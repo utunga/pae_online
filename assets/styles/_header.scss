@@ -5,7 +5,8 @@
     position: absolute;
     width: 100%;
     z-index: 100;
-    background-color: $white;
+	color: $white;
+    background-color: $accent;
     border-bottom: $site-border;
     .fixed-header & {
         position: fixed;
@@ -42,7 +43,7 @@
     }
     @include breakpoint(lg) {
         padding: 1.618em 0;
-        max-width: 24rem;
+        max-width: 30rem;
     }
     .fixed-header .shrink & {
         padding: 0.382em 0;

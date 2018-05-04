@@ -1,17 +1,16 @@
 /*!
- * Theme Name:  Genesis Starter
- * Theme URI:   http://www.seothemes.com/themes/genesis-starter/
- * Description: Starter theme for the Genesis Framework.
- * Author:      SEO Themes
- * Author URI:  http://www.seothemes.com/
- * Version:     2.2.7
- * Text Domain: genesis-starter
+ * Theme Name:  Paekakariki Online
+ * Description: Paekakariki Online custom child theme for the Genesis Framework.
+ * Author:      Miles Thompson (@utunga) and Catherine Adam
+ * Author URI:  http://goodbright.nz / http://catherineadam.co.nz
+ * Version:     0.5.5
+ * Text Domain: pae-online
  * Tags:        one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-logo, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready.
  * Template:    genesis
  * Template     Version: 2.5.2
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
- * GitHub URI:  https://github.com/seothemes/genesis-starter
+ * GitHub URI:  https://github.com/utunga/pae-online
  */
 /* # Table of Contents
 
@@ -623,7 +622,7 @@ p {
 }
 
 a {
-	color: #a0a8af;
+	color: #61b5b5;
 	word-wrap: break-word;
 }
 
@@ -728,7 +727,7 @@ input:focus,
 select:focus,
 textarea:focus {
 	outline: none;
-	border-color: #a0a8af;
+	border-color: #61b5b5;
 }
 
 :focus {
@@ -797,7 +796,7 @@ button.secondary,
 input[type='button'].secondary,
 input[type='reset'].secondary,
 input[type='submit'].secondary {
-	background-color: #a0a8af;
+	background-color: #61b5b5;
 }
 
 .button.small,
@@ -1113,7 +1112,7 @@ th {
 
 .entry-title a:hover,
 .entry-title a:focus {
-	color: #a0a8af;
+	color: #61b5b5;
 }
 
 /* ## WordPress
@@ -1282,7 +1281,8 @@ img.alignright,
 	position: absolute;
 	width: 100%;
 	z-index: 100;
-	background-color: #ffffff;
+	color: #ffffff;
+	background-color: #61b5b5;
 	border-bottom: 1px solid #f0f1f2;
 	border-bottom: 0.1rem solid #f0f1f2;
 }
@@ -1437,7 +1437,7 @@ img.alignright,
 .menu-item a:hover,
 .menu-item a:focus,
 .menu-item.current-menu-item > a {
-	color: #a0a8af;
+	color: #61b5b5;
 }
 
 /* ## Sub Menus
@@ -1523,6 +1523,29 @@ img.alignright,
 
 .nav-secondary {
 	width: 100%;
+	background: #000000;
+}
+
+.nav-secondary a,
+.nav-secondary a:hover,
+.nav-secondary a:focus {
+	color: #ffffff;
+}
+
+.nav-secondary .sub-menu a,
+.nav-secondary .sub-menu a:hover,
+.nav-secondary .sub-menu a:focus {
+	color: #30353a;
+}
+
+.nav-primary {
+	background: #61b5b5;
+}
+
+.nav-primary a,
+.nav-primary a:hover,
+.nav-primary a:focus {
+	color: #ffffff;
 }
 
 .nav-footer .menu {
@@ -1809,7 +1832,7 @@ p.entry-meta {
 .archive-pagination a:hover,
 .archive-pagination .active a,
 .archive-pagination a:focus {
-	background-color: #a0a8af;
+	background-color: #61b5b5;
 	color: #ffffff;
 }
 
@@ -2828,7 +2851,7 @@ p.entry-meta {
 	}
 	.nav-secondary {
 		width: 100%;
-		border-top: 0.1rem solid #f0f1f2;
+		border-top: #000000;
 	}
 	.menu-toggle {
 		display: none;
@@ -2859,7 +2882,7 @@ p.entry-meta {
 @media (min-width: 1152px) {
 	.title-area {
 		padding: 1.618em 0;
-		max-width: 24rem;
+		max-width: 30rem;
 	}
 	.page-header {
 		padding: 18rem 0 6rem;

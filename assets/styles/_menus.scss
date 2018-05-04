@@ -105,7 +105,6 @@
 
 /* ## Specific Menus
 --------------------------------------------- */
-
 .nav-primary,
 .nav-secondary {
     width: 100vw;
@@ -156,11 +155,31 @@
 }
 
 .nav-secondary {
-    width: 100%;
-    @include breakpoint(md) {
-        width: 100%;
-        border-top: $site-border;
-    }
+	width: 100%;
+	background: $black;
+
+	a, a:hover {
+		color: $white;
+	}
+
+	.sub-menu {
+		a, a:hover {
+			color: $dark;
+		}
+	}
+
+	@include breakpoint(md) {
+		width: 100%;
+		border-top: $black;
+	}
+}
+
+.nav-primary {
+	background: $accent;
+	a, a:hover
+	{
+		color: $white;
+	}
 }
 
 .nav-footer {
