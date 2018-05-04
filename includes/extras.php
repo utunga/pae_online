@@ -1,11 +1,8 @@
 <?php
 /**
- * This file adds extra functions used in the Genesis Starter Theme.
+ * This file adds extra functions used in the Paekakariki Online Theme.
  *
- * @package   GenesisStarter
- * @link      https://seothemes.com/themes/genesis-starter
- * @author    SEO Themes
- * @copyright Copyright © 2017 SEO Themes
+ * @package   PaekakarikiOnline
  * @license   GPL-2.0+
  */
 
@@ -16,7 +13,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 }
 
-add_filter( 'body_class', 'genesis_starter_body_class' );
+add_filter( 'body_class', 'pae_onlinebody_class' );
 /**
  * Add fixed header class.
  *
@@ -30,7 +27,7 @@ add_filter( 'body_class', 'genesis_starter_body_class' );
  *
  * @return array
  */
-function genesis_starter_body_class( $classes ) {
+function pae_onlinebody_class( $classes ) {
 
 	if ( current_theme_supports( 'fixed-header' ) ) {
 
@@ -54,7 +51,7 @@ function genesis_starter_body_class( $classes ) {
 
 }
 
-add_filter( 'genesis_attr_title-area', 'genesis_starter_title_area_schema' );
+add_filter( 'genesis_attr_title-area', 'pae_onlinetitle_area_schema' );
 /**
  * Add schema microdata to title-area.
  *
@@ -64,7 +61,7 @@ add_filter( 'genesis_attr_title-area', 'genesis_starter_title_area_schema' );
  *
  * @return array
  */
-function genesis_starter_title_area_schema( $attr ) {
+function pae_onlinetitle_area_schema( $attr ) {
 
 	$attr['itemscope'] = 'itemscope';
 	$attr['itemtype']  = 'http://schema.org/Organization';
@@ -73,7 +70,7 @@ function genesis_starter_title_area_schema( $attr ) {
 
 }
 
-add_filter( 'genesis_attr_site-title', 'genesis_starter_site_title_schema' );
+add_filter( 'genesis_attr_site-title', 'pae_onlinesite_title_schema' );
 /**
  * Correct site title schema.
  *
@@ -83,14 +80,14 @@ add_filter( 'genesis_attr_site-title', 'genesis_starter_site_title_schema' );
  *
  * @return array
  */
-function genesis_starter_site_title_schema( $attr ) {
+function pae_onlinesite_title_schema( $attr ) {
 
 	$attr['itemprop'] = 'name';
 
 	return $attr;
 }
 
-add_filter( 'theme_page_templates', 'genesis_starter_remove_templates' );
+add_filter( 'theme_page_templates', 'pae_onlineremove_templates' );
 /**
  * Remove Page Templates.
  *
@@ -104,7 +101,7 @@ add_filter( 'theme_page_templates', 'genesis_starter_remove_templates' );
  *
  * @return array Modified templates.
  */
-function genesis_starter_remove_templates( $page_templates ) {
+function pae_onlineremove_templates( $page_templates ) {
 
 	unset( $page_templates['page_archive.php'] );
 	unset( $page_templates['page_blog.php'] );
@@ -113,7 +110,7 @@ function genesis_starter_remove_templates( $page_templates ) {
 
 }
 
-add_action( 'genesis_admin_before_metaboxes', 'genesis_starter_remove_metaboxes' );
+add_action( 'genesis_admin_before_metaboxes', 'pae_onlineremove_metaboxes' );
 /**
  * Remove blog metabox.
  *
@@ -123,13 +120,13 @@ add_action( 'genesis_admin_before_metaboxes', 'genesis_starter_remove_metaboxes'
  *
  * @param string $hook The metabox hook.
  */
-function genesis_starter_remove_metaboxes( $hook ) {
+function pae_onlineremove_metaboxes( $hook ) {
 
 	remove_meta_box( 'genesis-theme-settings-blogpage', $hook, 'main' );
 
 }
 
-add_filter( 'genesis_site_layout', 'genesis_starter_page_layouts' );
+add_filter( 'genesis_site_layout', 'pae_onlinepage_layouts' );
 /**
  * Set page layout for special page templates.
  *
@@ -141,7 +138,7 @@ add_filter( 'genesis_site_layout', 'genesis_starter_page_layouts' );
  *
  * @return string
  */
-function genesis_starter_page_layouts() {
+function pae_onlinepage_layouts() {
 
 	if ( is_search() ) {
 
@@ -165,7 +162,7 @@ function genesis_starter_page_layouts() {
 
 }
 
-add_action( 'wp_head', 'genesis_starter_remove_ssi_inline_styles', 1 );
+add_action( 'wp_head', 'pae_onlineremove_ssi_inline_styles', 1 );
 /**
  * Remove Simple Social Icons inline CSS.
  *
@@ -177,7 +174,7 @@ add_action( 'wp_head', 'genesis_starter_remove_ssi_inline_styles', 1 );
  *
  * @return void
  */
-function genesis_starter_remove_ssi_inline_styles() {
+function pae_onlineremove_ssi_inline_styles() {
 
 	global $wp_widget_factory;
 
@@ -185,7 +182,7 @@ function genesis_starter_remove_ssi_inline_styles() {
 
 }
 
-add_action( 'wp_head', 'genesis_starter_simple_social_icons_css' );
+add_action( 'wp_head', 'pae_onlinesimple_social_icons_css' );
 /**
  * Simple Social Icons multiple instances workaround.
  *
@@ -198,7 +195,7 @@ add_action( 'wp_head', 'genesis_starter_simple_social_icons_css' );
  *
  * @return void
  */
-function genesis_starter_simple_social_icons_css() {
+function pae_onlinesimple_social_icons_css() {
 
 	if ( ! class_exists( 'Simple_Social_Icons_Widget' ) ) {
 
@@ -236,7 +233,7 @@ function genesis_starter_simple_social_icons_css() {
 		}';
 
 		// Minify.
-		$css = genesis_starter_minify_css( $css );
+		$css = pae_onlineminify_css( $css );
 
 		// Output.
 		printf( '<style type="text/css" media="screen">%s</style>', $css );
@@ -245,7 +242,7 @@ function genesis_starter_simple_social_icons_css() {
 
 }
 
-add_action( 'init', 'genesis_starter_structural_wrap_hooks' );
+add_action( 'init', 'pae_onlinestructural_wrap_hooks' );
 /**
  * Add hooks immediately before and after Genesis structural wraps.
  *
@@ -257,7 +254,7 @@ add_action( 'init', 'genesis_starter_structural_wrap_hooks' );
  *
  * @return void
  */
-function genesis_starter_structural_wrap_hooks() {
+function pae_onlinestructural_wrap_hooks() {
 
 	$wraps = get_theme_support( 'genesis-structural-wraps' );
 
@@ -296,7 +293,7 @@ function genesis_starter_structural_wrap_hooks() {
 
 }
 
-add_filter( 'genesis_markup_title-area_close', 'genesis_starter_after_title_area', 10, 2 );
+add_filter( 'genesis_markup_title-area_close', 'pae_onlineafter_title_area', 10, 2 );
 /**
  * Appends HTML to the closing markup for .title-area.
  *
@@ -313,7 +310,7 @@ add_filter( 'genesis_markup_title-area_close', 'genesis_starter_after_title_area
  *
  * @return string
  */
-function genesis_starter_after_title_area( $close_html, $args ) {
+function pae_onlineafter_title_area( $close_html, $args ) {
 
 	if ( $close_html ) {
 
@@ -329,7 +326,7 @@ function genesis_starter_after_title_area( $close_html, $args ) {
 
 }
 
-add_filter( 'http_request_args', 'genesis_starter_dont_update_theme', 5, 2 );
+add_filter( 'http_request_args', 'pae_onlinedont_update_theme', 5, 2 );
 /**
  * Don't Update Theme.
  *
@@ -343,7 +340,7 @@ add_filter( 'http_request_args', 'genesis_starter_dont_update_theme', 5, 2 );
  *
  * @return array  request arguments
  */
-function genesis_starter_dont_update_theme( $request, $url ) {
+function pae_onlinedont_update_theme( $request, $url ) {
 
 	 // Not a theme update request. Bail immediately.
 	if ( 0 !== strpos( $url, 'http://api.wordpress.org/themes/update-check' ) ) {

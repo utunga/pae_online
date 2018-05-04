@@ -1,26 +1,24 @@
 <?php
 /**
- * Genesis Starter.
+ * Paekakariki Online.
  *
- * This file adds the 404 page template to the Genesis Starter Theme.
+ * This file adds the 404 page template to the Paekakariki Online Theme.
  *
- * @package Genesis Starter
- * @author  SEOThemes
+ * @package Paekakariki Online
  * @license GPL-2.0+
- * @link    https://seothemes.com/themes/genesis-starter/
  * @todo    Delete file when Genesis 2.6 is released.
  */
 
 // Remove default loop.
 remove_action( 'genesis_loop', 'genesis_do_loop' );
 
-add_action( 'genesis_loop', 'genesis_starter_404' );
+add_action( 'genesis_loop', 'pae_online404' );
 /**
  * This function outputs a 404 "Not Found" error message.
  *
  * @since 1.6
  */
-function genesis_starter_404() {
+function pae_online404() {
 
 	genesis_markup( array(
 		'open' => '<article class="entry">',
@@ -37,7 +35,7 @@ function genesis_starter_404() {
 
 	get_search_form();
 
-	echo '<h2>' . __( 'Sitemap', 'genesis-starter' ) . '</h2>';
+	echo '<h2>' . __( 'Sitemap', 'pae-online' ) . '</h2>';
 
 	genesis_sitemap( 'h3' );
 

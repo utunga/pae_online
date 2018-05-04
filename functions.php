@@ -1,13 +1,11 @@
 <?php
 /**
- * Genesis Starter Theme.
+ * Paekakariki Online Theme.
  *
- * @package      GenesisStarter
- * @link         https://seothemes.com/themes/genesis-starter
- * @author       SEO Themes
- * @copyright    Copyright © 2017 SEO Themes
+ * @package      PaekakarikiOnline
  * @license      GPL-2.0+
  */
+
 
  // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -20,12 +18,12 @@ if ( ! defined( 'WPINC' ) ) {
 include_once( get_template_directory() . '/lib/init.php' );
 
 // Define theme constants.
-define( 'CHILD_THEME_NAME', 'Genesis Starter' );
-define( 'CHILD_THEME_URL', 'https://seothemes.com/themes/genesis-starter' );
-define( 'CHILD_THEME_VERSION', '2.2.7' );
+define( 'CHILD_THEME_NAME', 'Paekakariki Online' );
+define( 'CHILD_THEME_URL', 'https://paekakariki.online' );
+define( 'CHILD_THEME_VERSION', '0.5.5' );
 
 // Set Localization (do not remove).
-load_child_theme_textdomain( 'genesis-starter', apply_filters( 'child_theme_textdomain', get_stylesheet_directory() . '/languages', 'genesis-starter' ) );
+load_child_theme_textdomain( 'pae-online', apply_filters( 'child_theme_textdomain', get_stylesheet_directory() . '/languages', 'pae-online' ) );
 
 // Remove secondary sidebar.
 unregister_sidebar( 'sidebar-alt' );
@@ -68,8 +66,8 @@ add_theme_support( 'genesis-accessibility', array(
 
 // Enable support for custom navigation menus.
 add_theme_support( 'genesis-menus' , array(
-	'primary'   => __( 'Header Menu', 'genesis-starter' ),
-	'secondary' => __( 'After Header Menu', 'genesis-starter' ),
+	'primary'   => __( 'Header Menu', 'pae-online' ),
+	'secondary' => __( 'After Header Menu', 'pae-online' ),
 ) );
 
 // Enable support for viewport meta tag for mobile browsers.
@@ -143,21 +141,23 @@ add_theme_support( 'custom-header', array(
 	'flex-width'         => true,
 	'uploads'            => true,
 	'video'              => true,
-	'wp-head-callback'   => 'genesis_starter_custom_header',
+	'wp-head-callback'   => 'pae_onlinecustom_header',
 ) );
+
+add_theme_support( 'fixed-header' );
 
 // Register default header (just in case).
 register_default_headers( array(
 	'child' => array(
 		'url'           => '%2$s/assets/images/hero.jpg',
 		'thumbnail_url' => '%2$s/assets/images/hero.jpg',
-		'description'   => __( 'Hero Image', 'genesis-starter' ),
+		'description'   => __( 'Hero Image', 'pae-online' ),
 	),
 ) );
 
 // Register a custom layout.
 genesis_register_layout( 'custom-layout', array(
-	'label' => __( 'Custom Layout', 'genesis-starter' ),
+	'label' => __( 'Custom Layout', 'pae-online' ),
 	'img'   => get_stylesheet_directory_uri() . '/assets/images/custom-layout.gif',
 ) );
 
@@ -177,13 +177,13 @@ add_action( 'genesis_after_header_wrap', 'genesis_do_subnav' );
 remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
 add_action( 'genesis_before_footer_wrap', 'genesis_footer_widget_areas', 5 );
 
-add_action( 'wp_enqueue_scripts', 'genesis_starter_scripts_styles', 99 );
+add_action( 'wp_enqueue_scripts', 'pae_onlinescripts_styles', 99 );
 /**
  * Enqueue theme scripts and styles.
  *
  * @return void
  */
-function genesis_starter_scripts_styles() {
+function pae_onlinescripts_styles() {
 
 	// Remove Simple Social Icons CSS (included with theme).
 	wp_dequeue_style( 'simple-social-icons-font' );
@@ -192,9 +192,9 @@ function genesis_starter_scripts_styles() {
 	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700', array(), CHILD_THEME_VERSION );
 
 	// Conditionally load WooCommerce styles.
-	if ( genesis_starter_is_woocommerce_page() ) {
+	if ( pae_onlineis_woocommerce_page() ) {
 
-		wp_enqueue_style( 'genesis-starter-woocommerce', get_stylesheet_directory_uri() . '/assets/styles/min/woocommerce.min.css', array(), CHILD_THEME_VERSION );
+		wp_enqueue_style( 'pae-online-woocommerce', get_stylesheet_directory_uri() . '/assets/styles/min/woocommerce.min.css', array(), CHILD_THEME_VERSION );
 
 	}
 
@@ -203,12 +203,12 @@ function genesis_starter_scripts_styles() {
 	$folder = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : 'min/';
 
 	// Enqueue responsive menu script.
-	wp_enqueue_script( 'genesis-starter', get_stylesheet_directory_uri() . '/assets/scripts/' . $folder . 'scripts.' . $suffix . 'js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	wp_enqueue_script( 'pae-online', get_stylesheet_directory_uri() . '/assets/scripts/' . $folder . 'scripts.' . $suffix . 'js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
 	// Localize responsive menu script.
-	wp_localize_script( 'genesis-starter', 'genesis_responsive_menu', array(
-		'mainMenu'         => __( 'Menu', 'genesis-starter' ),
-		'subMenu'          => __( 'Menu', 'genesis-starter' ),
+	wp_localize_script( 'pae-online', 'genesis_responsive_menu', array(
+		'mainMenu'         => __( 'Menu', 'pae-online' ),
+		'subMenu'          => __( 'Menu', 'pae-online' ),
 		'menuIconClass'    => null,
 		'subMenuIconClass' => null,
 		'menuClasses'      => array(
@@ -240,3 +240,8 @@ include_once( get_stylesheet_directory() . '/includes/defaults.php' );
 
 // Load recommended plugins.
 include_once( get_stylesheet_directory() . '/includes/plugins.php' );
+
+
+/** ------------------------------------ **/
+
+

@@ -1,9 +1,9 @@
 //process.env.DISABLE_NOTIFIER = true; // Uncomment to disable all Gulp notifications.
 
 /**		
- * Genesis Starter.		
+ * Paekakariki Online.		
  *		
- * This file adds gulp tasks to the Genesis Starter theme.		
+ * This file adds gulp tasks to the Paekakariki Online theme.		
  *		
  * @author SEO themes		
  */
@@ -347,9 +347,9 @@ gulp.task('translate', function () {
 		.pipe(sort())
 
 		.pipe(wpPot({
-			domain: 'genesis-starter',
-			destFile: 'genesis-starter.pot',
-			package: 'Genesis Starter',
+			domain: 'pae-online',
+			destFile: 'pae-online.pot',
+			package: 'Paekakariki Online',
 			bugReport: 'https://seothemes.com/support',
 			lastTranslator: 'Lee Anthony <seothemeswp@gmail.com>',
 			team: 'SEO Themes <seothemeswp@gmail.com>'
@@ -379,7 +379,7 @@ gulp.task('zip', function () {
  */
 gulp.task('publish', function () {
 
-	gulp.src('../genesis-starter.zip')
+	gulp.src('../pae-online.zip')
 		.pipe(s3(aws));
 
 });
@@ -392,17 +392,17 @@ gulp.task('publish', function () {
  */
 gulp.task('rename', function () {
 
-	var old_proxy = 'genesis-starter.dev',
-		old_name = 'Genesis Starter',
-		old_domain = 'genesis-starter',
-		old_prefix = 'genesis_starter_',
-		old_package = 'GenesisStarter';
+	var old_proxy = 'pae.online.local',
+		old_name = 'Paekakariki Online',
+		old_domain = 'pae-online',
+		old_prefix = 'pae_online',
+		old_package = 'PaekakarikiOnline';
 
-	var new_proxy = args.to + '.dev',
-		new_name = changecase.titleCase(args.to) + ' Pro',
-		new_domain = changecase.paramCase(args.to) + '-pro',
-		new_prefix = changecase.snakeCase(args.to) + '_pro',
-		new_package = changecase.pascalCase(args.to) + 'Pro';
+	var new_proxy = 'pae.online.local',
+		new_name = 'Paekakariki Online',
+		new_domain = 'pae-online',
+		new_prefix = 'pae_online',
+		new_package = 'PaekakarikiOnline';
 
 	del(['./languages/' + old_domain + '.pot']);
 
@@ -473,8 +473,8 @@ gulp.task('watch', function () {
 		notify: true,
 		open: true,
 		// https: {
-		// 	"key": "/Users/seothemes/.valet/Certificates/genesis-starter.dev.key",
-		// 	"cert": "/Users/seothemes/.valet/Certificates/genesis-starter.dev.crt"
+		// 	"key": "/Users/seothemes/.valet/Certificates/pae.online.local.key",
+		// 	"cert": "/Users/seothemes/.valet/Certificates/pae.online.local.crt"
 		// }
 	});
 

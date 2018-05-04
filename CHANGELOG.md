@@ -1,5 +1,11 @@
+
+# Paekakariki Online Theme Changelog
+
+## This section intentionally left blank
+
 # Genesis Starter Theme Changelog
 
+# Forked at version [2.2.7] to create Paekakariki Online Theme ..
 ## [2.2.7] - 2018-02-09
 * Add and run PostCSS auto focus gulp function
 * Add support for search and 404 page settings

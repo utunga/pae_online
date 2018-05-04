@@ -1,13 +1,10 @@
 <?php
 /**
- * Genesis Starter.
+ * Paekakariki Online.
  *
- * This file adds the front page to the Genesis Starter Theme.
+ * This file adds the front page to the Paekakariki Online Theme.
  *
- * @package   GenesisStarter
- * @link      https://seothemes.com/themes/genesis-starter
- * @author    SEO Themes
- * @copyright Copyright © 2017 SEO Themes
+ * @package   PaekakarikiOnline
  * @license   GPL-2.0+
  */
 
@@ -22,7 +19,7 @@ if ( is_active_sidebar( 'front-page-1' ) ||
 	add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
 
 	// Remove default page header.
-	remove_action( 'genesis_before_content_sidebar_wrap', 'genesis_starter_page_header' );
+	remove_action( 'genesis_before_content_sidebar_wrap', 'pae_onlinepage_header' );
 
 	// Remove content-sidebar-wrap.
 	add_filter( 'genesis_markup_content-sidebar-wrap', '__return_null' );
@@ -30,7 +27,7 @@ if ( is_active_sidebar( 'front-page-1' ) ||
 	// Remove default loop.
 	remove_action( 'genesis_loop', 'genesis_do_loop' );
 
-	add_action( 'genesis_loop', 'genesis_starter_front_page_loop' );
+	add_action( 'genesis_loop', 'pae_onlinefront_page_loop' );
 	/**
 	 * Front page content.
 	 *
@@ -38,7 +35,7 @@ if ( is_active_sidebar( 'front-page-1' ) ||
 	 *
 	 * @return void
 	 */
-	function genesis_starter_front_page_loop() {
+	function pae_onlinefront_page_loop() {
 
 		// Front page 1 widget area.
 		genesis_widget_area( 'front-page-1', array(

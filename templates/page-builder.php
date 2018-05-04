@@ -1,17 +1,14 @@
 <?php
 /**
- * Genesis Starter
+ * Paekakariki Online
  *
  * Template Name: Page Builder
  *
- * This file adds the page builder template to the Genesis Starter
+ * This file adds the page builder template to the Paekakariki Online
  * theme. It removes everything between the site header and footer
  * leaving a blank template perfect for page builder plugins.
  *
- * @package   GenesisStarter
- * @link      https://seothemes.com/themes/genesis-starter
- * @author    SEO Themes
- * @copyright Copyright © 2017 SEO Themes
+ * @package   PaekakarikiOnline
  * @license   GPL-2.0+
  */
 
@@ -23,7 +20,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // Remove default page header.
-remove_action( 'genesis_before_content_sidebar_wrap', 'genesis_starter_page_header' );
+remove_action( 'genesis_before_content_sidebar_wrap', 'pae_onlinepage_header' );
 
 // Get site-header.
 get_header();

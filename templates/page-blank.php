@@ -1,17 +1,14 @@
 <?php
 /**
- * Genesis Starter
+ * Paekakariki Online
  *
  * Template Name: Blank Page
  *
- * This file adds a completely blank page template to the Genesis Starter
+ * This file adds a completely blank page template to the Paekakariki Online
  * theme. It removes everything except for the page content, leaving a
  * completely blank template with no site header or site footer.
  *
- * @package   GenesisStarter
- * @link      https://seothemes.com/themes/genesis-starter
- * @author    SEO Themes
- * @copyright Copyright © 2017 SEO Themes
+ * @package   PaekakarikiOnline
  * @license   GPL-2.0+
  */
 
@@ -23,7 +20,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // Remove default page header.
-remove_action( 'genesis_before_content_sidebar_wrap', 'genesis_starter_page_header' );
+remove_action( 'genesis_before_content_sidebar_wrap', 'pae_onlinepage_header' );
 
 // Custom loop, remove all hooks except entry content.
 if ( have_posts() ) :

@@ -1,11 +1,8 @@
 <?php
 /**
- * This file adds helper functions used in the Genesis Starter Theme.
+ * This file adds helper functions used in the Paekakariki Online Theme.
  *
- * @package   GenesisStarter
- * @link      https://seothemes.com/themes/genesis-starter
- * @author    SEO Themes
- * @copyright Copyright © 2017 SEO Themes
+ * @package   PaekakarikiOnline
  * @license   GPL-2.0+
  */
 
@@ -63,7 +60,7 @@ function sanitize_rgba_color( $color ) {
  *
  * @return string Minified CSS.
  */
-function genesis_starter_minify_css( $css ) {
+function pae_onlineminify_css( $css ) {
 
 	// Normalize whitespace.
 	$css = preg_replace( '/\s+/', ' ', $css );
@@ -108,7 +105,7 @@ function genesis_starter_minify_css( $css ) {
  *
  * @return bool
  */
-function genesis_starter_is_woocommerce_page() {
+function pae_onlineis_woocommerce_page() {
 
 	if ( ! class_exists( 'WooCommerce' ) ) {
 
@@ -142,7 +139,7 @@ function genesis_starter_is_woocommerce_page() {
  *
  * @return string
  */
-function genesis_starter_custom_header() {
+function pae_onlinecustom_header() {
 
 	$id = '';
 

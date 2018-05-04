@@ -26,16 +26,16 @@
 >
 
 <channel>
-	<title>Genesis Starter</title>
-	<link>https://genesis-starter.dev</link>
+	<title>Paekakariki Online</title>
+	<link>https://pae.online.local</link>
 	<description>Just another starter theme</description>
 	<pubDate>Mon, 11 Sep 2017 08:39:04 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
-	<wp:base_site_url>https://genesis-starter.dev</wp:base_site_url>
-	<wp:base_blog_url>https://genesis-starter.dev</wp:base_blog_url>
+	<wp:base_site_url>https://pae.online.local</wp:base_site_url>
+	<wp:base_blog_url>https://pae.online.local</wp:base_blog_url>
 
-	<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[admin@genesis-starter.dev]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+	<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[admin@pae.online.local]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
 	<wp:category>
 		<wp:term_id>2</wp:term_id>
@@ -261,10 +261,10 @@
 
 	<item>
 		<title>0-7-</title>
-		<link>https://genesis-starter.dev/features/gallery-page/0-7/</link>
+		<link>https://pae.online.local/features/gallery-page/0-7/</link>
 		<pubDate>Mon, 11 Sep 2017 06:52:56 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/0-7-.jpg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/0-7-.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -280,7 +280,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/0-7-.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/0-7-.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/0-7-.jpg]]></wp:meta_value>
@@ -292,10 +292,10 @@
 	</item>
 	<item>
 		<title>4c8ee826154745.56350688d0a0a</title>
-		<link>https://genesis-starter.dev/features/gallery-page/4c8ee826154745-56350688d0a0a/</link>
+		<link>https://pae.online.local/features/gallery-page/4c8ee826154745-56350688d0a0a/</link>
 		<pubDate>Mon, 11 Sep 2017 06:52:57 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/4c8ee826154745.56350688d0a0a.jpg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/4c8ee826154745.56350688d0a0a.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -311,7 +311,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/4c8ee826154745.56350688d0a0a.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/4c8ee826154745.56350688d0a0a.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/4c8ee826154745.56350688d0a0a.jpg]]></wp:meta_value>
@@ -323,10 +323,10 @@
 	</item>
 	<item>
 		<title>7-clean-business-card-mockup-psd-3</title>
-		<link>https://genesis-starter.dev/features/gallery-page/7-clean-business-card-mockup-psd-3/</link>
+		<link>https://pae.online.local/features/gallery-page/7-clean-business-card-mockup-psd-3/</link>
 		<pubDate>Mon, 11 Sep 2017 06:52:58 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/7-clean-business-card-mockup-psd-3.jpg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/7-clean-business-card-mockup-psd-3.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -342,7 +342,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/7-clean-business-card-mockup-psd-3.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/7-clean-business-card-mockup-psd-3.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/7-clean-business-card-mockup-psd-3.jpg]]></wp:meta_value>
@@ -354,10 +354,10 @@
 	</item>
 	<item>
 		<title>10</title>
-		<link>https://genesis-starter.dev/features/gallery-page/attachment/10/</link>
+		<link>https://pae.online.local/features/gallery-page/attachment/10/</link>
 		<pubDate>Mon, 11 Sep 2017 06:52:58 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/10.jpg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/10.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -373,7 +373,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/10.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/10.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/10.jpg]]></wp:meta_value>
@@ -385,10 +385,10 @@
 	</item>
 	<item>
 		<title>b88d3228647817.55caf9174e4a1</title>
-		<link>https://genesis-starter.dev/features/gallery-page/b88d3228647817-55caf9174e4a1/</link>
+		<link>https://pae.online.local/features/gallery-page/b88d3228647817-55caf9174e4a1/</link>
 		<pubDate>Mon, 11 Sep 2017 06:52:59 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/b88d3228647817.55caf9174e4a1.jpg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/b88d3228647817.55caf9174e4a1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -404,7 +404,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/b88d3228647817.55caf9174e4a1.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/b88d3228647817.55caf9174e4a1.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/b88d3228647817.55caf9174e4a1.jpg]]></wp:meta_value>
@@ -416,10 +416,10 @@
 	</item>
 	<item>
 		<title>blog-1</title>
-		<link>https://genesis-starter.dev/features/gallery-page/blog-1/</link>
+		<link>https://pae.online.local/features/gallery-page/blog-1/</link>
 		<pubDate>Mon, 11 Sep 2017 06:52:59 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/blog-1.jpg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/blog-1.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -435,7 +435,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/blog-1.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/blog-1.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/blog-1.jpg]]></wp:meta_value>
@@ -447,10 +447,10 @@
 	</item>
 	<item>
 		<title>blog</title>
-		<link>https://genesis-starter.dev/features/gallery-page/blog-2/</link>
+		<link>https://pae.online.local/features/gallery-page/blog-2/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:00 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/blog.jpg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/blog.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -466,7 +466,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/blog.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/blog.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/blog.jpg]]></wp:meta_value>
@@ -478,10 +478,10 @@
 	</item>
 	<item>
 		<title>calculator-dark-light-iphone-6-perspective</title>
-		<link>https://genesis-starter.dev/features/gallery-page/calculator-dark-light-iphone-6-perspective/</link>
+		<link>https://pae.online.local/features/gallery-page/calculator-dark-light-iphone-6-perspective/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:00 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/calculator-dark-light-iphone-6-perspective.png</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/calculator-dark-light-iphone-6-perspective.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -497,7 +497,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/calculator-dark-light-iphone-6-perspective.png]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/calculator-dark-light-iphone-6-perspective.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/calculator-dark-light-iphone-6-perspective.png]]></wp:meta_value>
@@ -509,10 +509,10 @@
 	</item>
 	<item>
 		<title>columns</title>
-		<link>https://genesis-starter.dev/features/gallery-page/columns-2/</link>
+		<link>https://pae.online.local/features/gallery-page/columns-2/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:01 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/columns.jpeg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/columns.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -528,7 +528,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/columns.jpeg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/columns.jpeg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/columns.jpeg]]></wp:meta_value>
@@ -540,10 +540,10 @@
 	</item>
 	<item>
 		<title>design</title>
-		<link>https://genesis-starter.dev/features/gallery-page/design/</link>
+		<link>https://pae.online.local/features/gallery-page/design/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:01 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/design.jpeg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/design.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -559,7 +559,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/design.jpeg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/design.jpeg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/design.jpeg]]></wp:meta_value>
@@ -571,10 +571,10 @@
 	</item>
 	<item>
 		<title>digital</title>
-		<link>https://genesis-starter.dev/features/gallery-page/digital/</link>
+		<link>https://pae.online.local/features/gallery-page/digital/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:02 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/digital.jpg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/digital.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -590,7 +590,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/digital.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/digital.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/digital.jpg]]></wp:meta_value>
@@ -602,10 +602,10 @@
 	</item>
 	<item>
 		<title>free-apple-macbook-mockup</title>
-		<link>https://genesis-starter.dev/features/gallery-page/free-apple-macbook-mockup/</link>
+		<link>https://pae.online.local/features/gallery-page/free-apple-macbook-mockup/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:02 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/free-apple-macbook-mockup.jpg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/free-apple-macbook-mockup.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -621,7 +621,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/free-apple-macbook-mockup.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/free-apple-macbook-mockup.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/free-apple-macbook-mockup.jpg]]></wp:meta_value>
@@ -633,10 +633,10 @@
 	</item>
 	<item>
 		<title>gallery</title>
-		<link>https://genesis-starter.dev/features/gallery-page/gallery/</link>
+		<link>https://pae.online.local/features/gallery-page/gallery/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:03 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/gallery.jpeg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/gallery.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -652,7 +652,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/gallery.jpeg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/gallery.jpeg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/gallery.jpeg]]></wp:meta_value>
@@ -664,10 +664,10 @@
 	</item>
 	<item>
 		<title>hero</title>
-		<link>https://genesis-starter.dev/features/gallery-page/hero/</link>
+		<link>https://pae.online.local/features/gallery-page/hero/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:03 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/hero.jpg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/hero.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -683,7 +683,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/hero.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/hero.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/hero.jpg]]></wp:meta_value>
@@ -695,10 +695,10 @@
 	</item>
 	<item>
 		<title>icons</title>
-		<link>https://genesis-starter.dev/features/gallery-page/icons/</link>
+		<link>https://pae.online.local/features/gallery-page/icons/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:04 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/icons.jpg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/icons.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -714,7 +714,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/icons.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/icons.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/icons.jpg]]></wp:meta_value>
@@ -726,10 +726,10 @@
 	</item>
 	<item>
 		<title>k4</title>
-		<link>https://genesis-starter.dev/features/gallery-page/k4/</link>
+		<link>https://pae.online.local/features/gallery-page/k4/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:05 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/k4.jpg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/k4.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -745,7 +745,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/k4.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/k4.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/k4.jpg]]></wp:meta_value>
@@ -757,10 +757,10 @@
 	</item>
 	<item>
 		<title>layouts</title>
-		<link>https://genesis-starter.dev/features/gallery-page/layouts-2/</link>
+		<link>https://pae.online.local/features/gallery-page/layouts-2/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:05 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/layouts.jpeg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/layouts.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -776,7 +776,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/layouts.jpeg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/layouts.jpeg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/layouts.jpeg]]></wp:meta_value>
@@ -788,10 +788,10 @@
 	</item>
 	<item>
 		<title>macbook-1</title>
-		<link>https://genesis-starter.dev/features/gallery-page/macbook-1/</link>
+		<link>https://pae.online.local/features/gallery-page/macbook-1/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:06 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/macbook-1.png</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/macbook-1.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -807,7 +807,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/macbook-1.png]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/macbook-1.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/macbook-1.png]]></wp:meta_value>
@@ -819,10 +819,10 @@
 	</item>
 	<item>
 		<title>macbook</title>
-		<link>https://genesis-starter.dev/features/gallery-page/macbook/</link>
+		<link>https://pae.online.local/features/gallery-page/macbook/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:07 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/macbook.png</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/macbook.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -838,7 +838,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/macbook.png]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/macbook.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/macbook.png]]></wp:meta_value>
@@ -850,10 +850,10 @@
 	</item>
 	<item>
 		<title>Magazine-mockup</title>
-		<link>https://genesis-starter.dev/features/gallery-page/magazine-mockup/</link>
+		<link>https://pae.online.local/features/gallery-page/magazine-mockup/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:07 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/Magazine-mockup.jpg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/Magazine-mockup.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -869,7 +869,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/Magazine-mockup.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/Magazine-mockup.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/Magazine-mockup.jpg]]></wp:meta_value>
@@ -881,10 +881,10 @@
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/?p=1073</link>
+		<link>https://pae.online.local/?p=1073</link>
 		<pubDate>Mon, 30 Nov -0001 00:00:00 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1073</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1073</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -939,10 +939,10 @@
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1075/</link>
+		<link>https://pae.online.local/1075/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:49 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1075</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1075</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -994,10 +994,10 @@
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1077/</link>
+		<link>https://pae.online.local/1077/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:49 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1077</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1077</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1049,10 +1049,10 @@
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1078/</link>
+		<link>https://pae.online.local/1078/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:49 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1078</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1078</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1104,10 +1104,10 @@
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1079/</link>
+		<link>https://pae.online.local/1079/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:50 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1079</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1079</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1159,10 +1159,10 @@
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1080/</link>
+		<link>https://pae.online.local/1080/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:49 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1080</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1080</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1214,10 +1214,10 @@
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1081/</link>
+		<link>https://pae.online.local/1081/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:49 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1081</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1081</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1269,10 +1269,10 @@
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1082/</link>
+		<link>https://pae.online.local/1082/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:49 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1082</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1082</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1324,10 +1324,10 @@
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1083/</link>
+		<link>https://pae.online.local/1083/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:49 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1083</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1083</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1379,10 +1379,10 @@
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1085/</link>
+		<link>https://pae.online.local/1085/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:49 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1085</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1085</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1434,10 +1434,10 @@
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1086/</link>
+		<link>https://pae.online.local/1086/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:49 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1086</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1086</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1489,10 +1489,10 @@
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1087/</link>
+		<link>https://pae.online.local/1087/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:49 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1087</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1087</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1544,10 +1544,10 @@
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1088/</link>
+		<link>https://pae.online.local/1088/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:50 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1088</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1088</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1599,10 +1599,10 @@
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1089/</link>
+		<link>https://pae.online.local/1089/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:50 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1089</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1089</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1654,10 +1654,10 @@
 	</item>
 	<item>
 		<title>marketing</title>
-		<link>https://genesis-starter.dev/features/gallery-page/marketing/</link>
+		<link>https://pae.online.local/features/gallery-page/marketing/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:08 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/marketing.jpeg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/marketing.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1673,7 +1673,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/marketing.jpeg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/marketing.jpeg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/marketing.jpeg]]></wp:meta_value>
@@ -1685,10 +1685,10 @@
 	</item>
 	<item>
 		<title>pricing</title>
-		<link>https://genesis-starter.dev/features/gallery-page/pricing/</link>
+		<link>https://pae.online.local/features/gallery-page/pricing/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:08 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/pricing.jpeg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/pricing.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1704,7 +1704,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/pricing.jpeg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/pricing.jpeg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/pricing.jpeg]]></wp:meta_value>
@@ -1716,10 +1716,10 @@
 	</item>
 	<item>
 		<title>sample</title>
-		<link>https://genesis-starter.dev/features/gallery-page/sample/</link>
+		<link>https://pae.online.local/features/gallery-page/sample/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:09 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/sample.jpeg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/sample.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1735,7 +1735,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/sample.jpeg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/sample.jpeg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/sample.jpeg]]></wp:meta_value>
@@ -1747,10 +1747,10 @@
 	</item>
 	<item>
 		<title>shop</title>
-		<link>https://genesis-starter.dev/features/gallery-page/shop-2/</link>
+		<link>https://pae.online.local/features/gallery-page/shop-2/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:10 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/shop.jpg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/shop.jpg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1766,7 +1766,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/shop.jpg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/shop.jpg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/shop.jpg]]></wp:meta_value>
@@ -1778,10 +1778,10 @@
 	</item>
 	<item>
 		<title>web</title>
-		<link>https://genesis-starter.dev/features/gallery-page/web/</link>
+		<link>https://pae.online.local/features/gallery-page/web/</link>
 		<pubDate>Mon, 11 Sep 2017 06:53:10 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/01/web.jpeg</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/01/web.jpeg</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1797,7 +1797,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/01/web.jpeg]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/01/web.jpeg]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/01/web.jpeg]]></wp:meta_value>
@@ -1809,10 +1809,10 @@
 	</item>
 	<item>
 		<title>transparency-grid</title>
-		<link>https://genesis-starter.dev/transparency-grid/</link>
+		<link>https://pae.online.local/transparency-grid/</link>
 		<pubDate>Mon, 11 Sep 2017 07:28:07 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/wp-content/uploads/2017/09/transparency-grid.png</guid>
+		<guid isPermaLink="false">https://pae.online.local/wp-content/uploads/2017/09/transparency-grid.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -1828,7 +1828,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[https://genesis-starter.dev/wp-content/uploads/2017/09/transparency-grid.png]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[https://pae.online.local/wp-content/uploads/2017/09/transparency-grid.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/09/transparency-grid.png]]></wp:meta_value>
@@ -1840,7 +1840,7 @@
 	</item>
 	<item>
 		<title>Blog</title>
-		<link>https://genesis-starter.dev/blog/</link>
+		<link>https://pae.online.local/blog/</link>
 		<pubDate>Thu, 04 May 2017 03:59:27 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://storefront.dev/?page_id=7</guid>
@@ -1894,7 +1894,7 @@
 	</item>
 	<item>
 		<title>Home</title>
-		<link>https://genesis-starter.dev/</link>
+		<link>https://pae.online.local/</link>
 		<pubDate>Thu, 04 May 2017 03:59:27 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://storefront.dev/?page_id=9</guid>
@@ -1928,7 +1928,7 @@
 	</item>
 	<item>
 		<title>Page Builder</title>
-		<link>https://genesis-starter.dev/templates/page-builder/</link>
+		<link>https://pae.online.local/templates/page-builder/</link>
 		<pubDate>Thu, 04 May 2017 03:59:27 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://storefront.dev/?page_id=11</guid>
@@ -2137,7 +2137,7 @@ Zen Life
 	</item>
 	<item>
 		<title>Cart</title>
-		<link>https://genesis-starter.dev/shop/cart/</link>
+		<link>https://pae.online.local/shop/cart/</link>
 		<pubDate>Thu, 04 May 2017 03:58:58 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://storefront.dev/cart/</guid>
@@ -2191,7 +2191,7 @@ Zen Life
 	</item>
 	<item>
 		<title>Checkout</title>
-		<link>https://genesis-starter.dev/shop/checkout/</link>
+		<link>https://pae.online.local/shop/checkout/</link>
 		<pubDate>Thu, 04 May 2017 03:58:58 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://storefront.dev/checkout/</guid>
@@ -2245,7 +2245,7 @@ Zen Life
 	</item>
 	<item>
 		<title>My account</title>
-		<link>https://genesis-starter.dev/shop/my-account/</link>
+		<link>https://pae.online.local/shop/my-account/</link>
 		<pubDate>Thu, 04 May 2017 03:58:58 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://storefront.dev/my-account/</guid>
@@ -2299,7 +2299,7 @@ Zen Life
 	</item>
 	<item>
 		<title>Features</title>
-		<link>https://genesis-starter.dev/features/</link>
+		<link>https://pae.online.local/features/</link>
 		<pubDate>Sun, 15 Aug 2010 19:03:46 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis</guid>
@@ -2405,7 +2405,7 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title>Gallery Page</title>
-		<link>https://genesis-starter.dev/features/gallery-page/</link>
+		<link>https://pae.online.local/features/gallery-page/</link>
 		<pubDate>Sat, 07 Jan 2017 02:38:48 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://fitness-pro.dev/?page_id=9</guid>
@@ -2483,7 +2483,7 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title>Page Layouts</title>
-		<link>https://genesis-starter.dev/layouts/</link>
+		<link>https://pae.online.local/layouts/</link>
 		<pubDate>Sun, 15 Aug 2010 19:08:02 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis</guid>
@@ -2543,7 +2543,7 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title>Column Classes</title>
-		<link>https://genesis-starter.dev/features/columns/</link>
+		<link>https://pae.online.local/features/columns/</link>
 		<pubDate>Thu, 03 Feb 2011 18:06:59 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?page_id=181</guid>
@@ -2692,7 +2692,7 @@ This is an example of a WordPress post, you could edit this to put information a
 	</item>
 	<item>
 		<title>Typography</title>
-		<link>https://genesis-starter.dev/features/typography/</link>
+		<link>https://pae.online.local/features/typography/</link>
 		<pubDate>Mon, 25 Apr 2016 19:44:06 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis-sample/?page_id=485</guid>
@@ -2835,7 +2835,7 @@ color: #000;
 	</item>
 	<item>
 		<title>Full Width Content</title>
-		<link>https://genesis-starter.dev/layouts/fwc/</link>
+		<link>https://pae.online.local/layouts/fwc/</link>
 		<pubDate>Sun, 15 Aug 2010 19:11:13 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis</guid>
@@ -2907,7 +2907,7 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title>Page Templates</title>
-		<link>https://genesis-starter.dev/templates/</link>
+		<link>https://pae.online.local/templates/</link>
 		<pubDate>Sun, 15 Aug 2010 19:11:56 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis</guid>
@@ -2963,7 +2963,7 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title>Content/Sidebar</title>
-		<link>https://genesis-starter.dev/layouts/cs/</link>
+		<link>https://pae.online.local/layouts/cs/</link>
 		<pubDate>Sun, 15 Aug 2010 19:09:00 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis</guid>
@@ -3035,7 +3035,7 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title>Sidebar/Content</title>
-		<link>https://genesis-starter.dev/layouts/sc/</link>
+		<link>https://pae.online.local/layouts/sc/</link>
 		<pubDate>Sun, 15 Aug 2010 19:09:20 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis</guid>
@@ -3107,10 +3107,10 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1090/</link>
+		<link>https://pae.online.local/1090/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:50 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1090</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1090</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3162,10 +3162,10 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1091/</link>
+		<link>https://pae.online.local/1091/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:50 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1091</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1091</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3217,10 +3217,10 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1092/</link>
+		<link>https://pae.online.local/1092/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:50 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1092</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1092</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3272,10 +3272,10 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1093/</link>
+		<link>https://pae.online.local/1093/</link>
 		<pubDate>Fri, 18 Aug 2017 10:59:50 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1093</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1093</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3327,10 +3327,10 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title></title>
-		<link>https://genesis-starter.dev/1104/</link>
+		<link>https://pae.online.local/1104/</link>
 		<pubDate>Fri, 18 Aug 2017 11:01:09 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1104</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1104</guid>
 		<description></description>
 		<content:encoded><![CDATA[ ]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3382,10 +3382,10 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title>Hello world!</title>
-		<link>https://genesis-starter.dev/hello-world__trashed/</link>
+		<link>https://pae.online.local/hello-world__trashed/</link>
 		<pubDate>Fri, 18 Aug 2017 10:56:05 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?p=1</guid>
+		<guid isPermaLink="false">https://pae.online.local/?p=1</guid>
 		<description></description>
 		<content:encoded><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3437,10 +3437,10 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 	</item>
 	<item>
 		<title>Sample Page</title>
-		<link>https://genesis-starter.dev/sample-page/</link>
+		<link>https://pae.online.local/sample-page/</link>
 		<pubDate>Fri, 18 Aug 2017 10:56:05 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?page_id=2</guid>
+		<guid isPermaLink="false">https://pae.online.local/?page_id=2</guid>
 		<description></description>
 		<content:encoded><![CDATA[This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:
 
@@ -3450,7 +3450,7 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.]]></wp:
 
 <blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>
 
-As a new WordPress user, you should go to <a href="https://genesis-starter.dev/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
+As a new WordPress user, you should go to <a href="https://pae.online.local/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>2</wp:post_id>
 		<wp:post_date><![CDATA[2017-08-18 10:56:05]]></wp:post_date>
@@ -3471,7 +3471,7 @@ As a new WordPress user, you should go to <a href="https://genesis-starter.dev/w
 	</item>
 	<item>
 		<title>About</title>
-		<link>https://genesis-starter.dev/about__trashed/</link>
+		<link>https://pae.online.local/about__trashed/</link>
 		<pubDate>Thu, 04 May 2017 04:25:10 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://storefront.dev/?page_id=47</guid>
@@ -3505,7 +3505,7 @@ As a new WordPress user, you should go to <a href="https://genesis-starter.dev/w
 	</item>
 	<item>
 		<title>Contact</title>
-		<link>https://genesis-starter.dev/contact/</link>
+		<link>https://pae.online.local/contact/</link>
 		<pubDate>Thu, 04 May 2017 04:25:10 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://storefront.dev/?page_id=48</guid>
@@ -3569,7 +3569,7 @@ As a new WordPress user, you should go to <a href="https://genesis-starter.dev/w
 	</item>
 	<item>
 		<title>Sample Post With a Blockquote</title>
-		<link>https://genesis-starter.dev/blockquote/</link>
+		<link>https://pae.online.local/blockquote/</link>
 		<pubDate>Sun, 01 Sep 2013 01:54:12 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=7</guid>
@@ -3640,7 +3640,7 @@ This is an example of a WordPress post, you could edit this to put information a
 	</item>
 	<item>
 		<title>Sample Post With an Ordered List</title>
-		<link>https://genesis-starter.dev/ordered-list/</link>
+		<link>https://pae.online.local/ordered-list/</link>
 		<pubDate>Sun, 01 Sep 2013 01:54:32 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=9</guid>
@@ -3717,7 +3717,7 @@ This is an example of a WordPress post, you could edit this to put information a
 	</item>
 	<item>
 		<title>Sample Post With an Unordered List</title>
-		<link>https://genesis-starter.dev/unordered-list/</link>
+		<link>https://pae.online.local/unordered-list/</link>
 		<pubDate>Sun, 01 Sep 2013 01:54:48 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=11</guid>
@@ -3794,7 +3794,7 @@ This is an example of a WordPress post, you could edit this to put information a
 	</item>
 	<item>
 		<title>Sample Post With Image Centered</title>
-		<link>https://genesis-starter.dev/image-centered/</link>
+		<link>https://pae.online.local/image-centered/</link>
 		<pubDate>Sun, 01 Sep 2013 01:55:21 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=13</guid>
@@ -3883,7 +3883,7 @@ This is an example of a WordPress post, you could edit this to put information a
 	</item>
 	<item>
 		<title>Sample Post With Image Aligned Right</title>
-		<link>https://genesis-starter.dev/image-aligned-right/</link>
+		<link>https://pae.online.local/image-aligned-right/</link>
 		<pubDate>Sun, 01 Sep 2013 01:56:30 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=16</guid>
@@ -3972,7 +3972,7 @@ This is an example of a WordPress post, you could edit this to put information a
 	</item>
 	<item>
 		<title>Sample Post With Image Aligned Left</title>
-		<link>https://genesis-starter.dev/image-aligned-left/</link>
+		<link>https://pae.online.local/image-aligned-left/</link>
 		<pubDate>Sun, 01 Sep 2013 01:57:05 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=18</guid>
@@ -4061,7 +4061,7 @@ This is an example of a WordPress post, you could edit this to put information a
 	</item>
 	<item>
 		<title>Sample Post With Threaded Comments</title>
-		<link>https://genesis-starter.dev/threaded-comments/</link>
+		<link>https://pae.online.local/threaded-comments/</link>
 		<pubDate>Sun, 01 Sep 2013 01:57:18 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=20</guid>
@@ -4537,7 +4537,7 @@ This is an example of a WordPress post, you could edit this to put information a
 	</item>
 	<item>
 		<title>Sample Post With a Table</title>
-		<link>https://genesis-starter.dev/sample-table/</link>
+		<link>https://pae.online.local/sample-table/</link>
 		<pubDate>Sun, 01 Sep 2013 01:53:31 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://www.genesisframework.com/?p=447</guid>
@@ -4622,7 +4622,7 @@ This is an example of a WordPress post, you could edit this to put information a
 	</item>
 	<item>
 		<title>Sample Post With Headlines</title>
-		<link>https://genesis-starter.dev/headlines/</link>
+		<link>https://pae.online.local/headlines/</link>
 		<pubDate>Sun, 01 Sep 2013 01:52:58 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://demo.studiopress.com/genesis/?p=5</guid>
@@ -4694,7 +4694,7 @@ This is an example of a WordPress post, you could edit this to put information a
 	</item>
 	<item>
 		<title>Landing Page</title>
-		<link>https://genesis-starter.dev/templates/landing-page/</link>
+		<link>https://pae.online.local/templates/landing-page/</link>
 		<pubDate>Sun, 21 May 2017 07:35:32 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://storefront.dev/?page_id=1032</guid>
@@ -4711,7 +4711,7 @@ This is an example of a WordPress page, you could edit this to put information a
 
 &nbsp;
 
-<a href="javascript:history.back()" class="button">Back to demo</a> &nbsp; <a href="https://seothemes.com/themes/genesis-starter/" class="button secondary">Buy Genesis Starter</a>]]></content:encoded>
+<a href="javascript:history.back()" class="button">Back to demo</a> &nbsp; <a href="https://seothemes.com/themes/pae-online/" class="button secondary">Buy Paekakariki Online</a>]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>1032</wp:post_id>
 		<wp:post_date><![CDATA[2017-05-21 07:35:32]]></wp:post_date>
@@ -4760,10 +4760,10 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title>Shop</title>
-		<link>https://genesis-starter.dev/shop/</link>
+		<link>https://pae.online.local/shop/</link>
 		<pubDate>Fri, 18 Aug 2017 11:00:01 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?page_id=1096</guid>
+		<guid isPermaLink="false">https://pae.online.local/?page_id=1096</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4798,7 +4798,7 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title>Front Page</title>
-		<link>https://genesis-starter.dev/front-page__trashed/</link>
+		<link>https://pae.online.local/front-page__trashed/</link>
 		<pubDate>Thu, 04 May 2017 03:59:27 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">http://storefront.dev/?page_id=9</guid>
@@ -4844,10 +4844,10 @@ This is an example of a WordPress page, you could edit this to put information a
 	</item>
 	<item>
 		<title>Test</title>
-		<link>https://genesis-starter.dev/product/test/</link>
+		<link>https://pae.online.local/product/test/</link>
 		<pubDate>Mon, 11 Sep 2017 05:23:32 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<guid isPermaLink="false">https://genesis-starter.dev/?post_type=product&#038;p=1119</guid>
+		<guid isPermaLink="false">https://pae.online.local/?post_type=product&#038;p=1119</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>

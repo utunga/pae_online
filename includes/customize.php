@@ -1,11 +1,8 @@
 <?php
 /**
- * This file adds customizer settings to the Genesis Starter theme.
+ * This file adds customizer settings to the Paekakariki Online theme.
  *
- * @package   GenesisStarter
- * @link      https://seothemes.com/themes/genesis-starter
- * @author    SEO Themes
- * @copyright Copyright © 2017 SEO Themes
+ * @package   PaekakarikiOnline
  * @license   GPL-2.0+
  */
 
@@ -19,12 +16,12 @@ if ( ! defined( 'WPINC' ) ) {
 /*
  * Add any theme custom colors here.
  */
-$genesis_starter_colors = array(
+$pae_onlinecolors = array(
 	'primary'   => '#b0b5ba',
 	'secondary' => 'rgba(255, 255, 255, 0.95)',
 );
 
-add_action( 'customize_register', 'genesis_starter_customize_register' );
+add_action( 'customize_register', 'pae_onlinecustomize_register' );
 /**
  * Sets up the theme customizer sections, controls, and settings.
  *
@@ -33,10 +30,10 @@ add_action( 'customize_register', 'genesis_starter_customize_register' );
  *
  * @return void
  */
-function genesis_starter_customize_register( $wp_customize ) {
+function pae_onlinecustomize_register( $wp_customize ) {
 
 	// Globals.
-	global $wp_customize, $genesis_starter_colors;
+	global $wp_customize, $pae_onlinecolors;
 
 	// Load RGBA Customizer control.
 	include_once( get_stylesheet_directory() . '/includes/rgba.php' );
@@ -48,13 +45,13 @@ function genesis_starter_customize_register( $wp_customize ) {
 	 * register a customizer setting and control for each.
 	 * To add additional color settings, do not modify this
 	 * function, instead add your color name and hex value to
-	 * the $genesis_starter_colors` array at the start of this file.
+	 * the $pae_onlinecolors` array at the start of this file.
 	 */
-	foreach ( $genesis_starter_colors as $id => $rgba ) {
+	foreach ( $pae_onlinecolors as $id => $rgba ) {
 
 		// Format ID and label.
-		$setting = "genesis_starter_{$id}_color";
-		$label   = ucwords( str_replace( '_', ' ', $id ) ) . __( ' Color', 'genesis-starter' );
+		$setting = "pae_online{$id}_color";
+		$label   = ucwords( str_replace( '_', ' ', $id ) ) . __( ' Color', 'pae-online' );
 
 		// Add color setting.
 		$wp_customize->add_setting(
@@ -91,19 +88,19 @@ function genesis_starter_customize_register( $wp_customize ) {
 	}
 }
 
-add_action( 'wp_enqueue_scripts', 'genesis_starter_customizer_output', 100 );
+add_action( 'wp_enqueue_scripts', 'pae_onlinecustomizer_output', 100 );
 /**
  * Output customizer styles.
  *
  * Checks the settings for the colors defined in the settings.
  * If any of these value are set the appropriate CSS is output.
  *
- * @var   array $genesis_starter_colors Global theme colors.
+ * @var   array $pae_onlinecolors Global theme colors.
  */
-function genesis_starter_customizer_output() {
+function pae_onlinecustomizer_output() {
 
 	// Set in customizer-settings.php.
-	global $genesis_starter_colors;
+	global $pae_onlinecolors;
 
 	/**
 	 * Loop though each color in the global array of theme colors
@@ -111,11 +108,11 @@ function genesis_starter_customizer_output() {
 	 * way of creating multiple variables that we can reuse. The
 	 * benefit of using a foreach loop over creating each variable
 	 * manually is that we can just declare the colors once in the
-	 * `$genesis_starter_colors` array, and they can be used in multiple ways.
+	 * `$pae_onlinecolors` array, and they can be used in multiple ways.
 	 */
-	foreach ( $genesis_starter_colors as $id => $hex ) {
+	foreach ( $pae_onlinecolors as $id => $hex ) {
 
-		${"$id"} = get_theme_mod( "genesis_starter_{$id}_color",  $hex );
+		${"$id"} = get_theme_mod( "pae_online{$id}_color",  $hex );
 
 	}
 
@@ -130,7 +127,7 @@ function genesis_starter_customizer_output() {
 	 * the user from the theme customizer. If the theme mod is not
 	 * equal to the default color then the string is appended to $css.
 	 */
-	$css .= ( $genesis_starter_colors['primary'] !== $primary ) ? sprintf( '
+	$css .= ( $pae_onlinecolors['primary'] !== $primary ) ? sprintf( '
 
 		.button:hover,
 		button:hover,
@@ -155,7 +152,7 @@ function genesis_starter_customizer_output() {
 
 		', $primary ) : '';
 
-	$css .= ( $genesis_starter_colors['secondary'] !== $secondary ) ? sprintf( '
+	$css .= ( $pae_onlinecolors['secondary'] !== $secondary ) ? sprintf( '
 
 		.page-header:before {
 			background-color: %1$s;
@@ -170,7 +167,7 @@ function genesis_starter_customizer_output() {
 	if ( ! empty( $css ) ) {
 
 		// Add the inline styles, also minify CSS first.
-		wp_add_inline_style( $handle, genesis_starter_minify_css( $css ) );
+		wp_add_inline_style( $handle, pae_onlineminify_css( $css ) );
 
 	}
 
