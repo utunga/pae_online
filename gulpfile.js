@@ -468,10 +468,10 @@ gulp.task('watch', function () {
 
 	// HTTPS (optional).
 	browsersync({
-		proxy: 'http://genesis-starter.dev',
+		proxy: 'http://pae.online.local',
 		port: 8000,
-		notify: false,
-		open: false,
+		notify: true,
+		open: true,
 		// https: {
 		// 	"key": "/Users/seothemes/.valet/Certificates/genesis-starter.dev.key",
 		// 	"cert": "/Users/seothemes/.valet/Certificates/genesis-starter.dev.crt"
