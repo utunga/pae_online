@@ -593,7 +593,7 @@ input[type='search'] {
 html {
 	font-size: 62.5%;
 	max-width: 100vw;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 }
 
 body {
@@ -608,7 +608,7 @@ body {
 	   -moz-font-smoothing: grayscale;
 	margin: 0;
 	max-width: 100vw;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 }
 
 body > div {
@@ -2478,6 +2478,123 @@ p.entry-meta {
 /* # Print Styles
 --------------------------------------------- */
 
+/* ## Directory Of Everything 
+--------------------------------------------- */
+.directory-item,
+.directory-widget,
+.directory-row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.directory-item a,
+.directory-widget a,
+.directory-row a {
+	display: block;
+	min-height: 100%;
+}
+
+.directory-item img,
+.directory-widget img,
+.directory-row img {
+	height: auto;
+	width: 100%;
+	display: block;
+}
+
+.directory-widget {
+	-ms-flex-flow: column nowrap;
+	    flex-flow: column nowrap;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.directory-sidebar {
+	-ms-flex-flow: column nowrap;
+	    flex-flow: column nowrap;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.directory-sidebar div {
+	margin: 0;
+	text-align: left;
+	margin: 0 0 1vw 0;
+}
+
+.directory-item {
+	width: 100%;
+	margin: 0 0 1vw;
+	text-align: center;
+	display: block;
+	border-bottom: solid 1px black;
+	/*@include breakpoint(xs) {
+		width: 48.717948717948715%;
+		margin-bottom: 2.564102564102564%;
+	}*/
+}
+
+.directory-item .title {
+	font-size: 1.6vw;
+}
+
+.directory-item div {
+	margin: 0;
+	text-align: left;
+	margin: 0 0 0.2vw 0;
+}
+
+.directory-row {
+	-ms-flex-flow: row nowrap;
+	    flex-flow: row nowrap;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+/** DEBUG */
+/*.directory-widget {
+	background: gray;
+}
+
+.directory-item {
+	background: green;
+	div {
+		border: solid 1px red;
+	}
+}
+
+.directory-row {
+	border: 1px dashed black;
+}*/
+.listing .teaser {
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-size: 1.5vw;
+}
+
+.listing .entry_content {
+	font-family: 'Times New Roman';
+}
+
+.acf-map {
+	width: 100%;
+	height: 250px;
+	border: #cccccc solid 1px;
+	margin: 20px 0;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+	max-width: inherit !important;
+}
 @media (min-width: 512px) {
 	.button + button,
 	.button + .button,
@@ -2620,7 +2737,6 @@ p.entry-meta {
 		width: 20%;
 	}
 }
-
 @media (min-width: 768px) {
 	body {
 		font-size: 2rem;
@@ -2780,7 +2896,6 @@ p.entry-meta {
 		padding: calc(20vh + 12rem) 0 20vh;
 	}
 }
-
 @media (min-width: 896px) {
 	.content-sidebar-wrap {
 		padding: 4rem 0;
@@ -2924,7 +3039,6 @@ p.entry-meta {
 		max-width: 768px;
 	}
 }
-
 @media (min-width: 1152px) {
 	.title-area {
 		padding: 1.618em 0;
@@ -2947,7 +3061,6 @@ p.entry-meta {
 		padding: calc(20vh + 12rem) 0 20vh;
 	}
 }
-
 @media (min-width: 1280px) {
 	.sub-menu a {
 		padding: 1em;
@@ -2958,7 +3071,6 @@ p.entry-meta {
 		width: 50%;
 	}
 }
-
 @media print {
 	*,
 	*:before,

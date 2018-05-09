@@ -1,4 +1,4 @@
-# Paekakariki Online Theme 
+# Paekākāriki Online Theme 
 
 A search engine optimized, mobile-first, flexbox-based starter theme for the Genesis Framework with development automation tools. Demo - [https://demo.seothemes.com/pae-online](https://demo.seothemes.com/pae-online)
 
