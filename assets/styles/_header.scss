@@ -1,54 +1,95 @@
 /* ## Site Header
 --------------------------------------------- */
 
-.site-header {
+.top-header {
+	color: $white;
+	background-color: $accent;
+	border-bottom: $site-border;
+	width: 100%;
+	z-index: 100;
+	color: $white;
+
+	> .wrap {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		@include breakpoint(md) {
+			padding: 0;
+			flex-wrap: nowrap;
+		}
+	}
+}
+
+.top-home {
+	img.wpsmartcrop-image {
+		height: 450px !important;
+		margin: 0;
+	}
+
+	.widget,
+	.alignnone {
+		margin: 0 !important;
+	}
+
+	figcaption {
+		display: none;
+	}
+}
+
+/*.site-header {
     position: absolute;
     width: 100%;
     z-index: 100;
 	color: $white;
     background-color: $accent;
     border-bottom: $site-border;
-    .fixed-header & {
-        position: fixed;
-    }
-    >.wrap {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        @include breakpoint(md) {
-            padding: 0;
-            flex-wrap: nowrap;
-        }
-    }
-}
-
-
+}*/
 /* ## Title Area
 --------------------------------------------- */
-
 .title-area {
-    margin: 0 auto 0 0;
-    position: relative;
-    height: 100%;
-    display: block;
-    flex: 1;
-    padding: 0.618em 0;
-    max-width: 18rem;
-    @include transition;
-    @include breakpoint(md) {
-        padding: 1.382em 0;
-        max-width: 24rem;
-    }
-    @include breakpoint(lg) {
-        padding: 1.618em 0;
-        max-width: 30rem;
-    }
-    .fixed-header .shrink & {
-        padding: 0.382em 0;
-    }
+	margin: 0 auto 0 0;
+	position: relative;
+	height: 100%;
+	display: block;
+	flex: 1;
+	padding: 0.618em 0;
+	max-width: 18rem;
+	@include transition;
+
+	@include breakpoint(md) {
+		padding: 1.382em 0;
+		max-width: 24rem;
+	}
+
+	@include breakpoint(lg) {
+		padding: 1.618em 0;
+		max-width: 30rem;
+	}
+
+	.fixed-header .shrink & {
+		padding: 0.382em 0;
+	}
 }
+
+.shrink .title-area {
+	padding: 0.218em 0;
+}
+
+.shrink .nav-secondary {
+	a {
+		@include breakpoint(lg) {
+			padding-top: 1em;
+			padding-bottom: 1em;
+		}
+	}
+}
+
+
+
+
 
 .site-title {
     font-size: 2.4rem;
@@ -95,15 +136,15 @@
 .page-header {
     width: 100%;
     margin: 0 auto;
-    padding: calc(6vw + 7rem) 0 6vw;
+    padding: calc(2vw + 5rem) 0 6vw;
     background-size: cover;
     background-position: center;
     position: relative;
     @include breakpoint(md) {
-        padding: 17rem 0 6rem;
+        padding: 4rem 0 6rem;
     }
     @include breakpoint(lg) {
-        padding: 18rem 0 6rem;
+        padding: 4rem 0 6rem;
     }
     &:before {
         content: "";
@@ -118,10 +159,10 @@
     }
     .has-nav-secondary & {
         @include breakpoint(md) {
-            padding-top: 23rem;
+            padding-top: 7rem;
         }
         @include breakpoint(lg) {
-            padding-top: 25rem;
+            padding-top: 7rem;
         }
     }
     .wrap {

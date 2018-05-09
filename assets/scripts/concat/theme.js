@@ -10,14 +10,49 @@
 	 * Add shrink class to header on scroll.
 	 */
 	$( window ).scroll( function() {
-		var scroll = $( window ).scrollTop();
-		var height = $( '.page-header' ).outerHeight();
-		var header = $( '.site-header' ).outerHeight();
-		if ( scroll >= header) {
-			$( '.site-header' ).addClass( 'shrink' );
-		} else {
-			$( '.site-header' ).removeClass( 'shrink' );
+		
+		//var height = $( '.page-header' ).outerHeight();
+		//var header = $( '.site-header' ).outerHeight();
+		//if ( scroll >= header) {
+		//	$('.site-header').addClass('shrink');
+		//	$(".nav-secondary").detach().appendTo(".top-header");
+		//} else {
+		//	$( '.site-header' ).removeClass( 'shrink' );
+		//}
+
+		var bottomOfTopNav = $('.top-header').outerHeight(); //$('.top-header').position().top + $('.top-header').offset().top + $('.top-header').outerHeight(true);
+		var topSecondaryNav = $('.nav-secondary').offset().top;
+		var scroll = $(window).scrollTop();
+	
+
+		if (scroll <= bottomOfTopNav) {
+			$('.site-header').removeClass('shrink');
 		}
+		else {
+			$('.site-header').addClass('shrink');
+		}
+
+
+		console.log("bottomOfTopNav:" + bottomOfTopNav + ", topSecondaryNav" + topSecondaryNav + ", scroll" + scroll);
+		if ($(".nav-placeholder").length>0) {
+			console.log("::" + ($('.nav-placeholder').offset().top - scroll) + ">=" + bottomOfTopNav + "?");
+			console.log("xxx" + $('.nav-placeholder').offset().top);
+			console.log("attach");
+			if ($('.nav-placeholder').offset().top - scroll >= bottomOfTopNav) {
+				$(".nav-secondary").detach().appendTo(".site-header");
+				//$(".nav-placeholder").remove();
+			}
+		}
+
+		if (topSecondaryNav - scroll <= bottomOfTopNav) {
+			console.log("detach");
+			if ($(".nav-placeholder").length==0) {
+				$(".nav-secondary").parent().after("<div class='nav-placeholder'></div>");
+				$(".nav-secondary").detach().appendTo(".top-header");
+			}
+			
+		}
+
 	} );
 
 	/**
@@ -67,6 +102,10 @@
 				} );
 			}
 		}
-	} );
+	});
+
+	$(".top-header").stick_in_parent({ bottoming: false, spacer: false });
+	//$(".nav-secondary").stick_in_parent({ parent: '.top-header', bottoming: false, spacer: false });
 
 } )( document, jQuery );
+

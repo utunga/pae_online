@@ -51,6 +51,7 @@
 }
 
 
+
 /* ## Sub Menus
 --------------------------------------------- */
 
@@ -117,6 +118,7 @@
     position: absolute;
     left: 0;
     top: 100%;
+	z-index: 1000;
     @include breakpoint(sm) {
         margin: 0 -5vw;
     }
@@ -155,13 +157,14 @@
 }
 
 .nav-secondary {
-	width: 100%;
-	background: $black;
+	background: $black !important;
+	text-align: center;
 
 	a, a:hover {
 		color: $white;
 	}
 
+	.mega-sub-menu,
 	.sub-menu {
 		a, a:hover {
 			color: $dark;
@@ -172,130 +175,163 @@
 		width: 100%;
 		border-top: $black;
 	}
+
+	#mega-menu-wrap-secondary {
+		background: $black;
+		text-align: center;
+		width: 70%;
+
+		#mega-menu-secondary {
+			text-align: center;
+		}
+	}
+
+	.search {
+		width: 180px;
+		margin: 4px;
+		float: right;
+		input {
+			height: 32px;
+		}
+	}
 }
 
 .nav-primary {
 	background: $accent;
-	a, a:hover
-	{
+
+	a, a:hover {
 		color: $white;
 	}
 }
 
 .nav-footer {
-    .menu {
-        justify-content: center;
-        margin-bottom: 1em;
-        @include breakpoint(sm) {
-            margin-bottom: 1.5em;
-        }
-    }
-    .menu-item {
-        width: auto;
-        a {
-            padding: 0;
-            margin: 0 1em;
-        }
-    }
+	.menu {
+		justify-content: center;
+		margin-bottom: 1em;
+
+		@include breakpoint(sm) {
+			margin-bottom: 1.5em;
+		}
+	}
+
+	.menu-item {
+		width: auto;
+
+		a {
+			padding: 0;
+			margin: 0 1em;
+		}
+	}
 }
-
-
 /* ## Menu Toggles
 --------------------------------------------- */
+	.menu-toggle {
+		padding: 2.7rem 0;
+		cursor: pointer;
+		background-color: transparent;
+		display: block;
+		position: relative;
+		line-height: 1;
+		color: $dark;
 
-.menu-toggle {
-    padding: 2.7rem 0;
-    cursor: pointer;
-    background-color: transparent;
-    display: block;
-    position: relative;
-    line-height: 1;
-    color: $dark;
-    &:hover,
-    &:focus {
-        background: none;
-        outline: none;
-        box-shadow: none;
-        color: $dark;
-    }
-    &:focus {
-        outline: $site-border;
-        background: none;
-    }
-    @include breakpoint(md) {
-        display: none;
-    }
-    span {
-        display: block;
-        float: right;
-        position: relative;
-        height: 0.2rem;
-        background: $dark;
-        transition: background 0s 0.2s;
-        width: 2.5rem;
-        margin-left: 0.236em;
-        margin-top: 0.8rem;
-        border-radius: $site-radius;
-        &::before,
-        &::after {
-            position: absolute;
-            display: block;
-            left: 0;
-            width: 100%;
-            height: 0.2rem;
-            background-color: $dark;
-            border-radius: $site-radius;
-            content: " ";
-        }
-        &::before {
-            top: -0.7rem;
-            transition: top 0.2s 0.2s, transform 0.2s 0s;
-        }
-        &::after {
-            bottom: -0.7rem;
-            transition: bottom 0.2s 0.2s, transform 0.2s 0s;
-        }
-    }
-    &.activated span {
-        background: none;
-        &::before {
-            top: 0;
-            transform: rotate(45deg);
-            transition: top 0.2s 0s, transform 0.2s 0.2s;
-        }
-        &::after {
-            bottom: 0;
-            transform: rotate(-45deg);
-            transition: bottom 0.2s 0s, transform 0.2s 0.2s;
-        }
-    }
-}
+		&:hover,
+		&:focus {
+			background: none;
+			outline: none;
+			box-shadow: none;
+			color: $dark;
+		}
 
-.sub-menu-toggle {
-    position: absolute;
-    right: 0;
-    top: 0.25em;
-    background: none;
-    padding: 0.75em;
-    margin: 0 -0.75em;
-    @include breakpoint(md) {
-        display: none;
-    }
-    &:hover,
-    &:focus {
-        background: none;
-    }
-    &:before {
-        content: "";
-        display: block;
-        margin: 0.2rem 0 -0.2rem;
-        border: 0.4rem solid transparent;
-        border-top-color: $dark;
-    }
-    &.activated {
-        &:before {
-            transform: rotate(180deg);
-            margin: -0.2rem 0 0.2rem;
-        }
-    }
-}
+		&:focus {
+			outline: $site-border;
+			background: none;
+		}
+
+		@include breakpoint(md) {
+			display: none;
+		}
+
+		span {
+			display: block;
+			float: right;
+			position: relative;
+			height: 0.2rem;
+			background: $dark;
+			transition: background 0s 0.2s;
+			width: 2.5rem;
+			margin-left: 0.236em;
+			margin-top: 0.8rem;
+			border-radius: $site-radius;
+
+			&::before,
+			&::after {
+				position: absolute;
+				display: block;
+				left: 0;
+				width: 100%;
+				height: 0.2rem;
+				background-color: $dark;
+				border-radius: $site-radius;
+				content: " ";
+			}
+
+			&::before {
+				top: -0.7rem;
+				transition: top 0.2s 0.2s, transform 0.2s 0s;
+			}
+
+			&::after {
+				bottom: -0.7rem;
+				transition: bottom 0.2s 0.2s, transform 0.2s 0s;
+			}
+		}
+
+		&.activated span {
+			background: none;
+
+			&::before {
+				top: 0;
+				transform: rotate(45deg);
+				transition: top 0.2s 0s, transform 0.2s 0.2s;
+			}
+
+			&::after {
+				bottom: 0;
+				transform: rotate(-45deg);
+				transition: bottom 0.2s 0s, transform 0.2s 0.2s;
+			}
+		}
+	}
+
+	.sub-menu-toggle {
+		position: absolute;
+		right: 0;
+		top: 0.25em;
+		background: none;
+		padding: 0.75em;
+		margin: 0 -0.75em;
+
+		@include breakpoint(md) {
+			display: none;
+		}
+
+		&:hover,
+		&:focus {
+			background: none;
+		}
+
+		&:before {
+			content: "";
+			display: block;
+			margin: 0.2rem 0 -0.2rem;
+			border: 0.4rem solid transparent;
+			border-top-color: $dark;
+		}
+
+		&.activated {
+			&:before {
+				transform: rotate(180deg);
+				margin: -0.2rem 0 0.2rem;
+			}
+		}
+	}

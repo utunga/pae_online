@@ -13,6 +13,14 @@ if ( ! defined( 'WPINC' ) ) {
 
 }
 
+// Register Front Page Top Home widget area.
+genesis_register_sidebar( array(
+	'id'           => 'top-home',
+	'name'         => __( 'Top Home', 'pae-online' ),
+	'description'  => __( 'Top Home above content.', 'pae-online' ),
+) );
+
+
 // Register Front Page 1 widget area.
 genesis_register_sidebar( array(
 	'id'           => 'front-page-1',

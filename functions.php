@@ -14,6 +14,13 @@ if ( ! defined( 'WPINC' ) ) {
 
 }
 
+
+/**
+ * Enable ACF 5 early access
+ * Requires at least version ACF 4.4.12 to work
+ */
+define('ACF_EARLY_ACCESS', '5');
+
 // Child theme (do not remove).
 include_once( get_template_directory() . '/lib/init.php' );
 
@@ -146,15 +153,6 @@ add_theme_support( 'custom-header', array(
 
 add_theme_support( 'fixed-header' );
 
-// Register default header (just in case).
-register_default_headers( array(
-	'child' => array(
-		'url'           => '%2$s/assets/images/hero.jpg',
-		'thumbnail_url' => '%2$s/assets/images/hero.jpg',
-		'description'   => __( 'Hero Image', 'pae-online' ),
-	),
-) );
-
 // Register a custom layout.
 genesis_register_layout( 'custom-layout', array(
 	'label' => __( 'Custom Layout', 'pae-online' ),
@@ -220,6 +218,9 @@ function pae_onlinescripts_styles() {
 	) );
 }
 
+//* Enable the superfish script
+add_filter( 'genesis_superfish_enabled', '__return_true' );
+
 // Load helper functions.
 include_once( get_stylesheet_directory() . '/includes/helpers.php' );
 
@@ -244,4 +245,50 @@ include_once( get_stylesheet_directory() . '/includes/plugins.php' );
 
 /** ------------------------------------ **/
 
+
+
+add_action( 'genesis_before_header_wrap', 'pae_onlinepage_top_header' );
+function pae_onlinepage_top_header() {
+
+?>
+	<div class="top-header">
+        <?php
+}
+
+
+add_action( 'genesis_after_header_wrap', 'pae_online_after_menu_secondary_wrap', 6 );
+function pae_online_after_menu_secondary_wrap() {
+        ?>
+</div>
+<?php
+    if ( is_front_page() ) {
+        genesis_widget_area( 'top-home', array(
+            'before' => '<div class="top-home">',
+            'after'  => '</div>',
+        ) );
+    }
+
+}
+
+add_filter( 'wp_nav_menu_items', 'pae_online_menu_extras', 10, 2 );
+/**
+ * Filter menu items, appending either a search form or today's date.
+ *
+ * @param string   $menu HTML string of list items.
+ * @param stdClass $args Menu arguments.
+ *
+ * @return string Amended HTML string of list items.
+ */
+function pae_online_menu_extras( $menu, $args ) {
+	//* Change 'primary' to 'secondary' to add extras to the secondary navigation menu
+	if ( 'secondary' !== $args->theme_location )
+		return $menu;
+
+	ob_start();
+	get_search_form();
+	$search = ob_get_clean();
+	$menu  .= '<li class="right search">' . $search . '</li>';
+
+	return $menu;
+}
 

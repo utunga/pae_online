@@ -8,8 +8,10 @@
  * @license   GPL-2.0+
  */
 
+
 // Check if any front page widgets are active.
-if ( is_active_sidebar( 'front-page-1' ) ||
+if (    is_active_sidebar( 'top-home' ) ||
+        is_active_sidebar( 'front-page-1' ) ||
 		is_active_sidebar( 'front-page-2' ) ||
 		is_active_sidebar( 'front-page-3' ) ||
 		is_active_sidebar( 'front-page-4' ) ||

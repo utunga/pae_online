@@ -47,7 +47,7 @@ var paths = {
 	concat:  ['assets/scripts/concat/*.js'],
 	images:  ['assets/images/*', '!assets/images/*.svg'],
 	php:     ['./*.php', './**/*.php', './**/**/*.php'],
-	scripts: ['assets/scripts/scripts.js', 'assets/scripts/customize.js'],
+	scripts: ['assets/scripts/scripts.js', 'assets/scripts/customize.js', 'assets/scripts/theme.js'],
 	styles:  ['assets/styles/*.scss', '!assets/styles/min/']
 };
 
