@@ -1,0 +1,229 @@
+
+/* ## Directory Of Everything 
+--------------------------------------------- */
+
+.directory-item,
+.directory-widget,
+.directory-row {
+	font-family: $font-directory-body;
+
+	a {
+		color: $accent;
+		font-weight: 900;
+
+		&:hover,
+		&:focus {
+			color: $dark;		
+			text-decoration-color: $accent;
+		}
+	}
+
+	img {
+		height: auto;
+		width: 100%;
+		display: block;
+	}
+}
+
+.directory-widget {
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	width: 100%;
+
+	.directory-widget-header {
+		border-bottom: solid 1px $dark;
+		padding: 0 0.5rem 0.5rem 0.5rem;
+
+		@include breakpoint(sm) {
+			margin: 1rem;
+		}
+
+		h2 {
+			padding-top: 2rem;
+			font-family: $font-directory-heading;
+		}
+
+		.intro-text {
+			padding-bottom: 1rem;
+		}
+	}
+}
+
+
+.directory-sidebar {
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content:space-around;
+
+	width: 100%;
+
+	div {
+		margin: 0px;
+		text-align: left;
+		margin: 0 0 0.5rem 0;
+	}
+}
+
+.directory-item {
+	width: 100%;
+	justify-content: space-between;
+	padding: 0 0.5rem 0.5rem 0.5rem;
+
+	@include breakpoint(sm) {
+		padding: 0;
+	}
+
+	.title {
+		font-weight: bold;
+		font-size: 1.2em;
+		margin-top: 1rem;
+	}
+
+	border-bottom: solid 1px $dark;
+}
+
+.directory-item:last-child {
+	border-bottom: none;
+}
+
+
+.directory-row {
+	display: inline-block;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	width: 100%;
+	margin-bottom: 1rem;
+
+	&.taxonomy {
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+
+	@include breakpoint(sm) {
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+
+	> div {
+		margin: 12px;
+		text-align: left;
+		margin: 0 0 0.2vw 0;
+		word-wrap: normal;
+		text-wrap: avoid;
+
+		@include breakpoint(sm) {
+			margin: 1rem;
+		}
+	}
+
+	.item {
+		@include breakpoint(sm) {
+			width: 30rem;
+			float: left;
+			flex-shrink: 1;
+			flex-grow: 1;
+		}
+	}
+
+	.item-sm {
+		@include breakpoint(sm) {
+			width: 23rem;
+			float: left;
+			flex-shrink: 1;
+			flex-grow: 1;
+		}
+	}
+
+	.item-lg {
+		@include breakpoint(sm) {
+			float: right;
+			width: 10rem;
+			flex-shrink: 2;
+			flex-grow: 2;
+
+			> div {
+				width: 100%;
+				text-align: right;
+			}
+		}
+	}
+
+	.website {
+
+		a {
+			text-wrap: avoid;
+			text-decoration: none;
+			margin: 0;
+
+			&:hover, &:focus {
+				text-decoration: none;
+			}
+		}
+	}
+
+	a {
+		text-decoration-color: $dark;
+
+		.arrows {
+			color: transparent;
+		}
+
+		&:hover, &:focus {
+			color: $dark;
+			text-decoration-color: $accent;
+			text-decoration: underline;
+
+			.arrows {
+				color: $accent;
+			}
+		}
+	}
+
+	.more-button {
+		border: solid 1px $accent;
+		text-align: center;
+		align-self: baseline;
+		float: right;
+
+		a {
+			text-decoration: none;
+			color: $accent;
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+
+.a_to_z_letter_heading {
+	padding-top: 3rem;;
+	background-color: $light;
+
+	H3 {
+		background-color: $light;
+		margin: 1rem;
+	}
+}
+.a_to_z_section {
+	background-color: $white;
+}
+
+
+/** DEBUG */
+
+/*.directory-widget {
+	background: gray;
+}
+
+.directory-item {
+	background: green;
+	div {
+		border: solid 1px red;
+	}
+}
+
+.directory-row {
+	border: 1px dashed black;
+}*/
+

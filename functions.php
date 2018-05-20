@@ -292,3 +292,33 @@ function pae_online_menu_extras( $menu, $args ) {
 	return $menu;
 }
 
+
+function pae_online_banner_header($image, $title, $sub_text) {
+    $image_Url =  $image['url'];
+    if ($image_Url)
+    {
+    ?>
+	<script>
+        jQuery(document).ready(function($) {
+                jQuery(".banner_header").backstretch("<?php echo $image_Url ?>");
+        });
+	</script>
+        <style>
+			.banner_header {
+				height: 26rem;
+			}
+        </style>
+    <?php
+    }
+
+    ?>
+    <div class='banner_header'>
+		<div class="wrap">
+			<div class="transparent_bit">
+				<h1><?php echo $title; ?></h1>
+				<p><?php echo $sub_text; ?></p>
+			</div>
+		</div>
+    </div>
+    <?php
+}

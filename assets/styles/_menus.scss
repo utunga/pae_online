@@ -176,22 +176,16 @@
 		border-top: $black;
 	}
 
-	#mega-menu-wrap-secondary {
-		background: $black;
-		text-align: center;
-		width: 70%;
-
-		#mega-menu-secondary {
-			text-align: center;
-		}
-	}
 
 	.search {
-		width: 180px;
+		
 		margin: 4px;
 		float: right;
+		height: 6rem;
+		
 		input {
-			height: 32px;
+			margin-top: 1rem;
+			height: 4rem;
 		}
 	}
 }

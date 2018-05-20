@@ -37,6 +37,21 @@ function pae_onlinedequeue_skip_links() {
 
 }
 
+
+////move post info to end and only include date
+remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+
+//// switch out header for custom header
+remove_action( 'genesis_before_content_sidebar_wrap', 'pae_onlinepage_header' );
+add_action( 'genesis_before_content_sidebar_wrap', 'pae_online_listing_banner_header' );
+
+function pae_online_listing_banner_header() {
+    $image = get_field('banner_image');
+    $title = get_the_title();
+    $sub_text =  get_field('byline');
+    pae_online_banner_header($image, $title, $sub_text);
+}
+
 //add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
 
 add_filter( 'genesis_post_info', 'pae_online_post_info' );

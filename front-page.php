@@ -40,9 +40,9 @@ if (    is_active_sidebar( 'top-home' ) ||
 	function pae_onlinefront_page_loop() {
 
 		// Front page 1 widget area.
-		genesis_widget_area( 'front-page-1', array(
-			'before' => '<div class="front-page-1 page-header" role="banner"><div class="wrap">',
-			'after'  => '</div></div>',
+		genesis_widget_area( 'mihi-area', array(
+            'before' => '<div class="mihi-widget">',
+            'after'  => '</div>',
 		) );
 
 		// Front page 2 widget area.
@@ -69,8 +69,14 @@ if (    is_active_sidebar( 'top-home' ) ||
 			'after'  => '</div></div>',
 		) );
 
+
+        
+
 	}
 }
 
+add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+
 // Run Genesis.
 genesis();
+

@@ -43,7 +43,6 @@
         position: absolute;
         background-color: $accent;
         border-radius: $site-radius;
-        text-transform: uppercase;
         font-weight: $normal;
         font-size: 1.4rem;
         letter-spacing: 0.05em;
@@ -503,7 +502,6 @@
         .meta {
             display: block;
             clear: both;
-            text-transform: capitalize;
         }
     }
     .quantity .qty {

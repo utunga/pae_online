@@ -4,7 +4,7 @@
  *
  * Template Name: Category Page
  *
- * This file adds the landing page template to the Paekakariki Online Theme.
+ * This file adds the category page template to the Paekakariki Online Theme.
  *
  * @package   PaekakarikiOnline
  * @license   GPL-2.0+
@@ -37,6 +37,23 @@ function pae_onlinedequeue_skip_links() {
 
 }
 
+
+////move post info to end and only include date
+remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+
+//// switch out header for custom header
+remove_action( 'genesis_before_content_sidebar_wrap', 'pae_onlinepage_header' );
+add_action( 'genesis_before_content_sidebar_wrap', 'pae_online_category_banner_header' );
+
+function pae_online_category_banner_header() {
+    $category = get_queried_object();
+    $image = get_field('banner_image', 'category'.'_'.$category->term_id);
+    $sub_text =  get_field('byline', 'category'.'_'.$category->term_id);
+    $title = $category->name;
+    pae_online_banner_header($image, $title, $sub_text);
+}
+
+
 add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
 
 /** Replace the standard loop with our custom loop */
@@ -49,16 +66,16 @@ function pae_online_category_custom_loop() {
     if ( empty( $sub_category_ids ) || is_wp_error( $sub_category_ids ) )
     {
         // no children - just render this category
-        render_listing_widget_for_category($category, false);    
+        render_listing_widget_for_category($category, false, true);
     }
     else
     {
         foreach ($sub_category_ids as $sub_category_id)
         {
-        	 render_listing_widget_for_category(get_term($sub_category_id, 'category'), true);    
+        	 render_listing_widget_for_category(get_term($sub_category_id, 'category'), true, false);
         }
     }
-    
+
 }
 
 // Run the Genesis loop.

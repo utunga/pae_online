@@ -1,0 +1,134 @@
+
+
+.top-header .title-area {
+	padding: 0;
+	img.custom-logo {
+		width: 280px;
+	}
+}
+
+.acf-map {
+	width: 100%;
+	height: 250px;
+	border: #ccc solid 1px;
+	margin: 20px 0;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+	max-width: inherit !important;
+}
+
+.mihi-widget {
+	background-color: black;
+	padding: 2rem;
+	color: white;
+
+	/* disable styling caused by all the random bullshit widget wrapping classes */
+	section, .widget, .widget:last-of-type {
+		background-color: inherit;
+		margin: 0;
+	}
+}
+
+.nav-secondary #mega-menu-wrap-secondary #mega-menu-secondary {
+	background: $black;
+	text-align: left;
+	width: 100%;
+	height: 6rem;
+
+	> li.mega-menu-item {
+		margin-top: 1.4rem;
+
+		> a.mega-menu-link {
+			font-size: 1.6rem;
+			text-transform: uppercase;
+			font-weight: 300;
+			letter-spacing: .075em;
+		}
+	}
+
+	text-align: center;
+}
+
+
+.menu {
+	font-weight: 300;
+}
+
+.post_header {
+	h1 {
+		font-family: $font-story-heading;
+	}
+
+	.excerpt {
+		font-size: 2rem;
+		font-family: $font-story-excerpt;
+	}
+}
+
+
+.intro-text {
+	padding-top: 2rem;
+	width: 65.81196581196582%;
+}
+
+.category .content-sidebar-wrap {
+	padding: 0;
+}
+
+.banner_header {
+	display: flex;
+
+	.wrap {
+		align-self: flex-end;
+		width: 100%;
+		margin: 0 auto;
+
+		.transparent_bit {
+			background-color: rgba(255, 255, 255, 0.7);
+			color: black;
+			width: 100%;
+			margin-bottom: 2rem;
+			margin-top: 0;
+			padding: 0.5rem 1.5rem;
+
+			h1 {
+				font-size: 5rem;
+				margin-bottom: 0px;
+				margin-left: 0px;
+				padding-left: 0px;
+			}
+
+			p {
+				color: $dark;
+				margin-bottom: 0px;
+				margin-left: 0px;
+				padding-left: 0px;
+			}
+		}
+	}
+}
+
+
+
+.single-listing {
+
+	.teaser {
+		font-family: $font-heading;
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+	article.entry {
+		padding: 2rem 6rem;
+	}
+
+	.sidebar .widget {
+		padding: 2rem 2rem;
+	}
+
+	.entry_content {
+		font-family: $font-directory-body;
+	}
+}

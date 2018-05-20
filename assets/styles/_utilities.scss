@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Nunito');
+
+
 // Breakpoints. 
 $breakpoints: (
 	xs: 512px,
@@ -16,12 +19,15 @@ $white:  #ffffff;
 $black:	 #000000;
 
 // Typography.
-$font-heading: 'Source Sans Pro', Helvetica, Arial, sans-serif;
-$font-body:    'Source Sans Pro', Helvetica, Arial, sans-serif;
-$font-listing-body: 'Times New Roman';
+$font-heading: 'lato', Helvetica, Arial, sans-serif;
+$font-body: 'lato', Helvetica, Arial, sans-serif;
+$font-directory-body: 'lato', Helvetica, Arial, sans-serif;
+$font-directory-heading: 'lato', Helvetica, Arial, sans-serif;
+$font-story-heading: 'droid-serif', Georgia, serif;
+$font-story-excerpt: 'droid-serif', Georgia, serif;
 
-$normal:  	   400;
-$bolder:  	   600;
+$normal: 500;
+$bolder:  	   700;
 $bold:    	   700;
 
 // Site.

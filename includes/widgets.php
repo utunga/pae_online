@@ -23,11 +23,9 @@ genesis_register_sidebar( array(
 
 // Register Front Page 1 widget area.
 genesis_register_sidebar( array(
-	'id'           => 'front-page-1',
-	'name'         => __( 'Front Page 1', 'pae-online' ),
-	'description'  => __( 'Front page 1 widget area.', 'pae-online' ),
-	'before_title' => '<h1 itemprop="headline">',
-	'after_title'  => '</h1>',
+	'id'           => 'mihi-area',
+	'name'         => __( 'Mihi Area', 'pae-online' ),
+	'description'  => __( 'Front page Mihi Area', 'pae-online' )
 ) );
 
 // Register Front Page 2 widget area.
