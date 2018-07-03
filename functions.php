@@ -245,40 +245,28 @@ include_once( get_stylesheet_directory() . '/includes/plugins.php' );
 
 /** ------------------------------------ **/
 
-
-
 add_action( 'genesis_before_header_wrap', 'pae_onlinepage_top_header' );
 function pae_onlinepage_top_header() {
-
 ?>
 	<div class="top-header">
         <?php
 }
 
 
-add_action( 'genesis_after_header_wrap', 'pae_online_after_menu_secondary_wrap', 6 );
+add_action( 'genesis_after_header', 'pae_online_after_menu_secondary_wrap', 6 );
 function pae_online_after_menu_secondary_wrap() {
-        ?>
-</div>
-<?php
     if ( is_front_page() ) {
         genesis_widget_area( 'top-home', array(
             'before' => '<div class="top-home">',
             'after'  => '</div>',
         ) );
     }
-
+    ?>
+    </div>
+<?php
 }
 
 add_filter( 'wp_nav_menu_items', 'pae_online_menu_extras', 10, 2 );
-/**
- * Filter menu items, appending either a search form or today's date.
- *
- * @param string   $menu HTML string of list items.
- * @param stdClass $args Menu arguments.
- *
- * @return string Amended HTML string of list items.
- */
 function pae_online_menu_extras( $menu, $args ) {
 	//* Change 'primary' to 'secondary' to add extras to the secondary navigation menu
 	if ( 'secondary' !== $args->theme_location )
@@ -292,6 +280,28 @@ function pae_online_menu_extras( $menu, $args ) {
 	return $menu;
 }
 
+/*
+ * Limit the excerpt by character.
+ *
+ * @link Reference - http://codex.wordpress.org/Function_Reference/get_the_excerpt
+ */
+function the_excerpt_max_charlength($charlength) {
+	$excerpt = get_the_excerpt();
+	$charlength++;
+	if ( mb_strlen( $excerpt ) > $charlength ) {
+		$subex = mb_substr( $excerpt, 0, $charlength - 5 );
+		$exwords = explode( ' ', $subex );
+		$excut = - ( mb_strlen( $exwords[ count( $exwords ) - 1 ] ) );
+		if ( $excut < 0 ) {
+			echo mb_substr( $subex, 0, $excut );
+		} else {
+			echo $subex;
+		}
+		echo ' <br><a href="' . get_permalink() . '" class="more-link" title="Read More">Read More</a>';
+	} else {
+		echo $excerpt;
+	}
+}
 
 function pae_online_banner_header($image, $title, $sub_text) {
     $image_Url =  $image['url'];
@@ -301,12 +311,16 @@ function pae_online_banner_header($image, $title, $sub_text) {
 	<script>
         jQuery(document).ready(function($) {
                 jQuery(".banner_header").backstretch("<?php echo $image_Url ?>");
+                $('.backstretch img').each(function(i, el) {
+                    $(el).addClass("wpsmartcrop-image");
+                });
         });
 	</script>
         <style>
 			.banner_header {
-				height: 26rem;
+				height: 26rem
 			}
+			
         </style>
     <?php
     }

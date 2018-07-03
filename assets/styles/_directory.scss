@@ -195,6 +195,55 @@
 	}
 }
 
+#a_to_z_widget {
+
+	.a_to_z_jumplinks,
+	.a_to_z_searchbar {
+		margin-top: 2rem;
+		width: 100%;
+	}
+
+	.a_to_z_searchbar {
+
+		.wrap {
+			width: 80%;
+			display: flex;
+			flex-flow: row nowrap;
+
+			.search {
+				width: 66%;
+				border: 1px solid $dark;
+			}
+
+			.search_button {
+				width: 33%;
+			}
+		}
+	}
+
+	.a_to_z_jumplinks {
+		text-align: center;
+
+		ul {
+			display: flex;
+			flex-flow: row nowrap;
+			width: 100%;
+
+			li {
+				width: 30%;
+				flex-grow: 4;
+
+				a {
+					font-size: 3rem;
+					text-decoration: none;
+					color: $dark;
+					width: 100%;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
 
 .a_to_z_letter_heading {
 	padding-top: 3rem;;
@@ -209,21 +258,101 @@
 	background-color: $white;
 }
 
+.directory_category_list {
 
-/** DEBUG */
+	.wrap {
+		display: flex;
+		justify-content: space-around;
+		flex-flow: column;
 
-/*.directory-widget {
-	background: gray;
-}
+		@include breakpoint(sm) {
+			flex-flow: row wrap;
+		}
+	}
 
-.directory-item {
-	background: green;
-	div {
-		border: solid 1px red;
+	.intro_area {
+		width: 100%;
+		padding: .5rem;
+
+		@include breakpoint(lg) {
+			width: 40rem;
+		}
+
+		h2 {
+			font-size: 3rem;
+		}
+	}
+
+	.category_list_container {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		justify-content: space-around;
+		display: flex;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		flex-flow: row wrap;
+		/*width: 32rem;*/
+
+		@include breakpoint(sm) {
+			width: 64rem;
+			-webkit-flex-flow: row wrap;
+		}
+	}
+
+
+	.category_item,
+	.category_item a {
+		/*width: 10rem;
+		height: 4.5rem;*/
+
+		@include breakpoint(sm) {
+			width: 20rem;
+			height: 17.5rem;
+		}
+	}
+
+	.category_item {
+		padding: 0;
+		margin-top: 1rem;
+		position: relative;
+		width: 100%; /* for IE 6 */
+		text-align: center;
+
+		a {
+			.category_title {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 2.5em;
+				line-height: 2.5em;
+				font-weight: 500;
+				font-size: 1.7rem;
+				color: white;
+				background: $dark;
+				opacity: 0.9;
+			}
+
+			&:hover,
+			&:focus {
+				.category_title {
+					background: $accent;
+				}
+			}
+		}
+	}
+	/* special handling for a_z*/
+	.a_z {
+		order: 99;
+		width: 100%;
+
+		@include breakpoint(sm) {
+			order: -1;
+			width: 20rem;
+		}
 	}
 }
-
-.directory-row {
-	border: 1px dashed black;
-}*/
 

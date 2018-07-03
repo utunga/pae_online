@@ -39,44 +39,262 @@ if (    is_active_sidebar( 'top-home' ) ||
 	 */
 	function pae_onlinefront_page_loop() {
 
-		// Front page 1 widget area.
-		genesis_widget_area( 'mihi-area', array(
-            'before' => '<div class="mihi-widget">',
-            'after'  => '</div>',
-		) );
+
+        ?>
+        <div class="mihi-widget">
+	        <div class="main"><?php
+		        // Front page 1 widget area.
+		        genesis_widget_area( 'mihi-area', array(
+		        'before' => '<a href="/mihi/">',
+		        'after'  => '</a>',
+		        ) );
+		        ?>
+	        </div>
+	        <div class="audio">
+        	        <?php echo do_shortcode( '[icon name="volume-up" class="2x" unprefixed_class="audio_icon"]' ); ?>
+            </div>
+        </div>
+        <?php
 
 		// Front page 2 widget area.
 		genesis_widget_area( 'front-page-2', array(
-			'before' => '<div class="front-page-2 widget-area"><div class="wrap">',
-			'after'  => '</div></div>',
+		'before' => '<div class="front-page-2 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
 		) );
 
-		// Front page 3 widget area.
-		genesis_widget_area( 'front-page-3', array(
-			'before' => '<div class="front-page-3 widget-area"><div class="wrap">',
-			'after'  => '</div></div>',
-		) );
+		// parallax home page image
+		echo do_shortcode( '[dd-parallax img="2017-10-21_Coote_008.jpg" speed="3" z-index="-100" mobile="2017-10-21_Coote_008.jpg" offset="true"]' );
+
+        //// Front page 3 widget area.
+        //genesis_widget_area( 'front-page-3', array(
+        //'before' => '<div class="front-page-3 widget-area"><div class="wrap">',
+        //'after'  => '</div></div>',
+        //) );
+
+        do_homepage_featured_posts();
+
+	    // parallax home page image
+		echo do_shortcode( '[dd-parallax img="a_z_banner.jpg" speed="3" z-index="-100" mobile="a_z_banner.jpg" offset="true"]' );
 
 		// Front page 4 widget area.
 		genesis_widget_area( 'front-page-4', array(
-			'before' => '<div class="front-page-4 widget-area"><div class="wrap">',
-			'after'  => '</div></div>',
+		'before' => '<div class="front-page-4 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
 		) );
 
 		// Front page 5 widget area.
 		genesis_widget_area( 'front-page-5', array(
-			'before' => '<div class="front-page-5 widget-area"><div class="wrap">',
-			'after'  => '</div></div>',
+		'before' => '<div class="front-page-5 widget-area"><div class="wrap">',
+		'after'  => '</div></div>',
 		) );
 
-
-        
-
+		}
 	}
+
+    add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+
+
+function render_first_post() {
+    
+	genesis_markup( array(
+		'open'    => '<article %s>',
+		'context' => 'entry',
+		'params'  => array(
+				'is_widget' => false,
+		),
+	) );
+
+    echo "<div class='featured_story'>";
+    echo "<div class='image'>";
+
+	$image = genesis_get_image( array(
+		'format'  => 'html',
+		'size'    => 'large',
+		'context' => 'featured-post-widget',
+		'attr'    => genesis_parse_attr( 'entry-image-widget', array(
+			'alt' => get_the_title(),
+		) ),
+	) );
+	printf( '<a href="%s" class="%s">%s</a>', get_permalink(), "", wp_make_content_images_responsive( $image ) );
+
+    echo "</div>";
+    echo "<div class='content'>";
+
+	$title = get_the_title();
+	$heading =  'h3' ;
+	$header = genesis_markup( array(
+		'open'    => "<{$heading} %s>",
+		'close'   => "</{$heading}>",
+		'context' => 'entry-title',
+		'content' => sprintf( '<a href="%s" class="%s">%s</a>',  get_permalink(),  "story_title",$title ),
+		'params'  => array(
+			'is_widget' => false,
+			'wrap'      => $heading,
+		),
+		'echo'    => false,
+	) );
+
+	genesis_markup( array(
+		'open'    => '<header %s>',
+		'close'   => '</header>',
+		'context' => 'entry-header',
+		'params'  => array(
+			'is_widget' => true,
+		),
+		'content' => $header,
+	) );
+
+	genesis_markup( array(
+		'open'    => '<div %s>',
+		'context' => 'entry-content',
+		'params'  => array(
+			'is_widget' => false,
+		),
+	) );
+
+	the_excerpt();
+					
+	genesis_markup( array(
+		'close'   => '</div>',
+		'context' => 'entry-content',
+		'params'  => array(
+			'is_widget' => false,
+		),
+	) );
+
+    //end 'content'
+    echo "</div>";
+
+    //end 'featured_story'
+    echo "</div>";
+
+	genesis_markup( array(
+		'close'   => '</article>',
+		'context' => 'entry',
+		'params'  => array(
+			'is_widget' => true,
+		),
+	) );
+	
 }
 
-add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+function render_other_post() {
+    
+	genesis_markup( array(
+		'open'    => '<article %s>',
+		'context' => 'entry',
+		'params'  => array(
+				'is_widget' => false,
+		),
+	) );
+
+	$title = get_the_title();
+	$heading =  'h4' ;
+	$header = genesis_markup( array(
+		'open'    => "<{$heading} %s>",
+		'close'   => "</{$heading}>",
+		'context' => 'entry-title',
+		'content' => sprintf( '<a href="%s" class="%s">%s</a>',  get_permalink(),  "story_title",$title ),
+		'params'  => array(
+			'is_widget' => false,
+			'wrap'      => $heading,
+		),
+		'echo'    => false,
+	) );
+
+	genesis_markup( array(
+		'open'    => '<header %s>',
+		'close'   => '</header>',
+		'context' => 'entry-header',
+		'params'  => array(
+			'is_widget' => true,
+		),
+		'content' => $header,
+	) );
+
+	genesis_markup( array(
+		'open'    => '<div %s>',
+		'context' => 'entry-content',
+		'params'  => array(
+			'is_widget' => false,
+		),
+	) );
+
+	the_excerpt();
+					
+	genesis_markup( array(
+		'close'   => '</div>',
+		'context' => 'entry-content',
+		'params'  => array(
+			'is_widget' => false,
+		),
+	) );
+
+	genesis_markup( array(
+		'close'   => '</article>',
+		'context' => 'entry',
+		'params'  => array(
+			'is_widget' => true,
+		),
+	) );
+	
+}
+
+function render_post($first_post) {
+    if ($first_post) {
+        render_first_post();
+    }
+    else {
+        render_other_post();
+    }
+}
+
+function do_homepage_featured_posts() {
+
+    // WP_Query arguments
+    $args = array (
+	    'post_type'              => 'post',
+	    'posts_per_page'         => '4',
+    );
+
+    // The Query
+    $query = new WP_Query( $args );
+
+    ?>
+        <div class="front-page-3 widget-area our_stories"><div class="wrap">
+        <h3>Our Stories</h3>
+    <?php
+        
+    // The Loop
+    $first_post = true;
+    if ( $query->have_posts() ) {
+
+        $query->the_post();
+        render_post($first_post);
+        $first_post = false;
+
+        ?>
+        <div class="other_stories">
+            <?php
+            while ( $query->have_posts() ) {
+		        $query->the_post();
+            
+                render_post($first_post);          
+            }
+            ?>
+        </div>
+        <?php
+    } else {
+	    echo "No stories yet";
+    }
+    ?>
+        </div></div>
+    <?php
+    // Restore original Post Data
+    wp_reset_postdata();
+}
+
 
 // Run Genesis.
 genesis();
-
+?>

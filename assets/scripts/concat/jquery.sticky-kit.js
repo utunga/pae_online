@@ -11,7 +11,7 @@
 
   win = $(window);
 
-  $.fn.stick_in_parent = function(opts) {
+  $.fn.stick_in_parent = function (opts) {
     var doc, elm, enable_bottoming, fn, i, inner_scrolling, len, manual_spacer, offset_top, parent_selector, recalc_every, sticky_class;
     if (opts == null) {
       opts = {};

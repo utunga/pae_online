@@ -32,7 +32,7 @@ $bold:    	   700;
 
 // Site.
 $site-radius: 0.1rem;
-$site-border: 0.1rem solid $border;
+$site-border: 0; /* 0.1rem solid $border;*/
 
 // Columns.
 $margin:        2.564102564102564%;

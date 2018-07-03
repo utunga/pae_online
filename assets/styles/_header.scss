@@ -4,9 +4,9 @@
 .top-header {
 	color: $white;
 	background-color: $accent;
-	border-bottom: $site-border;
+	
 	width: 100%;
-	z-index: 100;
+	z-index: 300;
 	color: $white;
 
 	> .wrap {
@@ -23,9 +23,25 @@
 	}
 }
 
+.site-inner {
+	margin-top: 180px;
+}
+
+body.home .site-inner {
+	margin-top: 0;
+}
+
 .top-home {
 	img.wpsmartcrop-image {
-		height: 450px !important;
+		height: 0px !important;
+
+		@include breakpoint(sm) {
+			height: 250px !important;
+		}
+
+		@include breakpoint(md) {
+			height: 400px !important;
+		}
 		margin: 0;
 	}
 
@@ -39,14 +55,14 @@
 	}
 }
 
-/*.site-header {
-    position: absolute;
-    width: 100%;
+header.site-header {
+    position: fixed;
+	width:100%;
+	top:0px;    
     z-index: 100;
-	color: $white;
-    background-color: $accent;
-    border-bottom: $site-border;
-}*/
+    
+}
+
 /* ## Title Area
 --------------------------------------------- */
 .title-area {
@@ -86,9 +102,6 @@
 		}
 	}
 }
-
-
-
 
 
 .site-title {
@@ -155,7 +168,6 @@
         right: 0;
         bottom: 0;
         background-color: rgba($white, 0.95);
-        z-index: 1;
     }
     .has-nav-secondary & {
         @include breakpoint(md) {
@@ -167,7 +179,6 @@
     }
     .wrap {
         position: relative;
-        z-index: 2;
     }
     h1 {
         width: 100%;

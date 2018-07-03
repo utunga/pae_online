@@ -20,40 +20,35 @@
 }
 
 .mihi-widget {
-	background-color: black;
-	padding: 2rem;
-	color: white;
+	background-color: white;
+	padding: 2rem 5.6rem;
+	color: black;
+	font-size: 1.2em;
+	font-weight: 600;
+	border-bottom: solid 1px $dark;
+	display: flex;
+	flex-flow: row;
+
+	a {
+		text-decoration: none;
+		color: $dark;
+
+		&:hover,
+		&:focus {
+			color: $accent;
+		}
+	}
+
+	.audio_icon {
+		color:#999;
+		font-size:3.5rem;
+	}
 
 	/* disable styling caused by all the random bullshit widget wrapping classes */
 	section, .widget, .widget:last-of-type {
 		background-color: inherit;
 		margin: 0;
 	}
-}
-
-.nav-secondary #mega-menu-wrap-secondary #mega-menu-secondary {
-	background: $black;
-	text-align: left;
-	width: 100%;
-	height: 6rem;
-
-	> li.mega-menu-item {
-		margin-top: 1.4rem;
-
-		> a.mega-menu-link {
-			font-size: 1.6rem;
-			text-transform: uppercase;
-			font-weight: 300;
-			letter-spacing: .075em;
-		}
-	}
-
-	text-align: center;
-}
-
-
-.menu {
-	font-weight: 300;
 }
 
 .post_header {
@@ -132,3 +127,100 @@
 		font-family: $font-directory-body;
 	}
 }
+
+/* EVENTS */
+
+.front-page-2.widget-area,
+.front-page-3.widget-area,
+.front-page-4.widget-area,
+.front-page-5.widget-area
+ {
+	padding-top: 4rem !important;
+
+	h3 {
+		font-size: 4rem;
+		margin-bottom: 0px;
+	}
+}
+
+.tribe-events-adv-list-widget {
+	div.widget-wrap {
+		display: flex;
+		width: 100%;
+		flex-flow: row wrap;
+		h3 {
+			display:block;
+		}
+		.type-tribe_events {
+			width: 31.5rem;
+		}
+	}
+
+	div {
+		display: flex;
+	}
+}
+
+/* Front page story display */
+.our_stories {
+
+	article {
+		padding: 2rem;
+		padding-left:0;
+		margin: 0;
+	}
+
+	h4.entry-title {
+		font-size: 2rem;
+	}
+
+	h3.entry-title {
+		font-size: 2.5rem;
+	}
+
+	.featured_story {
+		display: flex;
+		flex-flow: row nowrap;
+		width: 100%;
+
+		.image {
+			padding: 1rem;
+			padding-left: 0;
+			width: 30%;
+		}
+
+		.content {
+			padding: 1rem;
+			width: 60%;
+		}
+	}
+
+	.other_stories {
+		display: flex;
+		flex-flow: column;
+
+		@include breakpoint(sm) {
+			flex-flow: row wrap;
+		}
+
+		width: 100%;
+
+		article {
+			@include breakpoint(md) {
+				width: 32.5rem;
+			}
+		}
+	}
+
+	.entry-title {
+		a.story_title {
+			font-family: $font-story-heading;
+			font-weight: 400;
+		}
+
+		.entry-content {
+			font-family: $font-story-excerpt;
+		}
+	}
+}
+
