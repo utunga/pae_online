@@ -8,7 +8,6 @@
  * @license   GPL-2.0+
  */
 
-
 // Check if any front page widgets are active.
 if (    is_active_sidebar( 'top-home' ) ||
         is_active_sidebar( 'front-page-1' ) ||
@@ -51,7 +50,7 @@ if (    is_active_sidebar( 'top-home' ) ||
 		        ?>
 	        </div>
 	        <div class="audio">
-        	        <?php echo do_shortcode( '[icon name="volume-up" class="2x" unprefixed_class="audio_icon"]' ); ?>
+        	        <?php echo do_shortcode( '[icon name="volume-up" class="1x" unprefixed_class="audio_icon"]' ); ?>
             </div>
         </div>
         <?php
@@ -62,8 +61,9 @@ if (    is_active_sidebar( 'top-home' ) ||
 		'after'  => '</div></div>',
 		) );
 
-		// parallax home page image
-		echo do_shortcode( '[dd-parallax img="2017-10-21_Coote_008.jpg" speed="3" z-index="-100" mobile="2017-10-21_Coote_008.jpg" offset="true"]' );
+        // parallax home page image
+		$img_url = img_asset_url("2017-10-21_Coote_008.jpg");
+        echo do_shortcode( '[dd-parallax img="'.$img_url.'" speed="3" z-index="-100" mobile="'.$img_url.'"  offset="true"]' );
 
         //// Front page 3 widget area.
         //genesis_widget_area( 'front-page-3', array(
@@ -74,7 +74,8 @@ if (    is_active_sidebar( 'top-home' ) ||
         do_homepage_featured_posts();
 
 	    // parallax home page image
-		echo do_shortcode( '[dd-parallax img="a_z_banner.jpg" speed="3" z-index="-100" mobile="a_z_banner.jpg" offset="true"]' );
+		$img_url = img_asset_url("a_z_banner.jpg");
+        echo do_shortcode( '[dd-parallax img="'.$img_url.'" speed="3" z-index="-100" mobile="'.$img_url.'" offset="true"]' );
 
 		// Front page 4 widget area.
 		genesis_widget_area( 'front-page-4', array(

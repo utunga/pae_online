@@ -1537,7 +1537,7 @@ header.site-header {
 }
 
 .nav-secondary {
-	background: #000000 !important;
+	background: #050505 !important;
 	text-align: center;
 }
 
@@ -2776,11 +2776,13 @@ p.entry-meta {
 }
 
 .mihi-widget {
-	background-color: white;
-	padding: 20px 56px;
-	padding: 2rem 5.6rem;
+	background-color: #e0f0f0;
+	padding: 20px 160px;
+	padding: 2rem 16rem;
 	color: black;
-	font-size: 1.2em;
+	text-align: center;
+	font-size: 19px;
+	font-size: 1.9rem;
 	font-weight: 600;
 	border-bottom: solid 1px #30353a;
 	display: -ms-flexbox;
@@ -2800,10 +2802,14 @@ p.entry-meta {
 	color: #61b5b5;
 }
 
-.mihi-widget .audio_icon {
-	color: #999999;
-	font-size: 35px;
-	font-size: 3.5rem;
+.mihi-widget .audio {
+	padding: 0;
+}
+
+.mihi-widget .audio .audio_icon {
+	color: #61b5b5;
+	font-size: 30px;
+	font-size: 3rem;
 }
 
 .mihi-widget section,
@@ -2990,12 +2996,15 @@ p.entry-meta {
 }
 
 .nav-secondary {
-	background: #000000;
 	text-align: left;
 	width: 100%;
-	height: 60px;
-	height: 6rem;
+	height: 85px;
+	height: 8.5rem;
 	text-align: center;
+}
+
+.nav-secondary #quadmenu {
+	background: #050505;
 }
 
 .nav-secondary #quadmenu .quadmenu-dropdown-menu {
@@ -3012,7 +3021,8 @@ p.entry-meta {
 }
 
 .nav-secondary #quadmenu .quadmenu-navbar-nav li {
-	margin-top: 0;
+	margin-top: 12px;
+	margin-top: 1.2rem;
 }
 
 .nav-secondary #quadmenu .quadmenu-navbar-nav .search {
@@ -3020,13 +3030,14 @@ p.entry-meta {
 	float: right;
 	margin-right: 70px;
 	margin-right: 7rem;
+	color: #61b5b5;
 }
 
 .nav-secondary #quadmenu .quadmenu-navbar-nav .search input {
-	margin-top: 10px;
-	margin-top: 1rem;
-	height: 30px;
-	height: 3rem;
+	margin-top: 22px;
+	margin-top: 2.2rem;
+	height: 24px;
+	height: 2.4rem;
 }
 
 .nav-secondary #quadmenu .quadmenu-navbar-header {
@@ -3531,7 +3542,7 @@ p.entry-meta {
 	}
 	.nav-secondary {
 		width: 100%;
-		border-top: #000000;
+		border-top: #050505;
 	}
 	.menu-toggle {
 		display: none;
