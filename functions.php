@@ -246,7 +246,7 @@ include_once( get_stylesheet_directory() . '/includes/plugins.php' );
 /** ------------------------------------ **/
 
 function img_asset_url($asset_file) {
-    return (is_ssl() ? "https:" : "http:") .get_stylesheet_directory_uri() . "/assets/images/" . $asset_file;
+    return (!is_ssl() ? "http:" : "") .get_stylesheet_directory_uri() . "/assets/images/" . $asset_file;
 }
 
 add_action( 'genesis_before_header_wrap', 'pae_onlinepage_top_header' );

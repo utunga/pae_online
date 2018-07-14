@@ -63,6 +63,7 @@ if (    is_active_sidebar( 'top-home' ) ||
 
         // parallax home page image
 		$img_url = img_asset_url("2017-10-21_Coote_008.jpg");
+		#echo $img_url;
         echo do_shortcode( '[dd-parallax img="'.$img_url.'" speed="3" z-index="-100" mobile="'.$img_url.'"  offset="true"]' );
 
         //// Front page 3 widget area.
