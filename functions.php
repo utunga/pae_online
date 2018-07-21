@@ -13,7 +13,14 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 
 }
-
+    // Check if a google_maps_api_key is defined
+    function my_acf_google_map_api( $api ){
+        if (defined( 'GOOGLE_MAPS_API_KEY' )) {
+    	    $api['key'] = GOOGLE_MAPS_API_KEY;
+	    }    
+   	    return $api;
+    }
+    add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
 
 /**
  * Enable ACF 5 early access
@@ -199,6 +206,8 @@ function pae_onlinescripts_styles() {
 	// Check if debugging is enabled.
 	$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : 'min.';
 	$folder = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : 'min/';
+
+
 
 	// Enqueue responsive menu script.
 	wp_enqueue_script( 'pae-online', get_stylesheet_directory_uri() . '/assets/scripts/' . $folder . 'scripts.' . $suffix . 'js', array( 'jquery' ), CHILD_THEME_VERSION, true );

@@ -1289,10 +1289,6 @@ img.alignright,
 	    flex-wrap: wrap;
 }
 
-.site-inner {
-	margin-top: 205px;
-}
-
 body.home .site-inner {
 	margin-top: 0;
 }
