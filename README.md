@@ -4,8 +4,14 @@ A search engine optimized, mobile-first, flexbox-based starter theme for the Gen
 
 # Forked from the Genesis Starter Theme
 
-
 ![Screenshot](https://s3-us-west-1.amazonaws.com/seo-themes/screenshot.png)
+
+# API KEY 
+
+Add a valid API Key to your Wp-config for admin of maps on everything directory posts to work 
+
+Do this by adding the following line to  your overall wordpress wp-config.php
+define('GOOGLE_MAPS_API_KEY', "xxxxxx-xxx-xxxx-");
 
 ## Features
 
