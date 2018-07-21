@@ -44,13 +44,11 @@ remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 //// switch out header for custom header
 remove_action( 'genesis_before_content_sidebar_wrap', 'pae_onlinepage_header' );
 add_action( 'genesis_before_content_sidebar_wrap', 'pae_online_category_banner_header' );
-
 function pae_online_category_banner_header() {
     $category = get_queried_object();
     $image = get_field('banner_image', 'category'.'_'.$category->term_id);
-    $sub_text =  get_field('byline', 'category'.'_'.$category->term_id);
-    $title = $category->name;
-    pae_online_banner_header($image, $title, $sub_text);
+    $title = $category->name; 
+    pae_online_banner_header($image, $title);
 }
 
 
@@ -65,14 +63,20 @@ function pae_online_category_custom_loop() {
     $sub_category_ids = get_term_children($category->term_id, 'category');
     if ( empty( $sub_category_ids ) || is_wp_error( $sub_category_ids ) )
     {
-        // no children - just render this category
-        render_listing_widget_for_category($category, false, true);
+        render_listing_widget_for_category(array(
+            'category' => $category,
+            'show_title' => true,
+            'show_intro' => true));
     }
     else
     {
         foreach ($sub_category_ids as $sub_category_id)
         {
-        	 render_listing_widget_for_category(get_term($sub_category_id, 'category'), true, false);
+            render_listing_widget_for_category(array(
+                'category' => get_term($sub_category_id, 'category'),
+                'show_title' => true,
+                'show_intro' => true
+            ));
         }
     }
 

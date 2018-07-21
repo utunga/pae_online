@@ -107,18 +107,18 @@ add_theme_support( 'html5', array(
 	'search-form',
 ) );
 
-// Enable support for post formats.
-add_theme_support( 'post-formats', array(
-	'aside',
-	'audio',
-	'chat',
-	'gallery',
-	'image',
-	'link',
-	'quote',
-	'status',
-	'video',
-) );
+//// Enable support for post formats.
+//add_theme_support( 'post-formats', array(
+//    'aside',
+//    'audio',
+//    'chat',
+//    'gallery',
+//    'image',
+//    'link',
+//    'quote',
+//    'status',
+//    'video',
+//) );
 
 // Enable support for post thumbnails.
 add_theme_support( 'post-thumbnails' );
@@ -316,36 +316,21 @@ function the_excerpt_max_charlength($charlength) {
 	}
 }
 
-function pae_online_banner_header($image, $title, $sub_text) {
-    $image_Url =  $image['url'];
+function pae_online_banner_header($image_id, $title) {
+
+    $image_attributes = wp_get_attachment_image_src( $image_id, array(1200,800) );
+    $image_Url =  $image_attributes[0];
     if ($image_Url)
     {
     ?>
-	<script>
-        jQuery(document).ready(function($) {
-                jQuery(".banner_header").backstretch("<?php echo $image_Url ?>");
-                $('.backstretch img').each(function(i, el) {
-                    $(el).addClass("wpsmartcrop-image");
-                });
-        });
-	</script>
-        <style>
-			.banner_header {
-				height: 26rem
-			}
-			
-        </style>
+        <script>
+            jQuery(document).ready(function($) { 
+                    jQuery(".pae_online_banner_header").backstretch("<?php echo $image_Url ?>");
+                    jQuery(".pae_online_banner_header img").addClass("wpsmartcrop-image");
+            });
+        </script>
+        <div class='pae_online_banner_header'></div>
     <?php
-    }
-
-    ?>
-    <div class='banner_header'>
-		<div class="wrap">
-			<div class="transparent_bit">
-				<h1><?php echo $title; ?></h1>
-				<p><?php echo $sub_text; ?></p>
-			</div>
-		</div>
-    </div>
-    <?php
+ }
+   
 }

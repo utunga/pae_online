@@ -23,9 +23,24 @@
 	}
 }
 
-body.home .site-inner {
-	margin-top: 0;
+.pae_online_banner_header {
+	height:430px;
+	img.wpsmartcrop-image {
+		/*height: 0px !important;
+
+		@include breakpoint(sm) {
+			height: 50px !important;
+		}
+
+		@include breakpoint(md) {
+		}*/
+
+		height: 800px !important;
+		//margin: 0;
+	}
 }
+
+
 
 .top-home {
 	img.wpsmartcrop-image {
@@ -54,10 +69,18 @@ body.home .site-inner {
 header.site-header {
     position: fixed;
 	width:100%;
-	top:0px;    
     z-index: 100;
-    
+	top:0px;
 }
+
+.site-container {
+	top: 0px !important;
+}
+
+
+/*.site-inner {
+	margin-top: 205px;
+}*/
 
 /* ## Title Area
 --------------------------------------------- */
