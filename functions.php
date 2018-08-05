@@ -316,6 +316,13 @@ function the_excerpt_max_charlength($charlength) {
 	}
 }
 
+function pae_online_excerpt() {
+    return "excerpt";
+}
+
+add_filter( 'the_excerpt', 'pae_online_excerpt', 10, 1 );
+
+
 function pae_online_banner_header($image_id, $title) {
 
     $image_attributes = wp_get_attachment_image_src( $image_id, array(1200,800) );

@@ -41,8 +41,12 @@ function pae_online_post_header() {
 
     echo "<div class='post_header'>";
     genesis_do_post_title();
-    echo sprintf( '<p class="attribution">%s</p>', get_the_date() . ' by '. $display_author);
-    echo sprintf( '<p class="excerpt">%s</p>', get_the_excerpt() );
+    if (!empty( $display_author ) ) {
+        echo sprintf( '<p class="attribution">%s</p>', get_the_date() . ' by '. $display_author);
+    }
+    if (has_excerpt()) {
+        echo sprintf( '<p class="excerpt">%s</p>', get_the_excerpt() );
+    }
     echo "</div>";
 }
 
