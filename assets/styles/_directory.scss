@@ -53,8 +53,7 @@
 .directory-sidebar {
 	flex-flow: column nowrap;
 	align-items: flex-start;
-	justify-content:space-around;
-
+	justify-content: space-around;
 	width: 100%;
 
 	div {
@@ -62,8 +61,16 @@
 		text-align: left;
 		margin: 0 0 0.5rem 0;
 	}
-}
 
+	.taxonomy {
+
+		a.tag {
+			margin-right: 0.5rem;
+			font-size: 1.2rem;
+			text-decoration: none;
+		}
+	}
+}
 .directory-item {
 	width: 100%;
 	justify-content: space-between;

@@ -2528,6 +2528,14 @@ p.entry-meta {
 	margin: 0 0 0.5rem 0;
 }
 
+.directory-sidebar .taxonomy a.tag {
+	margin-right: 5px;
+	margin-right: 0.5rem;
+	font-size: 12px;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
 .directory-item {
 	width: 100%;
 	-ms-flex-pack: justify;
