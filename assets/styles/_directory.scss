@@ -77,7 +77,9 @@
 		font-weight: bold;
 		font-size: 1.2em;
 		margin-top: 1rem;
-
+		@include breakpoint(sm) {
+			float:left;
+		}
 		a {
 			text-decoration:none;
 			color:inherit;
@@ -102,6 +104,11 @@
 	&.taxonomy {
 		flex-flow: row nowrap;
 		justify-content: space-between;
+		a.tag {
+			margin-right:0.5rem;
+			font-size:1.2rem;
+			text-decoration:none;
+		}
 	}
 
 	@include breakpoint(sm) {

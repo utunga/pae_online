@@ -2571,6 +2571,14 @@ p.entry-meta {
 	justify-content: space-between;
 }
 
+.directory-row.taxonomy a.tag {
+	margin-right: 5px;
+	margin-right: 0.5rem;
+	font-size: 12px;
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
 .directory-row > div {
 	margin: 12px;
 	text-align: left;
@@ -3378,6 +3386,9 @@ p.entry-meta {
 	}
 	.directory-item {
 		padding: 0;
+	}
+	.directory-item .title {
+		float: left;
 	}
 	.directory-row {
 		-ms-flex-flow: row nowrap;
