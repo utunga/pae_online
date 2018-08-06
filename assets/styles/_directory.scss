@@ -77,6 +77,11 @@
 		font-weight: bold;
 		font-size: 1.2em;
 		margin-top: 1rem;
+
+		a {
+			text-decoration:none;
+			color:inherit;
+		}
 	}
 
 	border-bottom: solid 1px $dark;
