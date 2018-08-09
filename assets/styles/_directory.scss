@@ -32,14 +32,11 @@
 
 	.directory-widget-header {
 		border-bottom: solid 1px $dark;
-		padding: 0 0.5rem 0.5rem 0.5rem;
-
-		@include breakpoint(sm) {
-			margin: 1rem;
-		}
-
+		padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+		background-color: $accent;
 		h2 {
 			padding-top: 2rem;
+			padding-left: 2rem;
 			font-family: $font-directory-heading;
 		}
 

@@ -70,6 +70,7 @@ function pae_online_category_custom_loop() {
     }
     else
     {
+      
         foreach ($sub_category_ids as $sub_category_id)
         {
             render_listing_widget_for_category(array(
@@ -82,6 +83,8 @@ function pae_online_category_custom_loop() {
 
 }
 
+
+   
 // Run the Genesis loop.
 genesis();
 

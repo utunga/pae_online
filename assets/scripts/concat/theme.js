@@ -49,5 +49,13 @@ function adjustTopImage($) {
 		$('top-home').css('margin-top', 0);
 	}
 
+	//alert($('#categories-foldable'));
+
+	//$('#categories-foldable').foldable({
+	//	groups: '[data-foldable-role="group"]', // $('[data-foldable-role="group"]') will work too
+	//	triggers: '[data-foldable-role="trigger"]', // $('[data-foldable-role="trigger"]') will work too
+	//	targets: '[data-foldable-role="target"]' // $('[data-foldable-role="target"]') will work too
+	//});
+
 } )( document, jQuery );
 
