@@ -904,10 +904,8 @@ var FoldableGroup = function () {
 			if (this.isLink()) return;
 
 			this.$group.attr('data-foldable-role', 'group').addClass('foldable--level-' + this.level + ' ' + (this.isActive ? '' : 'foldable--is-closed') + ' ' + (this.hasTarget ? 'foldable--has-target' : '') + ' ' + (!this.options.isGrandChild ? 'foldable--has-children' : 'foldable--is-grandchild') + ' ' + (this.options.isFirst ? 'foldable--is-first' : '') + ' ' + (this.options.isLast ? 'foldable--is-last' : ''));
-
 			this.$trigger.attr('data-foldable-role', 'trigger');
 			this.$target.attr('data-foldable-role', 'target');
-
 			var $targetChildren = this.$target.children();
 
 			if (!this.$target.find('> [data-foldable-role="animation"]').length) {
@@ -2769,7 +2767,7 @@ module.exports = __webpack_require__(2);
 	}
 
 	// If there's only one menu on the page for combining, push it to the 'others' array and nullify our 'combine' variable.
-	if ( menusToCombine.length == 1 ) {
+	if (menusToCombine.length == 1) {
 		genesisMenus.others.push( menusToCombine[0] );
 		genesisMenus.combine = null;
 		menusToCombine = null;
@@ -2831,7 +2829,6 @@ module.exports = __webpack_require__(2);
 
 		// Apply sub menu toggle to each sub-menu found in the menuList.
 		$( _getMenuSelectorString( genesisMenus ) ).find( '.sub-menu' ).before( toggleButtons.submenu );
-
 
 		if ( menusToCombine !== null ) {
 
@@ -2916,32 +2913,32 @@ module.exports = __webpack_require__(2);
 
 	}
 
-	/**
-	 * Action to happen when the main menu button is clicked.
-	 */
-	function _mainmenuToggle() {
-		var $this = $( this );
-		_toggleAria( $this, 'aria-pressed' );
-		_toggleAria( $this, 'aria-expanded' );
-		$this.toggleClass( 'activated' );
-		$this.next( 'nav' ).slideToggle( 'fast' );
-	}
 
 	/**
 	 * Action for submenu toggles.
 	 */
-	function _submenuToggle() {
-
-		var $this  = $( this ),
+	function _submenuToggle() { 
+		var $this = $(this),
 			others = $this.closest( '.menu-item' ).siblings();
 		_toggleAria( $this, 'aria-pressed' );
 		_toggleAria( $this, 'aria-expanded' );
 		$this.toggleClass( 'activated' );
 		$this.next( '.sub-menu' ).slideToggle( 'fast' );
-
 		others.find( '.' + subMenuButtonClass ).removeClass( 'activated' ).attr( 'aria-pressed', 'false' );
-		others.find( '.sub-menu' ).slideUp( 'fast' );
+		others.find('.sub-menu').slideUp('fast');
+		$this.trigger("sub_menu.custom_click");
+	}
 
+	/**
+	 * Action to happen when the main menu button is clicked.
+	 */
+	function _mainmenuToggle() {
+		var $this = $(this);
+		_toggleAria($this, 'aria-pressed');
+		_toggleAria($this, 'aria-expanded');
+		$this.toggleClass('activated');
+		$this.next('nav').slideToggle('fast');
+		$this.trigger("main_menu.custom_click");
 	}
 
 	/**
@@ -3109,6 +3106,8 @@ module.exports = __webpack_require__(2);
 	});
 
 })( document, jQuery );
+
+
 /**
  * Add any custom theme JavaScript to this file.
  */
@@ -3139,34 +3138,52 @@ function adjustTopImage($) {
 
 	'use strict';
 
-	var contentPlacement = $('header.site-header').position().top + $('header.site-header  ').height();
-	$('header.site-header').next().css('margin-top', contentPlacement);
-	if ($(".top-home img").length > 0) {
-		$(".top-home img").load(
-			function () {
-				$('.nav-secondary').detach().insertBefore(".site-inner");
-				var contentPlacement = $('header.site-header').position().top + $('header.site-header  ').height();
-				$('header.site-header').next().css('margin-top', contentPlacement);
-				$('top-home').css('margin-top', 0);
+	if (window.matchMedia("(min-width: 896px)").matches) {
 
-				$(window).scroll(function () { adjustTopImage($) });
-				$(window).resize(function () { adjustTopImage($) });
+		var contentPlacement = $('header.site-header').position().top + $('header.site-header').height();
+		$('header.site-header').next().css('margin-top', contentPlacement);
+		if ($(".top-home img").length > 0) {
+			$(".top-home img").load(
+				function () {
+					$('.nav-secondary').detach().insertBefore(".site-inner");
+					var contentPlacement = $('header.site-header').position().top + $('header.site-header  ').height();
+					$('header.site-header').next().css('margin-top', contentPlacement);
+					$('top-home').css('margin-top', 0);
+
+					$(window).scroll(function () { adjustTopImage($) });
+					$(window).resize(function () { adjustTopImage($) });
+
+				}
+			);
+		}
+		else {
+			var contentPlacement = $('.site-container header').position().top + $('.site-container header').height();
+			$('.site-inner').css('margin-top', contentPlacement);
+			$('top-home').css('margin-top', 0);
+		}
+	}
+	
+	var mainMenuButtonClass = 'menu-toggle';
+	var subMenuButtonClass = 'sub-menu-toggle';
+
+	$(".top-header").on("main_menu.custom_click", "." + mainMenuButtonClass,
+		function (evt) {
+			$(".menu-toggle").toggle();
+			$(".quadmenu-navbar-toggle").trigger("click", true);
+			$(".quadmenu-navbar-header").css("margin-top", "-76px");
+		});
+
+	$(".top-header").on("click", ".quadmenu-navbar-toggle",
+		function (evt, isTriggered) {
+			if (!(isTriggered))
+			{
+				$(".menu-toggle").click();
 			}
-		);
-	}
-	else {
-		var contentPlacement = $('.site-container header').position().top + $('.site-container header').height();
-		$('.site-inner').css('margin-top', contentPlacement);
-		$('top-home').css('margin-top', 0);
-	}
+		});
 
-	//alert($('#categories-foldable'));
 
-	//$('#categories-foldable').foldable({
-	//	groups: '[data-foldable-role="group"]', // $('[data-foldable-role="group"]') will work too
-	//	triggers: '[data-foldable-role="trigger"]', // $('[data-foldable-role="trigger"]') will work too
-	//	targets: '[data-foldable-role="target"]' // $('[data-foldable-role="target"]') will work too
+	//$('.' + mainMenuButtonClass).on("main_menu.custom_click", function () {
+	//	alert("this");
+	//	$('.' + subMenuButtonClass).click('click.genesisMenu-subbutton');
 	//});
-
 } )( document, jQuery );
-

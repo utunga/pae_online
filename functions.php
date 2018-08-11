@@ -131,17 +131,21 @@ add_theme_support( 'custom-background', array(
 	'default-color' => 'f4f5f6',
 ) );
 
-// Enable support for logo option in Customizer > Site Identity.
-add_theme_support( 'custom-logo', array(
-	'height'      => 60,
-	'width'       => 240,
-	'flex-height' => true,
-	'flex-width'  => true,
-	'header-text' => array( '.site-title', '.site-description' ),
-) );
+// replace title with custom markup 
+remove_action( 'genesis_site_title', 'genesis_seo_site_title' );
+add_action( 'genesis_site_title', 'paeonline_site_title' );
+/**
+ * Replace title, with mark up easier to override 
+ */
+function paeonline_site_title() { 
 
-// Display custom logo in site title area.
-add_action( 'genesis_site_title', 'the_custom_logo', 0 );
+    //<div class="title-area" itemscope="itemscope" itemtype="http://schema.org/Organization"><p class="site-title" itemprop="name"><a href="//localhost:8000/">Paekākāriki Online</a></p><p class="site-description" itemprop="description">Your pocket universe</p></div>
+    $url =  trailingslashit( home_url() );
+    $blog_title = get_bloginfo( 'name' );
+
+    echo sprintf( '<a href="%s"><p class="site-title" itemprop="name"><span class="title-text">%s</span></p></a>',$url, $blog_title);
+}
+
 
 // Enable support for custom header image or video.
 add_theme_support( 'custom-header', array(
@@ -214,13 +218,12 @@ function pae_onlinescripts_styles() {
 
 	// Localize responsive menu script.
 	wp_localize_script( 'pae-online', 'genesis_responsive_menu', array(
-		'mainMenu'         => __( 'Menu', 'pae-online' ),
-		'subMenu'          => __( 'Menu', 'pae-online' ),
+		'mainMenu'         => __( '', 'pae-online' ),
+		'subMenu'          => __( '', 'pae-online' ),
 		'menuIconClass'    => null,
 		'subMenuIconClass' => null,
 		'menuClasses'      => array(
 			'combine' => array(
-				'.nav-primary',
 				'.nav-secondary',
 			),
 		),
@@ -316,8 +319,14 @@ function the_excerpt_max_charlength($charlength) {
 	}
 }
 
-function pae_online_excerpt() {
-    return "excerpt";
+function pae_online_excerpt($excerpt) {
+    
+    global $post;
+    if ( has_excerpt( $post->ID ) ) {
+        return $excerpt;
+    } else {
+        return "";
+    }
 }
 
 add_filter( 'the_excerpt', 'pae_online_excerpt', 10, 1 );
@@ -338,6 +347,5 @@ function pae_online_banner_header($image_id, $title) {
         </script>
         <div class='pae_online_banner_header'></div>
     <?php
- }
-   
+    }
 }

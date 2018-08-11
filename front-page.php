@@ -14,7 +14,8 @@ if (    is_active_sidebar( 'top-home' ) ||
 		is_active_sidebar( 'front-page-2' ) ||
 		is_active_sidebar( 'front-page-3' ) ||
 		is_active_sidebar( 'front-page-4' ) ||
-		is_active_sidebar( 'front-page-5' ) ) {
+		is_active_sidebar( 'sponsor-1' ) ||
+		is_active_sidebar( 'sponsor-2' )) {
 
 	// Force full-width-content layout.
 	add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
@@ -37,63 +38,79 @@ if (    is_active_sidebar( 'top-home' ) ||
 	 * @return void
 	 */
 	function pae_onlinefront_page_loop() {
-
-
-        ?>
-        <div class="mihi-widget">
-	        <div class="main"><?php
-		        // Front page 1 widget area.
-		        genesis_widget_area( 'mihi-area', array(
-		        'before' => '<a href="/mihi/">',
-		        'after'  => '</a>',
-		        ) );
-		        ?>
-	        </div>
-	        <div class="audio">
-        	        <?php echo do_shortcode( '[icon name="volume-up" class="1x" unprefixed_class="audio_icon"]' ); ?>
-            </div>
+    ?>
+    <div class="mihi-widget">
+	    <div class="main"><?php
+		    // Front page 1 widget area.
+		    genesis_widget_area( 'mihi-area', array(
+		    'before' => '<a href="/mihi/">',
+		    'after'  => '</a>',
+		    ) );
+		    ?>
+	    </div>
+	    <div class="audio">
+        	    <?php echo do_shortcode( '[icon name="volume-up" class="1x" unprefixed_class="audio_icon"]' ); ?>
         </div>
+    </div>
+    <?php
+
+	// Front page 2 widget area.
+	genesis_widget_area( 'front-page-2', array(
+	'before' => '<div class="front-page-2 widget-area"><div class="wrap">',
+	'after'  => '</div></div>',
+	) );
+
+    // parallax home page image
+	$img_url = img_asset_url("2017-10-21_Coote_008.jpg");
+	#echo $img_url;
+    echo do_shortcode( '[dd-parallax img="'.$img_url.'" speed="3" z-index="-100" mobile="'.$img_url.'"  offset="true"]' );
+
+    //// Front page 3 widget area.
+    //genesis_widget_area( 'front-page-3', array(
+    //'before' => '<div class="front-page-3 widget-area"><div class="wrap">',
+    //'after'  => '</div></div>',
+    //) );
+
+    do_homepage_featured_posts();
+
+	// parallax home page image
+	$img_url = img_asset_url("a_z_banner.jpg");
+    echo do_shortcode( '[dd-parallax img="'.$img_url.'" speed="3" z-index="-100" mobile="'.$img_url.'" offset="true"]' );
+
+	// Front page 4 widget area.
+	genesis_widget_area( 'front-page-4', array(
+	'before' => '<div class="front-page-4 widget-area"><div class="wrap">',
+	'after'  => '</div></div>',
+	) );
+
+     ?>
+    <div class="sponsor">
+        <div class="wrap">
+        <div class="intro_area">
+            <div class="title"><h2>Our Sponsors</h2></div>
+            <div class="intro_text">Our sponsors are very valuable</div>
+        </div>
+        <ul>
         <?php
 
-		// Front page 2 widget area.
-		genesis_widget_area( 'front-page-2', array(
-		'before' => '<div class="front-page-2 widget-area"><div class="wrap">',
-		'after'  => '</div></div>',
-		) );
+	    genesis_widget_area( 'sponsor-1', array(
+	    'before' => '<li class="sponsor-1 widget-area">',
+	    'after'  => '</li>',
+	    ) );
 
-        // parallax home page image
-		$img_url = img_asset_url("2017-10-21_Coote_008.jpg");
-		#echo $img_url;
-        echo do_shortcode( '[dd-parallax img="'.$img_url.'" speed="3" z-index="-100" mobile="'.$img_url.'"  offset="true"]' );
-
-        //// Front page 3 widget area.
-        //genesis_widget_area( 'front-page-3', array(
-        //'before' => '<div class="front-page-3 widget-area"><div class="wrap">',
-        //'after'  => '</div></div>',
-        //) );
-
-        do_homepage_featured_posts();
-
-	    // parallax home page image
-		$img_url = img_asset_url("a_z_banner.jpg");
-        echo do_shortcode( '[dd-parallax img="'.$img_url.'" speed="3" z-index="-100" mobile="'.$img_url.'" offset="true"]' );
-
-		// Front page 4 widget area.
-		genesis_widget_area( 'front-page-4', array(
-		'before' => '<div class="front-page-4 widget-area"><div class="wrap">',
-		'after'  => '</div></div>',
-		) );
-
-		// Front page 5 widget area.
-		genesis_widget_area( 'front-page-5', array(
-		'before' => '<div class="front-page-5 widget-area"><div class="wrap">',
-		'after'  => '</div></div>',
-		) );
-
-		}
+	    genesis_widget_area( 'sponsor-2', array(
+	    'before' => '<li class="sponsor-2 widget-area">',
+	    'after'  => '</li>',
+	    ) );
+     ?>
+        </ul>
+        </div>
+    </div>
+    <?php
 	}
+}
 
-    add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
 
 
 function render_first_post() {

@@ -734,10 +734,8 @@ var FoldableGroup = function () {
 			if (this.isLink()) return;
 
 			this.$group.attr('data-foldable-role', 'group').addClass('foldable--level-' + this.level + ' ' + (this.isActive ? '' : 'foldable--is-closed') + ' ' + (this.hasTarget ? 'foldable--has-target' : '') + ' ' + (!this.options.isGrandChild ? 'foldable--has-children' : 'foldable--is-grandchild') + ' ' + (this.options.isFirst ? 'foldable--is-first' : '') + ' ' + (this.options.isLast ? 'foldable--is-last' : ''));
-
 			this.$trigger.attr('data-foldable-role', 'trigger');
 			this.$target.attr('data-foldable-role', 'target');
-
 			var $targetChildren = this.$target.children();
 
 			if (!this.$target.find('> [data-foldable-role="animation"]').length) {

@@ -66,7 +66,8 @@ function pae_online_category_custom_loop() {
         render_listing_widget_for_category(array(
             'category' => $category,
             'show_title' => true,
-            'show_intro' => true));
+            'show_intro' => true,
+            'foldable' => false));
     }
     else
     {
@@ -76,7 +77,8 @@ function pae_online_category_custom_loop() {
             render_listing_widget_for_category(array(
                 'category' => get_term($sub_category_id, 'category'),
                 'show_title' => true,
-                'show_intro' => true
+                'show_intro' => false,
+                'foldable' => true
             ));
         }
     }

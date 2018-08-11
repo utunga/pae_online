@@ -71,7 +71,7 @@
 	}
 
 	// If there's only one menu on the page for combining, push it to the 'others' array and nullify our 'combine' variable.
-	if ( menusToCombine.length == 1 ) {
+	if (menusToCombine.length == 1) {
 		genesisMenus.others.push( menusToCombine[0] );
 		genesisMenus.combine = null;
 		menusToCombine = null;
@@ -133,7 +133,6 @@
 
 		// Apply sub menu toggle to each sub-menu found in the menuList.
 		$( _getMenuSelectorString( genesisMenus ) ).find( '.sub-menu' ).before( toggleButtons.submenu );
-
 
 		if ( menusToCombine !== null ) {
 
@@ -218,32 +217,32 @@
 
 	}
 
-	/**
-	 * Action to happen when the main menu button is clicked.
-	 */
-	function _mainmenuToggle() {
-		var $this = $( this );
-		_toggleAria( $this, 'aria-pressed' );
-		_toggleAria( $this, 'aria-expanded' );
-		$this.toggleClass( 'activated' );
-		$this.next( 'nav' ).slideToggle( 'fast' );
-	}
 
 	/**
 	 * Action for submenu toggles.
 	 */
-	function _submenuToggle() {
-
-		var $this  = $( this ),
+	function _submenuToggle() { 
+		var $this = $(this),
 			others = $this.closest( '.menu-item' ).siblings();
 		_toggleAria( $this, 'aria-pressed' );
 		_toggleAria( $this, 'aria-expanded' );
 		$this.toggleClass( 'activated' );
 		$this.next( '.sub-menu' ).slideToggle( 'fast' );
-
 		others.find( '.' + subMenuButtonClass ).removeClass( 'activated' ).attr( 'aria-pressed', 'false' );
-		others.find( '.sub-menu' ).slideUp( 'fast' );
+		others.find('.sub-menu').slideUp('fast');
+		$this.trigger("sub_menu.custom_click");
+	}
 
+	/**
+	 * Action to happen when the main menu button is clicked.
+	 */
+	function _mainmenuToggle() {
+		var $this = $(this);
+		_toggleAria($this, 'aria-pressed');
+		_toggleAria($this, 'aria-expanded');
+		$this.toggleClass('activated');
+		$this.next('nav').slideToggle('fast');
+		$this.trigger("main_menu.custom_click");
 	}
 
 	/**
@@ -411,3 +410,4 @@
 	});
 
 })( document, jQuery );
+

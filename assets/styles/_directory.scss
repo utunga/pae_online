@@ -25,6 +25,17 @@
 	}
 }
 
+.foldable .directory-widget div.directory-widget-header {
+	background-color: $accent;
+	height: 4.6rem;
+
+	h2 {
+		font-family: $font-directory-heading;
+		font-variant: normal;
+		font-variant-caps: normal;
+	}
+}
+
 .directory-widget {
 	flex-flow: column nowrap;
 	align-items: flex-start;
@@ -32,12 +43,15 @@
 
 	.directory-widget-header {
 		border-bottom: solid 1px $dark;
-		padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-		background-color: $accent;
+		padding: 1rem;
+
 		h2 {
-			padding-top: 2rem;
-			padding-left: 2rem;
 			font-family: $font-directory-heading;
+			font-size: 2.4rem;
+
+			@include breakpoint(md) {
+				font-size: 3rem;
+			}
 		}
 
 		.intro-text {

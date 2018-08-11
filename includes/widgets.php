@@ -49,9 +49,16 @@ genesis_register_sidebar( array(
 	'description' => __( 'Front page 4 widget area.', 'pae-online' ),
 ) );
 
-// Register Front Page 5 widget area.
+// Sponsor 1 Position
 genesis_register_sidebar( array(
-	'id'          => 'front-page-5',
-	'name'        => __( 'Front Page 5', 'pae-online' ),
-	'description' => __( 'Front page 5 widget area.', 'pae-online' ),
+	'id'          => 'sponsor-1',
+	'name'        => __( 'Sponsor 1', 'pae-online' ),
+	'description' => __( 'Sponsor 1 widget.', 'pae-online' ),
+) );
+
+// Sponsor 2 Position
+genesis_register_sidebar( array(
+	'id'          => 'sponsor-2',
+	'name'        => __( 'Sponsor 2', 'pae-online' ),
+	'description' => __( 'Sponsor 2 widget.', 'pae-online' ),
 ) );

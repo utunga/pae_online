@@ -677,7 +677,7 @@ THEME BLUE
 */
 
 .foldable--theme-blue [data-foldable-role="group"] .foldable--level-0 > [data-foldable-role="trigger"] {
-    border-left: 0 solid #35a4c2;
+    border-left: 0 solid #61B5B5;
     padding-left: 25px;
 }
 
@@ -687,7 +687,7 @@ THEME BLUE
 }
 
 .foldable--theme-blue [data-foldable-role="group"] .foldable--level-1 > [data-foldable-role="trigger"] {
-    border-left: 5px solid #35a4c2;
+    border-left: 5px solid #61B5B5;
     padding-left: 30px;
 }
 
@@ -697,7 +697,7 @@ THEME BLUE
 }
 
 .foldable--theme-blue [data-foldable-role="group"] .foldable--level-2 > [data-foldable-role="trigger"] {
-    border-left: 10px solid #35a4c2;
+    border-left: 10px solid #61B5B5;
     padding-left: 35px;
 }
 
@@ -707,7 +707,7 @@ THEME BLUE
 }
 
 .foldable--theme-blue [data-foldable-role="group"] .foldable--level-3 > [data-foldable-role="trigger"] {
-    border-left: 15px solid #35a4c2;
+    border-left: 15px solid #61B5B5;
     padding-left: 40px;
 }
 
@@ -717,7 +717,7 @@ THEME BLUE
 }
 
 .foldable--theme-blue [data-foldable-role="group"] .foldable--level-4 > [data-foldable-role="trigger"] {
-    border-left: 20px solid #35a4c2;
+    border-left: 20px solid #61B5B5;
     padding-left: 45px;
 }
 
@@ -727,7 +727,7 @@ THEME BLUE
 }
 
 .foldable--theme-blue [data-foldable-role="group"] .foldable--level-5 > [data-foldable-role="trigger"] {
-    border-left: 25px solid #35a4c2;
+    border-left: 25px solid #61B5B5;
     padding-left: 50px;
 }
 
@@ -738,11 +738,11 @@ THEME BLUE
 
 .foldable--theme-blue [data-foldable-role="group"].foldable--is-active > [data-foldable-role="trigger"] {
     background-color: #eff2f7;
-    color: #35a4c2;
+    color: #61B5B5;
 }
 
 .foldable--theme-blue [data-foldable-role="group"].foldable--is-current > [data-foldable-role="trigger"] {
-    background-color: #35a4c2;
+    background-color: #61B5B5;
     color: #fff;
     padding-left: 25px;
 }
@@ -754,8 +754,8 @@ THEME BLUE
 
 .foldable--theme-blue [data-foldable-role="group"].foldable--is-current.foldable--is-opening > [data-foldable-role="target"],
 .foldable--theme-blue [data-foldable-role="group"].foldable--is-current.foldable--is-opened > [data-foldable-role="target"] {
-    border-bottom: 1px solid #35a4c2;
-    border-color: #35a4c2;
+    border-bottom: 1px solid #61B5B5;
+    border-color: #61B5B5;
 }
 
 .foldable--theme-blue [data-foldable-role="group"].foldable--is-current.foldable--is-closed > [data-foldable-role="target"] {
@@ -763,7 +763,7 @@ THEME BLUE
 }
 
 .foldable--theme-blue [data-foldable-role="group"].foldable--is-grandchild.foldable--is-closing > [data-foldable-role="target"] {
-    border: 1px solid #35a4c2;
+    border: 1px solid #61B5B5;
     border-top: none;
 }
 

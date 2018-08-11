@@ -2,12 +2,58 @@
 --------------------------------------------- */
 
 .top-header {
-	color: $white;
-	background-color: $accent;
-	
+	background-color: $white;
+
+	@include breakpoint(sm) {
+		color: $white;
+		background-color: $accent;
+	}
+
 	width: 100%;
 	z-index: 300;
 	color: $white;
+
+	button.menu-toggle {
+		padding: 1rem;
+		position: absolute;
+		right: 1.3rem;
+		top: 2.4rem;
+	}
+
+	.title-area {
+		padding: 0;
+		margin: 0 auto;
+		@include breakpoint(sm) {
+			margin: 0;
+		}
+
+		.site-title {
+			.title-text {
+				display: none;
+			}
+
+			height: 90px;
+			width: 200px;
+			background: url("assets/images/logo_mobile.png") no-repeat;
+			background-size: 200px;
+
+			@include breakpoint(sm) {
+				height: 80px;
+				background: url("assets/images/logo_desktop.png") no-repeat;
+				background-size: 200px;
+			}
+
+			@include breakpoint(lg) {
+				height: 100px;
+				width: 312px;
+				background-size: 312px;
+			}
+		}
+
+		p.site-description {
+			display: none;
+		}
+	}
 
 	> .wrap {
 		position: relative;
@@ -23,20 +69,23 @@
 	}
 }
 
+.admin-bar header.site-header {
+	margin-top: 32px;
+}
+
 .pae_online_banner_header {
-	height:430px;
+	height: 230px;
+
+	@include breakpoint(sm) {
+		height: 570px !important;
+	}
+
 	img.wpsmartcrop-image {
-		/*height: 0px !important;
+		height: 230px;
 
 		@include breakpoint(sm) {
-			height: 50px !important;
+			height: 570px !important;
 		}
-
-		@include breakpoint(md) {
-		}*/
-
-		height: 800px !important;
-		//margin: 0;
 	}
 }
 
@@ -44,7 +93,7 @@
 
 .top-home {
 	img.wpsmartcrop-image {
-		height: 0px !important;
+		height: 230px !important;
 
 		@include breakpoint(sm) {
 			height: 250px !important;
@@ -67,10 +116,13 @@
 }
 
 header.site-header {
-    position: fixed;
-	width:100%;
-    z-index: 100;
-	top:0px;
+	width: 100%;
+	z-index: 100;
+	top: 0px;
+	
+	@include breakpoint(sm) {
+		position: fixed;
+	}
 }
 
 .site-container {
@@ -129,7 +181,7 @@ header.site-header {
     font-weight: $bold;
     line-height: 1;
     margin-bottom: 0;
-    @include breakpoint(md) {
+    @include breakpoint(sm) {
         font-size: 3rem;
     }
     a {
@@ -142,7 +194,7 @@ header.site-header {
     font-size: 1.4rem;
     margin-bottom: 0;
     line-height: 1;
-    @include breakpoint(md) {
+    @include breakpoint(sm) {
         text-align: left;
         font-size: 1.6rem;
         line-height: 1.382;
@@ -172,7 +224,7 @@ header.site-header {
     background-size: cover;
     background-position: center;
     position: relative;
-    @include breakpoint(md) {
+    @include breakpoint(sm) {
         padding: 4rem 0 6rem;
     }
     @include breakpoint(lg) {

@@ -17,14 +17,10 @@ add_action( 'genesis_entry_header', 'pae_online_post_header' );
 
 ////move post info to end and only include date
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
-//add_action( 'genesis_after_entry_content', 'genesis_post_info' );
+
 add_filter( 'genesis_post_info', 'pae_online_post_info' );
 function pae_online_post_info($post_info) {
-    $display_author = get_field('display_author');
-    return '[post_date] by '. $display_author;
-    //by [post_author_posts_link] [post_comments] [post_edit]
 }
-
 
 //// switch out header for custom header
 remove_action( 'genesis_before_content_sidebar_wrap', 'pae_onlinepage_header' );
@@ -41,7 +37,6 @@ function pae_online_post_header() {
 
     echo "<div class='post_header'>";
     genesis_do_post_title();
-    echo sprintf( '<p class="attribution">%s</p>', get_the_date() . ' by '. $display_author);
     echo sprintf( '<p class="excerpt">%s</p>', get_the_excerpt() );
     echo "</div>";
 }
