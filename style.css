@@ -3027,13 +3027,8 @@ img.alignright,
 	padding: 0;
 	margin: 0 auto;
 	height: 90px;
-}
-
-.top-header .title-area .site-title {
 	height: 90px;
 	width: 200px;
-	background: url('assets/images/logo_mobile.png') no-repeat;
-	background-size: 200px;
 }
 
 .top-header .title-area .site-title .title-text {
@@ -3041,6 +3036,15 @@ img.alignright,
 }
 
 .top-header .title-area p.site-description {
+	display: none;
+}
+
+.top-header .title-area img.logo_mobile {
+	display: inline-block;
+	width: 200px;
+}
+
+.top-header .title-area img.logo_desktop {
 	display: none;
 }
 
@@ -4579,7 +4583,8 @@ p.entry-meta {
 	background-color: #e0f0f0;
 	color: black;
 	text-align: center;
-	padding: 4%;
+	padding: 20px 4%;
+	padding: 2rem 4%;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 600;
@@ -4603,6 +4608,8 @@ p.entry-meta {
 
 .mihi-widget .audio {
 	padding: 0;
+	margin: 10px;
+	margin: 1rem;
 }
 
 .mihi-widget .audio .audio_icon {
@@ -5136,10 +5143,12 @@ p.entry-meta {
 	.top-header .title-area {
 		margin: 0;
 	}
-	.top-header .title-area .site-title {
-		height: 80px;
-		background: url('assets/images/logo_desktop.png') no-repeat;
-		background-size: 200px;
+	.top-header .title-area img.logo_mobile {
+		display: none;
+	}
+	.top-header .title-area img.logo_desktop {
+		display: inline-block;
+		width: 200px;
 	}
 	.pae_online_banner_header {
 		height: 570px !important;
@@ -5346,6 +5355,13 @@ p.entry-meta {
 	.top-header .title-area {
 		height: 100px;
 	}
+	.top-header .title-area {
+		height: 100px;
+		width: 312px;
+	}
+	.top-header .title-area img.logo_desktop {
+		width: 312px;
+	}
 	.top-header > .wrap {
 		padding: 0;
 		-ms-flex-wrap: nowrap;
@@ -5465,11 +5481,6 @@ p.entry-meta {
 }
 
 @media (min-width: 1152px) {
-	.top-header .title-area .site-title {
-		height: 100px;
-		width: 312px;
-		background-size: 312px;
-	}
 	.title-area {
 		padding: 1.618em 0;
 		max-width: 30rem;
@@ -5492,6 +5503,10 @@ p.entry-meta {
 	}
 	.directory_category_list .intro_area {
 		width: 40rem;
+	}
+	.mihi-widget {
+		font-size: 2.4rem;
+		padding: 2rem 10%;
 	}
 }
 

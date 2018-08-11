@@ -37,27 +37,42 @@
 			.title-text {
 				display: none;
 			}
-
-			height: 90px;
-			width: 200px;
-			background: url("assets/images/logo_mobile.png") no-repeat;
-			background-size: 200px;
-
-			@include breakpoint(sm) {
-				height: 80px;
-				background: url("assets/images/logo_desktop.png") no-repeat;
-				background-size: 200px;
-			}
-
-			@include breakpoint(lg) {
-				height: 100px;
-				width: 312px;
-				background-size: 312px;
-			}
 		}
 
 		p.site-description {
 			display: none;
+		}
+
+		height: 90px;
+		width: 200px;
+
+		img.logo_mobile {
+			display: inline-block;
+			width: 200px;
+		}
+
+		img.logo_desktop {
+			display: none;
+		}
+
+		@include breakpoint(sm) {
+			img.logo_mobile {
+				display: none;
+			}
+
+			img.logo_desktop {
+				display: inline-block;
+				width: 200px;
+			}
+		}
+
+		@include breakpoint(md) {
+			height: 100px;
+			width: 312px;
+
+			img.logo_desktop {
+				width: 312px;
+			}
 		}
 	}
 

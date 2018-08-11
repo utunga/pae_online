@@ -143,7 +143,19 @@ function paeonline_site_title() {
     $url =  trailingslashit( home_url() );
     $blog_title = get_bloginfo( 'name' );
 
-    echo sprintf( '<a href="%s"><p class="site-title" itemprop="name"><span class="title-text">%s</span></p></a>',$url, $blog_title);
+    $theme_root = get_stylesheet_directory_uri();
+    $logo_mobile = $theme_root . "/assets/images/logo_mobile.png";
+    $logo_desktop =  $theme_root . "/assets/images/logo_desktop.png";
+
+    $logo_desktop_img = sprintf('<img src="%s" class="logo_desktop" title="%s" alt="%s" />', $logo_desktop, $blog_title, $blog_title);
+    $logo_mobile_img = sprintf('<img src="%s" class="logo_mobile" title="%s" alt="%s" />', $logo_mobile, $blog_title, $blog_title);
+
+    echo sprintf( '
+        <a href="%s">
+            %s
+            %s
+            <p class="site-title" itemprop="name"><span class="title-text">%s</span></p>
+        </a>',  $url, $logo_desktop_img, $logo_mobile_img, $blog_title);
 }
 
 
