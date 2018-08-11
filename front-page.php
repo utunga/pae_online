@@ -88,7 +88,7 @@ if (    is_active_sidebar( 'top-home' ) ||
         <div class="wrap">
         <div class="intro_area">
             <div class="title"><h2>Our Sponsors</h2></div>
-            <div class="intro_text">Our sponsors are very valuable</div>
+            <div class="intro_text">This web platform is managed, developed and run by the Paekākāriki community for the community. For it to survive we require support from those who will benefit from it. Become one of two key sponsors and receive prominent profile here with your own webpages and links. Your sponsorship will go directly to funding an editorial position to keep the site up to date and humming.</div>
         </div>
         <ul>
         <?php
