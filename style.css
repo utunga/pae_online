@@ -3032,7 +3032,7 @@ img.alignright,
 .top-header .title-area .site-title {
 	height: 90px;
 	width: 200px;
-	background: url('//staging.paekakariki.nz/wp-content/themes/pae_online/assets/images/logo_mobile.png') no-repeat;
+	background: url('https://staging.paekakariki.nz/wp-content/themes/pae_online/assets/images/logo_mobile.png') no-repeat;
 	background-size: 200px;
 }
 
@@ -5138,7 +5138,7 @@ p.entry-meta {
 	}
 	.top-header .title-area .site-title {
 		height: 80px;
-		background: url('//staging.paekakariki.nz/wp-content/themes/pae_online/assets/images/logo_desktop.png') no-repeat;
+		background: url('https://staging.paekakariki.nz/wp-content/themes/pae_online/assets/images/logo_desktop.png') no-repeat;
 		background-size: 200px;
 	}
 	.pae_online_banner_header {
