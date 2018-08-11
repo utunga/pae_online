@@ -3,7 +3,7 @@
 
 .top-header {
 	background-color: $white;
-	
+
 	@include breakpoint(sm) {
 		color: $white;
 		background-color: $accent;
@@ -23,8 +23,8 @@
 	.title-area {
 		padding: 0;
 		margin: 0 auto;
-
 		height: 90px;
+
 		@include breakpoint(md) {
 			height: 100px;
 		}
@@ -40,12 +40,12 @@
 
 			height: 90px;
 			width: 200px;
-			background: url("assets/images/logo_mobile.png") no-repeat;
+			background: url("//staging.paekakariki.nz/wp-content/themes/pae_online/assets/images/logo_mobile.png") no-repeat;
 			background-size: 200px;
 
 			@include breakpoint(sm) {
 				height: 80px;
-				background: url("assets/images/logo_desktop.png") no-repeat;
+				background: url("//staging.paekakariki.nz/wp-content/themes/pae_online/assets/images/logo_desktop.png") no-repeat;
 				background-size: 200px;
 			}
 
