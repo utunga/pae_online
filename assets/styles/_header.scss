@@ -25,7 +25,7 @@
 		margin: 0 auto;
 
 		height: 90px;
-		@include breakpoint(lg) {
+		@include breakpoint(md) {
 			height: 100px;
 		}
 

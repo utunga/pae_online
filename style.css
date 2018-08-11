@@ -73,8 +73,8 @@
 - Print
 	- Print Styles
 */
-@import 'http://fonts.googleapis.com/css?family=Roboto:400,700';
-@import 'http://fonts.googleapis.com/css?family=Roboto:400,700';
+@import '//fonts.googleapis.com/css?family=Roboto:400,700';
+@import '//fonts.googleapis.com/css?family=Roboto:400,700';
 @import url('https://use.typekit.net/smd3wht.css');
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Nunito');
 .foldable-anim--scale-in {
@@ -5343,6 +5343,9 @@ p.entry-meta {
 	.home .content {
 		width: 100%;
 	}
+	.top-header .title-area {
+		height: 100px;
+	}
 	.top-header > .wrap {
 		padding: 0;
 		-ms-flex-wrap: nowrap;
@@ -5462,9 +5465,6 @@ p.entry-meta {
 }
 
 @media (min-width: 1152px) {
-	.top-header .title-area {
-		height: 100px;
-	}
 	.top-header .title-area .site-title {
 		height: 100px;
 		width: 312px;
