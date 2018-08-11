@@ -3,7 +3,7 @@
 
 .top-header {
 	background-color: $white;
-
+	
 	@include breakpoint(sm) {
 		color: $white;
 		background-color: $accent;
@@ -23,6 +23,12 @@
 	.title-area {
 		padding: 0;
 		margin: 0 auto;
+
+		height: 90px;
+		@include breakpoint(lg) {
+			height: 100px;
+		}
+
 		@include breakpoint(sm) {
 			margin: 0;
 		}

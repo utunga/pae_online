@@ -3026,6 +3026,7 @@ img.alignright,
 .top-header .title-area {
 	padding: 0;
 	margin: 0 auto;
+	height: 90px;
 }
 
 .top-header .title-area .site-title {
@@ -5461,6 +5462,9 @@ p.entry-meta {
 }
 
 @media (min-width: 1152px) {
+	.top-header .title-area {
+		height: 100px;
+	}
 	.top-header .title-area .site-title {
 		height: 100px;
 		width: 312px;
