@@ -33,6 +33,14 @@
 	display: flex;
 	flex-flow: row;
 
+	button {
+		background-color: $light_accent;
+		&:hover,
+		&:focus {
+			 box-shadow: none !important;
+		}
+	}
+
 	a {
 		text-decoration: none;
 		color: $dark;

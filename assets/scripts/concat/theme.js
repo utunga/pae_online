@@ -24,6 +24,39 @@ function adjustTopImage($) {
 	}
 }
 
+/**
+ * Functions to handle mihi controls
+ */
+function handleMihiAudio($) {
+	var audio = $('.audio');
+	var volume = audio.find('.audio_icon');
+	var player = audio.find('#mihi');
+	if (audio && volume && player) {
+		audio.on("click", "button",
+			function () {
+				toggle();
+		});
+		player.on("ended",
+			function () {
+				reset();
+		});
+		function toggle() {
+			if( volume.hasClass('fa-volume-up') ) {
+				volume.removeClass('fa-volume-up').addClass('fa-volume-off');
+				player.trigger('play');
+			} else {
+				volume.removeClass('fa-volume-off').addClass('fa-volume-up');
+				player.trigger('pause');
+			}
+		};
+		function reset() {
+			volume.removeClass('fa-volume-off').addClass('fa-volume-up');
+			player.prop("currentTime",0);
+		};
+	}
+}
+
+
 (function (document, $) {
 
 	'use strict';
@@ -52,7 +85,7 @@ function adjustTopImage($) {
 			$('top-home').css('margin-top', 0);
 		}
 	}
-	
+
 	var mainMenuButtonClass = 'menu-toggle';
 	var subMenuButtonClass = 'sub-menu-toggle';
 
@@ -68,9 +101,9 @@ function adjustTopImage($) {
 			if (!(isTriggered))
 			{
 				$(".menu-toggle").click();
-			}
-		});
+		}});
 
+	handleMihiAudio($);
 
 	//$('.' + mainMenuButtonClass).on("main_menu.custom_click", function () {
 	//	alert("this");
