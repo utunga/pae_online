@@ -4,7 +4,7 @@
  * Description: Paekakariki Online custom child theme for the Genesis Framework.
  * Author:      Miles Thompson (@utunga) and Catherine Adam
  * Author URI:  http://goodbright.nz / http://catherineadam.co.nz
- * Version:     0.5.5
+ * Version:     0.5.6
  * Text Domain: pae-online
  * Tags:        one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-logo, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready.
  * Template:    genesis
@@ -4594,6 +4594,15 @@ p.entry-meta {
 	-ms-flex-flow: row;
 	    flex-flow: row;
 	/* disable styling caused by all the random bullshit widget wrapping classes */
+}
+
+.mihi-widget button {
+	background-color: #e0f0f0;
+}
+
+.mihi-widget button:hover,
+.mihi-widget button:focus {
+	box-shadow: none !important;
 }
 
 .mihi-widget a {

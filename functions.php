@@ -39,6 +39,10 @@ define( 'CHILD_THEME_VERSION', '0.5.5' );
 // Set Localization (do not remove).
 load_child_theme_textdomain( 'pae-online', apply_filters( 'child_theme_textdomain', get_stylesheet_directory() . '/languages', 'pae-online' ) );
 
+// ogg files are not allowed by default????
+define('ALLOW_UNFILTERED_UPLOADS', true);
+
+
 // Remove secondary sidebar.
 unregister_sidebar( 'sidebar-alt' );
 

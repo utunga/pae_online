@@ -49,8 +49,15 @@ if (    is_active_sidebar( 'top-home' ) ||
 		    ?>
 	    </div>
 	    <div class="audio">
-        	    <?php echo do_shortcode( '[icon name="volume-up" class="1x" unprefixed_class="audio_icon"]' ); ?>
-        </div>
+        <audio id='mihi'>
+          <source src="wp-content/uploads/2018/08/MihiKarlFarrell.mp3">
+        </audio>
+        <button type="button" class="btn">
+          <span class="fa-stack fa-1x">
+            <i class="fa fa-1x fa-volume-up audio_icon"></i>
+          </span>
+        </button>
+      </div>
     </div>
     <?php
 
