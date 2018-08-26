@@ -361,7 +361,9 @@ function pae_online_banner_header($image_id, $title) {
                     jQuery(".pae_online_banner_header img").addClass("wpsmartcrop-image");
             });
         </script>
-        <div class='pae_online_banner_header'></div>
+        <div class='pae_online_banner_header'>
+            
+        </div>
     <?php
     }
 }
