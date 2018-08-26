@@ -95,6 +95,7 @@
 		font-weight: bold;
 		font-size: 1.2em;
 		margin-top: 1rem;
+		margin-bottom: 0rem;
 		@include breakpoint(sm) {
 			float:left;
 		}
@@ -122,10 +123,11 @@
 	&.taxonomy {
 		flex-flow: row nowrap;
 		justify-content: space-between;
+
 		a.tag {
-			margin-right:0.5rem;
-			font-size:1.2rem;
-			text-decoration:none;
+			margin-right: 0.5rem;
+			font-size: 1.2rem;
+			text-decoration: none;
 		}
 	}
 
@@ -179,14 +181,16 @@
 	}
 
 	.website {
-
-		a {
-			text-wrap: avoid;
-			text-decoration: none;
-			margin: 0;
-
-			&:hover, &:focus {
+		.website-link {
+			clear:left;
+			a {
+				text-wrap: avoid;
 				text-decoration: none;
+				margin: 0;
+
+				&:hover, &:focus {
+					text-decoration: none;
+				}
 			}
 		}
 	}

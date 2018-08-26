@@ -4330,6 +4330,8 @@ p.entry-meta {
 	font-size: 1.2em;
 	margin-top: 10px;
 	margin-top: 1rem;
+	margin-bottom: 0;
+	margin-bottom: 0rem;
 }
 
 .directory-item .title a {
@@ -4375,14 +4377,18 @@ p.entry-meta {
 	text-wrap: avoid;
 }
 
-.directory-row .website a {
+.directory-row .website .website-link {
+	clear: left;
+}
+
+.directory-row .website .website-link a {
 	text-wrap: avoid;
 	text-decoration: none;
 	margin: 0;
 }
 
-.directory-row .website a:hover,
-.directory-row .website a:focus {
+.directory-row .website .website-link a:hover,
+.directory-row .website .website-link a:focus {
 	text-decoration: none;
 }
 
