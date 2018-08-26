@@ -135,6 +135,13 @@ add_theme_support( 'custom-background', array(
 	'default-color' => 'f4f5f6',
 ) );
 
+
+// define the get_terms_orderby callback 
+function filter_get_terms_orderby( $orderby, $this_query_vars, $this_query_vars_taxonomy ) { 
+    return "slug"; 
+}; 
+add_filter( 'get_terms_orderby', 'filter_get_terms_orderby', 10, 3 );
+
 // replace title with custom markup 
 remove_action( 'genesis_site_title', 'genesis_seo_site_title' );
 add_action( 'genesis_site_title', 'paeonline_site_title' );
