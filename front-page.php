@@ -238,23 +238,23 @@ function render_other_post() {
 		'content' => $header,
 	) );
 
-	genesis_markup( array(
-		'open'    => '<div %s>',
-		'context' => 'entry-content',
-		'params'  => array(
-			'is_widget' => false,
-		),
-	) );
+    //genesis_markup( array(
+    //    'open'    => '<div %s>',
+    //    'context' => 'entry-content',
+    //    'params'  => array(
+    //        'is_widget' => false,
+    //    ),
+    //) );
 
-	the_excerpt();
+    //the_excerpt();
 					
-	genesis_markup( array(
-		'close'   => '</div>',
-		'context' => 'entry-content',
-		'params'  => array(
-			'is_widget' => false,
-		),
-	) );
+    //genesis_markup( array(
+    //    'close'   => '</div>',
+    //    'context' => 'entry-content',
+    //    'params'  => array(
+    //        'is_widget' => false,
+    //    ),
+    //) );
 
 	genesis_markup( array(
 		'close'   => '</article>',
