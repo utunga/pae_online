@@ -3074,6 +3074,7 @@ img.alignright,
 .pae_online_banner_header img.wpsmartcrop-image {
 	height: 230px;
 	width: 100%;
+	top: 0 !important;
 }
 
 .top-home img.wpsmartcrop-image {

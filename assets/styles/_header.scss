@@ -103,6 +103,7 @@
 	img.wpsmartcrop-image {
 		height: 230px;
 		width: 100%;
+		top: 0px !important;
 	}
 
 	@include breakpoint(sm) {
