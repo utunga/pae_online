@@ -56,6 +56,11 @@ function handleMihiAudio($) {
 	}
 }
 
+function fixPaekakarikiSpelling($) {
+	$("p").each(function () {
+		$(this).html($(this).html().replace(/Paekakariki/g, "Paekākāriki"));
+	});
+}
 
 (function (document, $) {
 
@@ -105,8 +110,8 @@ function handleMihiAudio($) {
 
 	handleMihiAudio($);
 
-	//$('.' + mainMenuButtonClass).on("main_menu.custom_click", function () {
-	//	alert("this");
-	//	$('.' + subMenuButtonClass).click('click.genesisMenu-subbutton');
-	//});
+	$(document).ready(function () {
+		fixPaekakarikiSpelling($);
+	})
+	
 } )( document, jQuery );
