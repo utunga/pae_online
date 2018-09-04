@@ -189,9 +189,21 @@ header.site-header {
 	width: 100%;
 	z-index: 100;
 	top: 0px;
-	
+
 	@include breakpoint(sm) {
 		position: fixed;
+	}
+
+	.a_to_z_searchbar {
+		background: black;
+		input {
+			float:left;
+			width:300px;
+			margin-bottom:5px;
+		}
+		input.search_button {
+			width: 100px;
+		}
 	}
 }
 

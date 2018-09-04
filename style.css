@@ -3110,6 +3110,20 @@ header.site-header {
 	top: 0;
 }
 
+header.site-header .a_to_z_searchbar {
+	background: black;
+}
+
+header.site-header .a_to_z_searchbar input {
+	float: left;
+	width: 300px;
+	margin-bottom: 5px;
+}
+
+header.site-header .a_to_z_searchbar input.search_button {
+	width: 100px;
+}
+
 .site-container {
 	top: 0 !important;
 }

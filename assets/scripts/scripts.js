@@ -3134,6 +3134,30 @@ function adjustTopImage($) {
 	}
 }
 
+
+function adjustAToZSearchBar($) {
+	var topBar = $('.site-header');
+	var searchBar = $('.a_to_z_searchbar');
+	var widget = $("div#a_to_z_widget");
+
+	var bottomOfTopBar = topBar.outerHeight() + $(window).scrollTop();
+	var topOfWidget = widget.offset().top;
+	var searchBarInWidget = $('.a_to_z_searchbar').parent().is(widget);
+
+	console.log(bottomOfTopBar + " ," + topOfWidget + " ," + searchBarInWidget);
+	if (bottomOfTopBar >= topOfWidget && searchBarInWidget) {
+		$('.a_to_z_searchbar').detach().appendTo(".site-header");
+		//var contentPlacement = $('header.site-header').position().top + $('header.site-header  ').height();
+		//$('header.site-header').next().css('margin-top', contentPlacement);
+	}
+
+	if (bottomOfTopBar < topOfWidget && !searchBarInWidget) {
+		$('.a_to_z_searchbar').detach().insertBefore(".a_to_z_jumplinks");
+		//var contentPlacement = $('header.site-header').position().top + $('header.site-header  ').height();
+		//$('header.site-header').next().css('margin-top', contentPlacement);
+	}
+}
+
 /**
  * Functions to handle mihi controls
  */
@@ -3198,6 +3222,12 @@ function fixPaekakarikiSpelling($) {
 			var contentPlacement = $('.site-container header').position().top + $('.site-container header').height();
 			$('.site-inner').css('margin-top', contentPlacement);
 			$('top-home').css('margin-top', 0);
+
+			if ($("#a_to_z_widget").length > 0) {
+				adjustAToZSearchBar($);
+				$(window).scroll(function () { adjustAToZSearchBar($) });
+				$(window).resize(function () { adjustAToZSearchBar($) });
+			}
 		}
 	}
 
