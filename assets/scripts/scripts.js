@@ -3151,11 +3151,11 @@ function adjustAToZSearchBar($) {
 		//$('header.site-header').next().css('margin-top', contentPlacement);
 	}
 
-	if (bottomOfTopBar < topOfWidget && !searchBarInWidget) {
-		$('.a_to_z_searchbar').detach().insertBefore(".a_to_z_jumplinks");
-		//var contentPlacement = $('header.site-header').position().top + $('header.site-header  ').height();
-		//$('header.site-header').next().css('margin-top', contentPlacement);
-	}
+	//if (bottomOfTopBar < topOfWidget && !searchBarInWidget) {
+	//	$('.a_to_z_searchbar').detach().insertBefore(".a_to_z_jumplinks");
+	//	//var contentPlacement = $('header.site-header').position().top + $('header.site-header  ').height();
+	//	//$('header.site-header').next().css('margin-top', contentPlacement);
+	//}
 }
 
 /**
