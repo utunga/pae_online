@@ -106,13 +106,6 @@
 		top: 0px !important;
 	}
 
-	@include breakpoint(sm) {
-		width: 90%;
-		max-width: map-get($breakpoints, xl);
-		padding-left: 0;
-		padding-right: 0;
-	}
-
 	@include breakpoint(xs) {
 		height: 420px !important;
 
@@ -122,6 +115,11 @@
 	}
 
 	@include breakpoint(sm) {
+		width: 90%;
+		max-width: map-get($breakpoints, xl);
+		padding-left: 0;
+		padding-right: 0;
+	
 		height: 520px !important;
 
 		img.wpsmartcrop-image {
@@ -130,20 +128,36 @@
 	}
 
 	@include breakpoint(md) {
-		height: 570px !important;
+		display:none;
+	}
+}
+
+.pae_online_banner_header_wide {
+	display: none;
+	margin: 0 auto;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	img.wpsmartcrop-image {
+		display: none;
+		width: 100%;
+		top: 0px !important;
+	}
+
+	@include breakpoint(md) {
+		display: block;
+		width: 90%;
+		max-width: map-get($breakpoints, xl);
+		padding-left: 0;
+		padding-right: 0;
+		height: 515px !important;
 
 		img.wpsmartcrop-image {
-			height: 570px !important;
+			display: block;
+			height: 515px !important;
 		}
 	}
 
-	@include breakpoint(xl) {
-		height: 840px !important;
-
-		img.wpsmartcrop-image {
-			height: 840px !important;
-		}
-	}
 }
 
 

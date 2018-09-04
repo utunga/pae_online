@@ -57,6 +57,7 @@ add_post_type_support( 'page', 'excerpt' );
 // Enable shortcodes in text widgets.
 add_filter( 'widget_text', 'do_shortcode' );
 
+
 // Enable support for WooCommerce and WooCommerce features.
 add_theme_support( 'woocommerce' );
 add_theme_support( 'wc-product-gallery-zoom' );
@@ -126,6 +127,8 @@ add_theme_support( 'html5', array(
 
 // Enable support for post thumbnails.
 add_theme_support( 'post-thumbnails' );
+add_image_size('banner', 1200, 800, true); // width, height, crop
+add_image_size('banner-wide', 1200, 315, true); // width, height, crop
 
 // Enable support for selective refresh and Customizer edit icons.
 add_theme_support( 'customize-selective-refresh-widgets' );
@@ -319,29 +322,6 @@ function pae_online_menu_extras( $menu, $args ) {
 	return $menu;
 }
 
-/*
- * Limit the excerpt by character.
- *
- * @link Reference - http://codex.wordpress.org/Function_Reference/get_the_excerpt
- */
-function the_excerpt_max_charlength($charlength) {
-	$excerpt = get_the_excerpt();
-	$charlength++;
-	if ( mb_strlen( $excerpt ) > $charlength ) {
-		$subex = mb_substr( $excerpt, 0, $charlength - 5 );
-		$exwords = explode( ' ', $subex );
-		$excut = - ( mb_strlen( $exwords[ count( $exwords ) - 1 ] ) );
-		if ( $excut < 0 ) {
-			echo mb_substr( $subex, 0, $excut );
-		} else {
-			echo $subex;
-		}
-		echo ' <br><a href="' . get_permalink() . '" class="more-link" title="Read More">Read More</a>';
-	} else {
-		echo $excerpt;
-	}
-}
-
 function pae_online_excerpt($excerpt) {
     
     global $post;
@@ -351,26 +331,63 @@ function pae_online_excerpt($excerpt) {
         return "";
     }
 }
-
 add_filter( 'the_excerpt', 'pae_online_excerpt', 10, 1 );
 
 
+function abs_path_to_url( $path = '' ) {
+    $url = str_replace(
+        wp_normalize_path( untrailingslashit( ABSPATH ) ),
+        site_url(),
+        wp_normalize_path( $path )
+    );
+    return esc_url_raw( $url );
+}
+
+function pae_image_resize( $file, $max_w, $max_h, $crop = false, $jpeg_quality = 90 ) {
+    
+    $editor = wp_get_image_editor( $file );
+    if ( is_wp_error( $editor ) )
+        return $editor;
+    $editor->set_quality( $jpeg_quality );
+ 
+    $resized = $editor->resize( $max_w, $max_h, $crop );
+    if ( is_wp_error( $resized ) )
+        return $resized;
+ 
+    $dest_file = $editor->generate_filename();
+    $saved = $editor->save( $dest_file );
+    if ( is_wp_error( $saved ) )
+       return $saved;
+ 
+    return abs_path_to_url($dest_file);
+}
+
 function pae_online_banner_header($image_id, $title) {
 
-    $image_attributes = wp_get_attachment_image_src( $image_id, array(1200,800) );
-    $image_Url =  $image_attributes[0];
-    if ($image_Url)
+    $image_attributes = wp_get_attachment_image_src($image_id, 'banner');
+    $image_url =  $image_attributes[0];
+    $image_file = get_attached_file($image_id);
+    $wide_image_url = pae_image_resize($image_file, 1200, 515, true);
+    $wide_image_url = (is_wp_error($wide_image_url) ? $image_url : $wide_image_url);
+
+    if ($image_url)
     {
     ?>
         <script>
             jQuery(document).ready(function($) { 
-                    jQuery(".pae_online_banner_header").backstretch("<?php echo $image_Url ?>");
+                    jQuery(".pae_online_banner_header").backstretch("<?php echo $image_url ?>");
                     jQuery(".pae_online_banner_header img").addClass("wpsmartcrop-image");
+                    jQuery(".pae_online_banner_header_wide").backstretch("<?php echo $wide_image_url ?>");
+                    jQuery(".pae_online_banner_header_wide img").addClass("wpsmartcrop-image");
             });
         </script>
         <div class='pae_online_banner_header'>
             
         </div>
+        <div class='pae_online_banner_header_wide'>
+            
+        </div>
+      
     <?php
     }
 }

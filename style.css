@@ -3077,6 +3077,19 @@ img.alignright,
 	top: 0 !important;
 }
 
+.pae_online_banner_header_wide {
+	display: none;
+	margin: 0 auto;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.pae_online_banner_header_wide img.wpsmartcrop-image {
+	display: none;
+	width: 100%;
+	top: 0 !important;
+}
+
 .top-home img.wpsmartcrop-image {
 	height: 230px !important;
 	margin: 0;
@@ -5181,8 +5194,6 @@ p.entry-meta {
 		max-width: 1280px;
 		padding-left: 0;
 		padding-right: 0;
-	}
-	.pae_online_banner_header {
 		height: 520px !important;
 	}
 	.pae_online_banner_header img.wpsmartcrop-image {
@@ -5400,10 +5411,19 @@ p.entry-meta {
 		    flex-wrap: nowrap;
 	}
 	.pae_online_banner_header {
-		height: 570px !important;
+		display: none;
 	}
-	.pae_online_banner_header img.wpsmartcrop-image {
-		height: 570px !important;
+	.pae_online_banner_header_wide {
+		display: block;
+		width: 90%;
+		max-width: 1280px;
+		padding-left: 0;
+		padding-right: 0;
+		height: 515px !important;
+	}
+	.pae_online_banner_header_wide img.wpsmartcrop-image {
+		display: block;
+		height: 515px !important;
 	}
 	.top-home img.wpsmartcrop-image {
 		height: 400px !important;
@@ -5549,12 +5569,6 @@ p.entry-meta {
 }
 
 @media (min-width: 1280px) {
-	.pae_online_banner_header {
-		height: 840px !important;
-	}
-	.pae_online_banner_header img.wpsmartcrop-image {
-		height: 840px !important;
-	}
 	.sub-menu a {
 		padding: 1em;
 	}
