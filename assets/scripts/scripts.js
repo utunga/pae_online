@@ -3158,6 +3158,7 @@ function adjustAToZSearchBar($) {
 	//}
 }
 
+
 /**
  * Functions to handle mihi controls
  */
