@@ -201,8 +201,7 @@ header.site-header {
 		padding: 5px 12px;
 
 		@include breakpoint(sm) {
-			width: inherit;
-			margin: inherit;
+			width: inherit;		
 			padding: inherit;
 		}
 
