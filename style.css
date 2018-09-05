@@ -3112,16 +3112,22 @@ header.site-header {
 
 header.site-header .a_to_z_searchbar {
 	background: black;
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px 12px;
 }
 
 header.site-header .a_to_z_searchbar input {
 	float: left;
-	width: 300px;
+	width: 250px;
 	margin-bottom: 5px;
+	margin-top: 5px;
 }
 
 header.site-header .a_to_z_searchbar input.search_button {
 	width: 100px;
+	padding: 10px;
+	padding: 1rem;
 }
 
 .site-container {
@@ -4509,6 +4515,15 @@ p.entry-meta {
 	display: inline-block;
 }
 
+#a_to_z_widget.extra-padding {
+	padding-bottom: 1000px;
+}
+
+.a_to_z_searchbar.fixed-at-top {
+	position: fixed;
+	top: 0;
+}
+
 .a_to_z_letter_heading {
 	padding-top: 30px;
 	padding-top: 3rem;
@@ -5223,6 +5238,16 @@ p.entry-meta {
 	}
 	header.site-header {
 		position: fixed;
+	}
+	header.site-header .a_to_z_searchbar {
+		width: inherit;
+		margin: inherit;
+		padding: inherit;
+	}
+	header.site-header .a_to_z_searchbar input {
+		height: 4rem;
+		margin-bottom: 10px;
+		margin-top: 0;
 	}
 	.site-title {
 		font-size: 3rem;

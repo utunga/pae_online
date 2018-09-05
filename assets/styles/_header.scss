@@ -196,13 +196,32 @@ header.site-header {
 
 	.a_to_z_searchbar {
 		background: black;
-		input {
-			float:left;
-			width:300px;
-			margin-bottom:5px;
+		width: 100%;
+		margin: 0px auto;
+		padding: 5px 12px;
+
+		@include breakpoint(sm) {
+			width: inherit;
+			margin: inherit;
+			padding: inherit;
 		}
+
+		input {
+			float: left;
+			width: 250px;
+			margin-bottom: 5px;
+			margin-top: 5px;
+
+			@include breakpoint(sm) {
+				height: 4rem;
+				margin-bottom: 10px;
+				margin-top: 0;
+			}
+		}
+
 		input.search_button {
 			width: 100px;
+			padding: 1rem;
 		}
 	}
 }

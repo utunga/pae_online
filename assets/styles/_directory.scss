@@ -279,6 +279,15 @@
 	}
 }
 
+#a_to_z_widget.extra-padding {
+	padding-bottom: 1000px;
+}
+
+.a_to_z_searchbar.fixed-at-top {
+	position:fixed;
+	top:0px;
+}
+
 .a_to_z_letter_heading {
 	padding-top: 3rem;;
 	background-color: $light;

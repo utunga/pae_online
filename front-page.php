@@ -288,7 +288,7 @@ function do_homepage_featured_posts() {
 
     ?>
         <div class="front-page-3 widget-area our_stories"><div class="wrap">
-        <h3>Our Stories</h3>
+        <h3>Our stories</h3>
     <?php
         
     // The Loop

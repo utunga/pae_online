@@ -33,19 +33,27 @@ function adjustAToZSearchBar($) {
 	var bottomOfTopBar = topBar.outerHeight() + $(window).scrollTop();
 	var topOfWidget = widget.offset().top;
 	var searchBarInWidget = $('.a_to_z_searchbar').parent().is(widget);
-
-	console.log(bottomOfTopBar + " ," + topOfWidget + " ," + searchBarInWidget);
 	if (bottomOfTopBar >= topOfWidget && searchBarInWidget) {
-		$('.a_to_z_searchbar').detach().appendTo(".site-header");
-		//var contentPlacement = $('header.site-header').position().top + $('header.site-header  ').height();
-		//$('header.site-header').next().css('margin-top', contentPlacement);
+		searchBar.detach().appendTo(".site-header");
+		widget.toggleClass('extra-padding');
 	}
 
-	//if (bottomOfTopBar < topOfWidget && !searchBarInWidget) {
-	//	$('.a_to_z_searchbar').detach().insertBefore(".a_to_z_jumplinks");
-	//	//var contentPlacement = $('header.site-header').position().top + $('header.site-header  ').height();
-	//	//$('header.site-header').next().css('margin-top', contentPlacement);
-	//}
+	if (bottomOfTopBar < topOfWidget && !searchBarInWidget) {
+		searchBar.detach().insertBefore(".a_to_z_jumplinks");
+		widget.toggleClass('extra-padding');
+	}
+
+	// for mobile.. we fix at top of screen
+	var widgetInWindowTop = widget.offset().top - $(window).scrollTop();
+	var searchBarInWindowTop = searchBar.offset().top - $(window).scrollTop();
+	if (widgetInWindowTop <= 1 && searchBarInWindowTop <= 0) {
+		if (!searchBar.hasClass("fixed-at-top"))
+			searchBar.addClass("fixed-at-top");
+	}
+	else {
+		searchBar.removeClass("fixed-at-top");
+	}
+	
 }
 
 
@@ -113,13 +121,13 @@ function fixPaekakarikiSpelling($) {
 			var contentPlacement = $('.site-container header').position().top + $('.site-container header').height();
 			$('.site-inner').css('margin-top', contentPlacement);
 			$('top-home').css('margin-top', 0);
-
-			if ($("#a_to_z_widget").length > 0) {
-				adjustAToZSearchBar($);
-				$(window).scroll(function () { adjustAToZSearchBar($) });
-				$(window).resize(function () { adjustAToZSearchBar($) });
-			}
 		}
+	}
+
+	if ($("#a_to_z_widget").length > 0) {
+		adjustAToZSearchBar($);
+		$(window).scroll(function () { adjustAToZSearchBar($) });
+		$(window).resize(function () { adjustAToZSearchBar($) });
 	}
 
 	var mainMenuButtonClass = 'menu-toggle';
