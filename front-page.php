@@ -273,6 +273,8 @@ function do_homepage_featured_posts() {
     $args = array (
 	    'post_type'              => 'post',
 	    'posts_per_page'         => '4',
+        'meta_key'               => 'is_featured',
+        'meta_value'               => 1
     );
 
     // The Query
