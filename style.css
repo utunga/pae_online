@@ -5596,8 +5596,13 @@ p.entry-meta {
 	}
 	.top-header > .wrap {
 		padding: 0;
+		width: 100%;
 		-ms-flex-wrap: nowrap;
 		    flex-wrap: nowrap;
+		-ms-flex-direction: row;
+		    flex-direction: row;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
 	}
 	.pae_online_banner_header {
 		display: none;
@@ -5767,6 +5772,9 @@ p.entry-meta {
 }
 
 @media (min-width: 1280px) {
+	.top-header > .wrap .title-area {
+		margin-right: 30%;
+	}
 	.sub-menu a {
 		padding: 1em;
 	}
