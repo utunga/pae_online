@@ -12,8 +12,6 @@
 if (    is_active_sidebar( 'top-home' ) ||
         is_active_sidebar( 'front-page-1' ) ||
 		is_active_sidebar( 'front-page-2' ) ||
-		is_active_sidebar( 'front-page-3' ) ||
-		is_active_sidebar( 'front-page-4' ) ||
 		is_active_sidebar( 'sponsor-1' ) ||
 		is_active_sidebar( 'sponsor-2' )) {
 
@@ -38,45 +36,45 @@ if (    is_active_sidebar( 'top-home' ) ||
 	 * @return void
 	 */
 	function pae_onlinefront_page_loop() {
+
     ?>
     <div class="mihi-widget">
 	    <div class="main"><?php
 		    // Front page 1 widget area.
 		    genesis_widget_area( 'mihi-area', array(
-		    'before' => '<a href="/mihi/">',
-		    'after'  => '</a>',
+		        'before' => '<a href="/mihi/">',
+		        'after'  => '</a>',
 		    ) );
 		    ?>
 	    </div>
 	    <div class="audio">
-        <audio id='mihi'>
-          <source src="wp-content/uploads/2018/08/MihiKarlFarrell.mp3">
-        </audio>
-        <button type="button" class="btn">
-          <span class="fa-stack fa-1x">
-            <i class="fa fa-1x fa-volume-up audio_icon"></i>
-          </span>
-        </button>
-      </div>
+            <audio id='mihi'>
+              <source src="wp-content/uploads/2018/08/MihiKarlFarrell.mp3">
+            </audio>
+            <button type="button" class="btn">
+              <span class="fa-stack fa-1x">
+                <i class="fa fa-1x fa-volume-up audio_icon"></i>
+              </span>
+            </button>
+        </div>
     </div>
+    
+    <div class="front-page-2 widget-area events">
+    <div class="wrap">
+        <div class="title"><h3><?php the_field( 'calendar_title'); ?></h3></div>
+        <?php // events widget expected here 
+	    genesis_widget_area( 'front-page-2', array(
+	        'before' => '<div class="events-widget">',
+	        'after'  => '</div>',
+	    ) );
+        ?>
+    </div>
+    </div>
+
     <?php
-
-	// Front page 2 widget area.
-	genesis_widget_area( 'front-page-2', array(
-	'before' => '<div class="front-page-2 widget-area"><div class="wrap">',
-	'after'  => '</div></div>',
-	) );
-
     // parallax home page image
 	$img_url = img_asset_url("2017-10-21_Coote_008.jpg");
-	#echo $img_url;
-    echo do_shortcode( '[dd-parallax img="'.$img_url.'" speed="3" z-index="-100" mobile="'.$img_url.'"  offset="true"]' );
-
-    //// Front page 3 widget area.
-    //genesis_widget_area( 'front-page-3', array(
-    //'before' => '<div class="front-page-3 widget-area"><div class="wrap">',
-    //'after'  => '</div></div>',
-    //) );
+	echo do_shortcode( '[dd-parallax img="'.$img_url.'" speed="3" z-index="-100" mobile="'.$img_url.'"  offset="true"]' );
 
     do_homepage_featured_posts();
 
@@ -84,34 +82,46 @@ if (    is_active_sidebar( 'top-home' ) ||
 	$img_url = img_asset_url("a_z_banner.jpg");
     echo do_shortcode( '[dd-parallax img="'.$img_url.'" speed="3" z-index="-100" mobile="'.$img_url.'" offset="true"]' );
 
-	// Front page 4 widget area.
-	genesis_widget_area( 'front-page-4', array(
-	'before' => '<div class="front-page-4 widget-area"><div class="wrap">',
-	'after'  => '</div></div>',
-	) );
-
      ?>
+
+    <div class="front-page-4 widget-area">
+    <div class="wrap">
+        <div class="directory_category_list">
+            <div class="wrap">
+                <div class="intro_area">
+                    <div class="title"><h2><?php the_field( 'directory_title'); ?></h2></div>
+                    <div class="intro_text"><?php the_field( 'directory_intro'); ?></div>
+                </div>
+                <?php the_widget('EverythingDirectory_Category_List_Widget');  ?>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <div class="sponsor">
-        <div class="wrap">
+    <div class="wrap">
         <div class="intro_area">
-            <div class="title"><h2>Our Sponsors</h2></div>
-            <div class="intro_text">This web platform is managed, developed and run by the Paekākāriki community for the community. For it to survive we require support from those who will benefit from it. Become one of two key sponsors and receive prominent profile here with your own webpages and links. Your sponsorship will go directly to funding an editorial position to keep the site up to date and humming.</div>
+            <div class="title"><h2><?php the_field( 'sponsors_title'); ?></h2></div>
+            <div class="intro_text"><?php the_field( 'sponsors_intro'); ?></div>
         </div>
         <ul>
         <?php
 
-	    genesis_widget_area( 'sponsor-1', array(
-	    'before' => '<li class="sponsor-1 widget-area">',
-	    'after'  => '</li>',
-	    ) );
+	        genesis_widget_area( 'sponsor-1', array(
+	            'before' => '<li class="sponsor-1 widget-area">',
+	            'after'  => '</li>',
+	        ) );
 
-	    genesis_widget_area( 'sponsor-2', array(
-	    'before' => '<li class="sponsor-2 widget-area">',
-	    'after'  => '</li>',
-	    ) );
-     ?>
+	        genesis_widget_area( 'sponsor-2', array(
+	            'before' => '<li class="sponsor-2 widget-area">',
+	            'after'  => '</li>',
+	        ) );
+         ?>
         </ul>
+        <div class="last-row">
+            <a href="/supporters/"><?php the_field( 'sponsors_button_text'); ?></a>
         </div>
+    </div>
     </div>
     <?php
 	}
@@ -237,24 +247,6 @@ function render_other_post() {
 		),
 		'content' => $header,
 	) );
-
-    //genesis_markup( array(
-    //    'open'    => '<div %s>',
-    //    'context' => 'entry-content',
-    //    'params'  => array(
-    //        'is_widget' => false,
-    //    ),
-    //) );
-
-    //the_excerpt();
-					
-    //genesis_markup( array(
-    //    'close'   => '</div>',
-    //    'context' => 'entry-content',
-    //    'params'  => array(
-    //        'is_widget' => false,
-    //    ),
-    //) );
 
 	genesis_markup( array(
 		'close'   => '</article>',

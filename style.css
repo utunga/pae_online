@@ -4166,6 +4166,42 @@ p.entry-meta {
 
 /* ## Front Page
 --------------------------------------------- */
+/* ## Custom Header
+--------------------------------------------- */
+.wp-custom-header {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.wp-custom-header img,
+.wp-custom-header video,
+.wp-custom-header iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: auto;
+	height: auto;
+	min-height: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	max-height: none;
+	object-fit: cover;
+}
+
+.wp-custom-header iframe {
+	left: -25%;
+	right: -25%;
+	height: 150%;
+	width: 150%;
+}
+
 .front-page-1,
 .front-page-2,
 .front-page-3,
@@ -4177,6 +4213,15 @@ p.entry-meta {
 	background-color: #ffffff;
 	border-bottom: 0;
 	position: relative;
+}
+
+.events .title {
+	width: 100%;
+}
+
+.events .events-widget {
+	margin-top: 10px;
+	margin-top: 1rem;
 }
 
 .front-page-1 {
@@ -4215,40 +4260,66 @@ p.entry-meta {
 	margin: 0 0 1.382em;
 }
 
-/* ## Custom Header
---------------------------------------------- */
-.wp-custom-header {
-	position: absolute;
-	height: 100%;
+.sponsor {
+	margin-top: 0;
+	padding-top: 40px;
+	padding-top: 4rem;
+	background: white;
+}
+
+.sponsor .sponsor-1.widget-area,
+.sponsor .sponsor-2.widget-area {
+	margin-left: 100px;
+	margin-left: 10rem;
+	margin-top: 20px;
+	margin-top: 2rem;
+}
+
+.sponsor .sponsor-1.widget-area section,
+.sponsor .sponsor-2.widget-area section {
+	padding: 0;
+}
+
+.sponsor .sponsor-1.widget-area section .content,
+.sponsor .sponsor-2.widget-area section .content {
+	padding: 10px 0;
+	padding: 1rem 0;
+}
+
+.sponsor .sponsor-1.widget-area section a,
+.sponsor .sponsor-2.widget-area section a {
+	text-decoration: none;
+	color: #30353a;
+}
+
+.sponsor .sponsor-1.widget-area section a:hover h4,
+.sponsor .sponsor-2.widget-area section a:hover h4,
+.sponsor .sponsor-1.widget-area section a:focus h4,
+.sponsor .sponsor-2.widget-area section a:focus h4 {
+	text-decoration: underline;
+	color: #61b5b5;
+}
+
+.sponsor .sponsor-1.widget-area section h4,
+.sponsor .sponsor-2.widget-area section h4 {
+	margin-top: 10px;
+	margin-top: 1rem;
+	color: #61b5b5;
+	font-weight: bold;
+}
+
+.sponsor .last-row {
 	width: 100%;
-	top: 0;
-	left: 0;
-	overflow: hidden;
 }
 
-.wp-custom-header img,
-.wp-custom-header video,
-.wp-custom-header iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	margin: auto;
-	width: auto;
-	height: auto;
-	min-height: 100%;
-	min-width: 100%;
-	max-width: 100%;
-	max-height: none;
-	object-fit: cover;
-}
-
-.wp-custom-header iframe {
-	left: -25%;
-	right: -25%;
-	height: 150%;
-	width: 150%;
+.sponsor .last-row a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #61b5b5;
+	padding: 10px 30px;
+	padding: 1rem 3rem;
+	border: solid 1px #61b5b5;
+	float: right;
 }
 
 /* # Print Styles

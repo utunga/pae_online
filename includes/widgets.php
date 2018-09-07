@@ -34,21 +34,6 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Front Page 2', 'pae-online' ),
 	'description' => __( 'Front page 2 widget area.', 'pae-online' ),
 ) );
-
-// Register Front Page 3 widget area.
-genesis_register_sidebar( array(
-	'id'          => 'front-page-3',
-	'name'        => __( 'Front Page 3', 'pae-online' ),
-	'description' => __( 'Front page 3 widget area.', 'pae-online' ),
-) );
-
-// Register Front Page 4 widget area.
-genesis_register_sidebar( array(
-	'id'          => 'front-page-4',
-	'name'        => __( 'Front Page 4', 'pae-online' ),
-	'description' => __( 'Front page 4 widget area.', 'pae-online' ),
-) );
-
 // Sponsor 1 Position
 genesis_register_sidebar( array(
 	'id'          => 'sponsor-1',

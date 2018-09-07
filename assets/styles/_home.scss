@@ -1,6 +1,44 @@
 /* ## Front Page
 --------------------------------------------- */
 
+
+/* ## Custom Header
+--------------------------------------------- */
+
+.wp-custom-header {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+
+	img,
+	video,
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		width: auto;
+		height: auto;
+		min-height: 100%;
+		min-width: 100%;
+		max-width: 100%;
+		max-height: none;
+		object-fit: cover;
+	}
+
+	iframe {
+		left: -25%;
+		right: -25%;
+		height: 150%;
+		width: 150%;
+	}
+}
+
 .front-page-1,
 .front-page-2,
 .front-page-3,
@@ -20,6 +58,15 @@
             flex-wrap: wrap;
         }
     }
+}
+
+.events {
+	.title {
+		width: 100%;
+	}
+	.events-widget {
+		margin-top: 1rem;
+	}
 }
 
 .front-page-1 {
@@ -57,38 +104,54 @@
     }
 }
 
+.sponsor {
+	margin-top: 0;
+	padding-top: 4rem;
+	background: white;
 
-/* ## Custom Header
---------------------------------------------- */
+	.sponsor-1.widget-area,
+	.sponsor-2.widget-area {
+		margin-left: 10rem;
+		margin-top: 2rem;
 
-.wp-custom-header {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    img,
-    video,
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        width: auto;
-        height: auto;
-        min-height: 100%;
-        min-width: 100%;
-        max-width: 100%;
-        max-height: none;
-        object-fit: cover;
-    }
-    iframe {
-        left: -25%;
-        right: -25%;
-        height: 150%;
-        width: 150%;
-    }
+		section {
+			padding: 0px;
+
+			.content {
+				padding: 1rem 0;
+			}
+
+			a {
+				text-decoration: none;
+				color: $dark;
+
+				&:hover {
+					h4 {
+						text-decoration: underline;
+						color: $accent;
+					}
+				}
+			}
+
+			h4 {
+				margin-top: 1rem;
+				color: $accent;
+				font-weight: bold;
+			}
+		}
+	}
+
+
+	.last-row {
+		width: 100%;
+
+		a {
+			text-decoration: none;
+			font-weight: bold;
+			color: $accent;
+			padding: 1rem 3rem;
+			border: solid 1px $accent;
+			float: right;
+		}
+	}
 }

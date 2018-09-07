@@ -130,6 +130,7 @@ add_theme_support( 'post-thumbnails' );
 add_image_size('banner', 1200, 800, true); // width, height, crop
 add_image_size('banner-wide', 1200, 315, true); // width, height, crop
 
+
 // Enable support for selective refresh and Customizer edit icons.
 add_theme_support( 'customize-selective-refresh-widgets' );
 
@@ -265,6 +266,9 @@ include_once( get_stylesheet_directory() . '/includes/helpers.php' );
 // Load miscellaneous functions.
 include_once( get_stylesheet_directory() . '/includes/extras.php' );
 
+// Load custom widgets 
+include_once( get_stylesheet_directory() . '/includes/sponsor-custom-widget.php' );
+
 // Load widget areas.
 include_once( get_stylesheet_directory() . '/includes/widgets.php' );
 
@@ -382,10 +386,8 @@ function pae_online_banner_header($image_id, $title) {
             });
         </script>
         <div class='pae_online_banner_header'>
-            
         </div>
-        <div class='pae_online_banner_header_wide'>
-            
+        <div class='pae_online_banner_header_wide'> 
         </div>
       
     <?php
