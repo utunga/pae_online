@@ -10,13 +10,6 @@
 
 //// move default page header into main entry
 remove_action( 'genesis_before_content_sidebar_wrap', 'pae_onlinepage_header' );
-add_action( 'genesis_entry_header', 'pae_online_post_header' );
-
-//// Remove content-sidebar-wrap.
-//add_filter( 'genesis_markup_content-sidebar-wrap', '__return_null' );
-
-////move post info to end and only include date
-remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 
 add_filter( 'genesis_post_info', 'pae_online_post_info' );
 function pae_online_post_info($post_info) {
@@ -31,6 +24,8 @@ function pae_online_general_banner_header() {
     pae_online_banner_header($image, $title);
 }
 
+remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
+add_action( 'genesis_entry_header', 'pae_online_post_header' );
 function pae_online_post_header() {
 
     $display_author = get_field('display_author');

@@ -3594,10 +3594,40 @@ header.site-header .a_to_z_searchbar input.search_button {
 
 /* ## Entry Meta
 --------------------------------------------- */
+article h2.entry-title {
+	font-weight: 600;
+	margin-bottom: 5px;
+	margin-bottom: 0.5rem;
+}
+
+article h2.entry-title a {
+	color: #61b5b5;
+}
+
+article h2.entry-title a:hover,
+article h2.entry-title a:focus {
+	text-decoration: underline;
+}
+
+article p.entry-meta {
+	font-size: 3.2vw;
+}
+
+article .entry-content {
+	margin-bottom: 10px;
+	margin-bottom: 1rem;
+}
+
+article a.more-link {
+	float: right;
+}
+
 p.entry-meta {
 	font-size: 16px;
 	font-size: 1.6rem;
-	margin-bottom: 0;
+	margin-top: 0;
+	margin-top: 0rem;
+	font-weight: bold;
 }
 
 .entry-header p.entry-meta {
@@ -5368,8 +5398,11 @@ p.entry-meta {
 		margin-bottom: 1.5em;
 	}
 	.entry {
-		padding: 6rem;
-		margin-bottom: 4rem;
+		padding: 2rem;
+		margin-bottom: 2rem;
+	}
+	article p.entry-meta {
+		font-size: 1.6rem;
 	}
 	.entry-footer {
 		margin-top: 4rem;
