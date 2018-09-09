@@ -4628,6 +4628,10 @@ p.entry-meta {
 	color: #61b5b5;
 }
 
+.directory-row a .website-link {
+	color: #61b5b5;
+}
+
 .directory-row .more-button {
 	border: solid 1px #61b5b5;
 	text-align: center;

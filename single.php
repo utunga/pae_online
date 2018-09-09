@@ -41,9 +41,6 @@ function pae_online_post_header() {
     echo "</div>";
 }
 
-
-
-
 // Run Genesis.
 genesis();
 

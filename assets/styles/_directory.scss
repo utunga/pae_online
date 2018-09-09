@@ -182,7 +182,8 @@
 
 	.website {
 		.website-link {
-			clear:left;
+			clear: left;
+
 			a {
 				text-wrap: avoid;
 				text-decoration: none;
@@ -210,6 +211,10 @@
 			.arrows {
 				color: $accent;
 			}
+		}
+
+		.website-link {
+			color: $accent;
 		}
 	}
 
