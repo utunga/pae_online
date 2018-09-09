@@ -15,44 +15,66 @@
 }
 
 .entry-content {
-    @include clearfix;
-    ol,
-    ul {
-        margin-bottom: 1em;
-        margin-left: 4rem;
-        .error404 & {
-            margin-bottom: 4rem;
-        }
-    }
-    ol>li {
-        list-style-type: decimal;
-    }
-    ul>li {
-        list-style-type: disc;
-    }
-    ol ol,
-    ul ul {
-        margin-bottom: 0;
-    }
-    li li {
-        list-style-type: circle;
-    }
-    code {
-        background-color: $light;
-        display: block;
-        padding: 1rem 2rem;
-        border: $site-border;
-        margin-top: 1em;
-        font-size: 1.6rem;
-    }
-    input,
-    select,
-    textarea {
-        margin-bottom: 1em;
-    }
-    >*:last-child {
-        margin-bottom: 0;
-    }
+	@include clearfix;
+
+	ol,
+	ul {
+		margin-bottom: 1em;
+		margin-left: 4rem;
+
+		.error404 & {
+			margin-bottom: 4rem;
+		}
+	}
+
+	ol > li {
+		list-style-type: decimal;
+	}
+
+	ul > li {
+		list-style-type: disc;
+	}
+
+	ol ol,
+	ul ul {
+		margin-bottom: 0;
+	}
+
+	li li {
+		list-style-type: circle;
+	}
+
+	code {
+		background-color: $light;
+		display: block;
+		padding: 1rem 2rem;
+		border: $site-border;
+		margin-top: 1em;
+		font-size: 1.6rem;
+	}
+
+	input,
+	select,
+	textarea {
+		margin-bottom: 1em;
+	}
+
+	> *:last-child {
+		margin-bottom: 0;
+	}
+
+	
+}
+
+figcaption.wp-caption-text {
+	text-align:right;
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.attachment_description,
+.attachment_link {
+	margin-top: 1rem;
 }
 
 .entry-image-link {
