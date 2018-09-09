@@ -241,6 +241,69 @@
 	}
 }
 
+.nav-secondary {
+	ul.quadmenu-navbar-nav {
+		max-width: map-get($breakpoints, xl) !important;
+
+		@include breakpoint(sm) {
+			margin-left: 8rem !important;
+		}
+
+		@include breakpoint(xl) {
+			margin: 0 auto !important;
+		}
+
+		@include breakpoint(sm) {
+			display: flex !important;
+			flex-flow: row nowrap !important;
+			justify-content: space-between !important;
+		}
+
+		li.search {
+			color: $accent;
+
+			@include breakpoint(sm) {
+				margin-top: 1.2rem !important;
+				margin: 0;
+				margin-left: auto !important;
+			}
+
+			.gsc-search-box {
+				margin-top: 1.8rem;
+				height: 2.6rem;
+
+				.gsc-input-box {
+					table {
+						margin-bottom: 0;
+
+						input {
+							height: 2.6rem !important;
+							color: $dark !important;
+							margin: 0;
+							padding: 0 5px !important;
+						}
+
+						.gsib_b {
+							padding-top: .6rem;
+						}
+					}
+				}
+
+				td.gsc-search-button {
+					background: black;
+
+					button.gsc-search-button {
+						padding: .25rem 1rem;
+						height: 2.6rem !important;
+						border: none;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
 /* ## Menu Toggles
 --------------------------------------------- */
 .menu-toggle {

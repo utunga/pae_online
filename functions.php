@@ -335,7 +335,7 @@ function pae_online_menu_extras( $menu, $args ) {
 	ob_start();
 	get_search_form();
 	$search = ob_get_clean();
-	$menu  .= '<li class="right search">' . $search . '</li>';
+	$menu  .= '<li class="right search">' . do_shortcode(' [wp_google_searchbox]') . '</li>';
 
 	return $menu;
 }

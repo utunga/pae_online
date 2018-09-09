@@ -3417,6 +3417,51 @@ header.site-header .a_to_z_searchbar input.search_button {
 	margin: 0 1em;
 }
 
+.nav-secondary ul.quadmenu-navbar-nav {
+	max-width: 1280px !important;
+}
+
+.nav-secondary ul.quadmenu-navbar-nav li.search {
+	color: #61b5b5;
+}
+
+.nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box {
+	margin-top: 18px;
+	margin-top: 1.8rem;
+	height: 26px;
+	height: 2.6rem;
+}
+
+.nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box .gsc-input-box table {
+	margin-bottom: 0;
+}
+
+.nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box .gsc-input-box table input {
+	height: 26px !important;
+	height: 2.6rem !important;
+	color: #30353a !important;
+	margin: 0;
+	padding: 0 5px !important;
+}
+
+.nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box .gsc-input-box table .gsib_b {
+	padding-top: 6px;
+	padding-top: 0.6rem;
+}
+
+.nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box td.gsc-search-button {
+	background: black;
+}
+
+.nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box td.gsc-search-button button.gsc-search-button {
+	padding: 2.5px 10px;
+	padding: 0.25rem 1rem;
+	height: 26px !important;
+	height: 2.6rem !important;
+	border: none;
+	margin: 0;
+}
+
 /* ## Menu Toggles
 --------------------------------------------- */
 .menu-toggle {
@@ -5090,21 +5135,6 @@ p.entry-meta {
 	margin-top: 1.2rem;
 }
 
-.nav-secondary #quadmenu .quadmenu-navbar-nav .search {
-	margin: 0;
-	float: right;
-	margin-right: 70px;
-	margin-right: 7rem;
-	color: #61b5b5;
-}
-
-.nav-secondary #quadmenu .quadmenu-navbar-nav .search input {
-	margin-top: 22px;
-	margin-top: 2.2rem;
-	height: 24px;
-	height: 2.4rem;
-}
-
 .nav-secondary #quadmenu .quadmenu-navbar-header {
 	width: 100%;
 	font-size: 200px;
@@ -5430,6 +5460,22 @@ p.entry-meta {
 	}
 	.nav-footer .menu {
 		margin-bottom: 1.5em;
+	}
+	.nav-secondary ul.quadmenu-navbar-nav {
+		margin-left: 8rem !important;
+	}
+	.nav-secondary ul.quadmenu-navbar-nav {
+		display: -ms-flexbox !important;
+		display: flex !important;
+		-ms-flex-flow: row nowrap !important;
+		    flex-flow: row nowrap !important;
+		-ms-flex-pack: justify !important;
+		justify-content: space-between !important;
+	}
+	.nav-secondary ul.quadmenu-navbar-nav li.search {
+		margin-top: 1.2rem !important;
+		margin: 0;
+		margin-left: auto !important;
 	}
 	.entry {
 		padding: 2rem;
@@ -5811,6 +5857,9 @@ p.entry-meta {
 	}
 	.sub-menu a {
 		padding: 1em;
+	}
+	.nav-secondary ul.quadmenu-navbar-nav {
+		margin: 0 auto !important;
 	}
 	.comment-respond input[type='email'],
 	.comment-respond input[type='text'],
