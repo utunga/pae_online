@@ -51,56 +51,82 @@
 }
 
 
+.widget_nav_menu {
+
+	ul.menu {
+		flex-flow: column nowrap;
+		li.menu-item {
+			padding: 0;
+			margin-top:0.5rem;
+			a {
+				color: $accent;
+				text-decoration: underline;
+				padding: 0;
+			}
+			a:hover {
+				text-decoration:none;
+			}
+		}
+	}
+}
 
 /* ## Sub Menus
 --------------------------------------------- */
-
 .sub-menu {
-    display: none;
-    font-size: 1.4rem;
-    @include clearfix;
-    @include breakpoint(md) {
-        top: 100%;
-        position: absolute;
-        width: 20rem;
-        z-index: 99;
-        background-color: $white;
-        border: $site-border;
-        padding: 0.5em 0;
-    }
-    li {
-        width: 100%;
-        &:first-of-type {
-            margin-top: 0.5em; // Slide toggle fix.
-            @include breakpoint(md) {
-                margin-top: 0;
-            }
-            a {
-                padding-left: 1em;
-            }
-        }
-    }
-    a {
-        padding-left: 1em;
-        @include breakpoint(md) {
-            padding: 1em;
-            position: relative;
-            word-wrap: break-word;
-        }
-        @include breakpoint(xl) {
-            padding: 1em;
-        }
-    }
-    .sub-menu {
-        padding-left: 1em;
-        @include breakpoint(md) {
-            margin: -0.1rem 0 0 19.9rem;
-            padding-left: 0;
-            left: -0.1rem;
-            top: -0.5em;
-            border: $site-border;
-        }
-    }
+	display: none;
+	font-size: 1.4rem;
+	@include clearfix;
+
+	@include breakpoint(md) {
+		top: 100%;
+		position: absolute;
+		width: 20rem;
+		z-index: 99;
+		background-color: $white;
+		border: $site-border;
+		padding: 0.5em 0;
+	}
+
+	li {
+		width: 100%;
+
+		&:first-of-type {
+			margin-top: 0.5em; // Slide toggle fix.
+			@include breakpoint(md) {
+				margin-top: 0;
+			}
+
+			a {
+				padding-left: 1em;
+			}
+		}
+	}
+
+	a {
+		padding-left: 1em;
+
+		@include breakpoint(md) {
+			padding: 1em;
+			position: relative;
+			word-wrap: break-word;
+		}
+
+		@include breakpoint(xl) {
+			padding: 1em;
+		}
+	}
+
+	.sub-menu {
+		padding-left: 1em;
+
+		@include breakpoint(md) {
+			margin: -0.1rem 0 0 19.9rem;
+			padding-left: 0;
+			left: -0.1rem;
+			top: -0.5em;
+			border: $site-border;
+		}
+	}
 }
 
 

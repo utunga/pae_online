@@ -3275,6 +3275,28 @@ header.site-header .a_to_z_searchbar input.search_button {
 	color: #61b5b5;
 }
 
+.widget_nav_menu ul.menu {
+	-ms-flex-flow: column nowrap;
+	    flex-flow: column nowrap;
+}
+
+.widget_nav_menu ul.menu li.menu-item {
+	padding: 0;
+	margin-top: 5px;
+	margin-top: 0.5rem;
+}
+
+.widget_nav_menu ul.menu li.menu-item a {
+	color: #61b5b5;
+	text-decoration: underline;
+	padding: 0;
+}
+
+.widget_nav_menu ul.menu li.menu-item a:hover,
+.widget_nav_menu ul.menu li.menu-item a:focus {
+	text-decoration: none;
+}
+
 /* ## Sub Menus
 --------------------------------------------- */
 .sub-menu {
