@@ -47,3 +47,10 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Sponsor 2', 'pae-online' ),
 	'description' => __( 'Sponsor 2 widget.', 'pae-online' ),
 ) );
+
+//* Register a new sidebar
+genesis_register_sidebar( array(
+  'id'          => 'official-stuff-sidebar',
+  'name'        => __( 'Official Stuff - Sidebar', 'pae-online'),
+  'description' => __( 'Widget area for official stuff page.', 'pae-online' ),
+) );
