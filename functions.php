@@ -13,20 +13,24 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 
 }
-    // Check if a google_maps_api_key is defined
-    function my_acf_google_map_api( $api ){
-        if (defined( 'GOOGLE_MAPS_API_KEY' )) {
-    	    $api['key'] = GOOGLE_MAPS_API_KEY;
-	    }    
-   	    return $api;
+
+// Check if a google_maps_api_key is defined and pass it through to
+// Advanced Custom Field plugin. What is NUTS is that you also need to define this
+// key in the front end for Events Calendar Pro plugin (and the two can clash)
+// So:
+//  We *this* key is used in the Directory of everything Admin back end and
+//  the events calendar pro defined key is used on the front  end
+function my_acf_init() {
+	if (defined( 'GOOGLE_MAPS_API_KEY' )) {
+    acf_update_setting('google_api_key', GOOGLE_MAPS_API_KEY);
     }
-    add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+}
+add_action('acf/init', 'my_acf_init');
 
 /**
  * Enable ACF 5 early access
  * Requires at least version ACF 4.4.12 to work
  */
-define('ACF_EARLY_ACCESS', '5');
 
 // Child theme (do not remove).
 include_once( get_template_directory() . '/lib/init.php' );
