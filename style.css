@@ -3258,6 +3258,11 @@ header.site-header .a_to_z_searchbar input.search_button {
 	padding: 0.5rem 0;
 	width: 100%;
 	position: relative;
+	/*a:hover,
+    a:focus,
+    &.current-menu-item>a {
+        color: $accent;
+    }*/
 }
 
 .menu-item.right {
@@ -3269,12 +3274,6 @@ header.site-header .a_to_z_searchbar input.search_button {
 	display: block;
 	padding: 0.5em 0;
 	color: #30353a;
-}
-
-.menu-item a:hover,
-.menu-item a:focus,
-.menu-item.current-menu-item > a {
-	color: #61b5b5;
 }
 
 .widget_nav_menu ul.menu {
