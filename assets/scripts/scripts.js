@@ -3257,8 +3257,8 @@ function hackMenusForMobile($) {
 		hackMenusForMobile($);
 	});
 
-	$(window).on("resize", function () {
-		hackMenusForMobile($);
-	});
+	//$(window).on("resize", function () {
+	//	hackMenusForMobile($);
+	//});
 	
 } )( document, jQuery );
