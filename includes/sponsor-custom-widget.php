@@ -1,6 +1,6 @@
 <?php
 
-add_image_size('sponsor-thumb', 435, 290, false); // width, height, crop
+add_image_size('sponsor-thumb-size', 290, 265, false); // width, height, crop
 
 if(!class_exists('PaeOnline_SponsorWidget')) {
 
@@ -36,7 +36,7 @@ if(!class_exists('PaeOnline_SponsorWidget')) {
         $sponsor_title = get_field( 'sponsor_title', $widget_id ) ? get_field( 'sponsor_title', $widget_id ) : '';
         $sponsor_link = get_field( 'sponsor_link', $widget_id );
 
-        $image = wp_get_attachment_image_src(get_field('sponsor_image', $widget_id ), 'sponsor-thumb');
+        $image = wp_get_attachment_image_src(get_field('sponsor_image', $widget_id ), 'sponsor-thumb-size');
         $has_image = ($image);
 
         echo $args['before_widget'];

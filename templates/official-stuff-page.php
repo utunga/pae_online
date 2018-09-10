@@ -2,7 +2,7 @@
 /**
  * Paekakariki Online
  *
- * Template Name: Official Stuff Page
+ * Template Name: Official Stuff Main Page
  *
  * This file adds the A-Z page to the Paekakariki Online theme
  *
@@ -53,17 +53,26 @@ function pae_online_general_banner_header() {
     pae_online_banner_header($image, $title);
 }
 
-//* removes primary
+// ut sidebar over on the side 
 remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
-add_action( 'genesis_sidebar', 'official_stuff_custom_sidebar' );
-
-//* Retrieve our custom sidebar
-function official_stuff_custom_sidebar() {
+add_action( 'genesis_sidebar', 'official_stuff_sidebar' );
+function official_stuff_sidebar() {
     genesis_widget_area( 'official-stuff-sidebar', array(
-        'before' => '<div class="widget-area">',
+        'before' => '<div class="widget-area official-stuff-sidebar">',
         'after'  => '</div>',
     ) );
 }
+
+// put sidebar at bottom
+remove_action( 'genesis_after_entry', 'genesis_do_sidebar' );
+add_action( 'genesis_after_entry', 'official_stuff_lower_sidebar' ); 
+function official_stuff_lower_sidebar() {
+    genesis_widget_area( 'official-stuff-lower-sidebar', array(
+        'before' => '<div class="widget-area official-stuff-lower-sidebar">',
+        'after'  => '</div>',
+    ) );
+}
+
 
 // Run the Genesis loop.
 genesis();

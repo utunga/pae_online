@@ -82,10 +82,11 @@
 		}
 	}
 }
+
 .directory-item {
-	width: 100%;
 	justify-content: space-between;
 	padding: 0 0.5rem 0.5rem 0.5rem;
+	flex-flow: column nowrap;
 
 	@include breakpoint(sm) {
 		padding: 0;
@@ -96,30 +97,118 @@
 		font-size: 1.2em;
 		margin-top: 1rem;
 		margin-bottom: 0rem;
+
 		@include breakpoint(sm) {
-			float:left;
+			float: left;
 		}
+
 		a {
-			text-decoration:none;
-			color:inherit;
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+}
+
+.a_to_z_section {
+	background-color: $light;
+	flex: 1;
+	flex-flow: row nowrap;
+
+	.a_to_z_letter_heading {
+		padding-top: 3rem;
+		width: 100px;
+		background-color: $light;
+
+		h3 {
+			background-color: $light;
+			margin: 1rem;
 		}
 	}
 
-	border-bottom: solid 1px $dark;
+	.a_to_z_listings {
+		background-color: $white;
+	}
 }
 
-.directory-item:last-child {
+.directory-item-container {
+	display: flex;
+	flex-flow: column wrap;
+	@include breakpoint(sm) {
+		flex-flow: row nowrap;
+	}
+
+	.directory-logo {
+		display: none; /* not that this happens anyway */
+	}
+
+	border-bottom: solid 2px $accent;
+}
+
+.directory-item-container:last-child {
 	border-bottom: none;
 }
 
+.directory-item-container.supporter {
+
+	.directory-item {
+		width: inherit;
+		flex-grow: 1;
+		max-width: 990px;
+
+		.directory-row {
+			width: 100%;
+
+			.item {
+				@include breakpoint(sm) {
+					//min-width: inherit;
+					flex-grow: 1;
+				}
+			}
+
+			.item-sm {
+				@include breakpoint(sm) {
+					//min-width: inherit;
+					flex-grow: 1;
+				}
+			}
+
+			.item-lg {
+				@include breakpoint(sm) {
+					align-self: flex-end;
+					//min-width: inherit;
+					flex-grow: 2;
+					margin-left: auto;
+				}
+			}
+		}
+	}
+
+	.directory-logo {
+		@include breakpoint(md) {
+			display: block;
+			width: 290px;
+			height: 265px;
+			align-self: flex-end;
+			margin-left: auto;
+			flex-grow: 0;
+
+			img {
+				width: 290px !important;
+				height: 265px !important;
+			}
+		}
+	}
+
+	margin-top: 1rem;
+	border-bottom: none;
+	background: $featured_bg;
+}
 
 .directory-row {
-	display: inline-block;
+	display: inline-flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
-	width: 100%;
 	margin-bottom: 1rem;
-
 	&.taxonomy {
 		flex-flow: row nowrap;
 		justify-content: space-between;
@@ -150,47 +239,41 @@
 
 	.item {
 		@include breakpoint(sm) {
-			width: 30rem;
-			float: left;
-			flex-shrink: 1;
+			//min-width: 30rem;
 			flex-grow: 1;
 		}
 	}
 
 	.item-sm {
 		@include breakpoint(sm) {
-			width: 23rem;
-			float: left;
-			flex-shrink: 1;
+			//min-width: 23rem;
 			flex-grow: 1;
 		}
 	}
 
 	.item-lg {
 		@include breakpoint(sm) {
-			float: right;
-			width: 10rem;
-			flex-shrink: 2;
+			align-self: flex-end;
+			//min-width: 10rem;
 			flex-grow: 2;
-
-			> div {
-				width: 100%;
-				text-align: right;
-			}
+			margin-left: auto;
 		}
 	}
 
-	.website {
-		.website-link {
-			clear: left;
-
-			a {
-				text-wrap: avoid;
-				text-decoration: none;
-				margin: 0;
-
-				&:hover, &:focus {
+	&.title-row {
+		width:100%;
+		flex-flow: column nowrap;
+		.website {
+			.website-link {
+			
+				a {
+					text-wrap: avoid;
 					text-decoration: none;
+					margin: 0;
+
+					&:hover, &:focus {
+						text-decoration: none;
+					}
 				}
 			}
 		}
@@ -199,18 +282,10 @@
 	a {
 		text-decoration-color: $dark;
 
-		.arrows {
-			color: transparent;
-		}
-
 		&:hover, &:focus {
 			color: $dark;
 			text-decoration-color: $accent;
 			text-decoration: underline;
-
-			.arrows {
-				color: $accent;
-			}
 		}
 
 		.website-link {
@@ -218,18 +293,31 @@
 		}
 	}
 
-	.more-button {
-		border: solid 1px $accent;
-		text-align: center;
-		align-self: baseline;
-		float: right;
+}
 
-		a {
-			text-decoration: none;
+.more-button {
+	border: solid 1px $accent;
+	text-align: center;
+
+	a {
+		text-decoration: none;
+		color: $accent;
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		.arrows {
+			color: transparent;
+			padding-right: 1rem;
+		}
+	}
+
+	a:hover {
+		text-decoration: none;
+		color: $accent;
+
+		.arrows {
 			color: $accent;
-			display: block;
-			width: 100%;
-			height: 100%;
 		}
 	}
 }
@@ -291,19 +379,6 @@
 .a_to_z_searchbar.fixed-at-top {
 	position:fixed;
 	top:0px;
-}
-
-.a_to_z_letter_heading {
-	padding-top: 3rem;;
-	background-color: $light;
-
-	H3 {
-		background-color: $light;
-		margin: 1rem;
-	}
-}
-.a_to_z_section {
-	background-color: $white;
 }
 
 .directory_category_list {
