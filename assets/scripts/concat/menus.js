@@ -399,7 +399,7 @@
 
 	}
 
-	$(document).ready(function () {
+	$(function () {
 
 		if ( _getAllMenusArray() !== null ) {
 

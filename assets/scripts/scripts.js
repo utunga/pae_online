@@ -158,7 +158,7 @@
     // global var
     var map = null;
 
-    $(document).ready(function () {
+    $(function () {
 
         $('.acf-map').each(function () {
 
@@ -3098,7 +3098,7 @@ module.exports = __webpack_require__(2);
 
 	}
 
-	$(document).ready(function () {
+	$(function () {
 
 		if ( _getAllMenusArray() !== null ) {
 
@@ -3209,18 +3209,30 @@ function fixPaekakarikiSpelling($) {
 }
 
 function hackMenusForMobile($) {
-
 	if (!window.matchMedia("(min-width: 896px)").matches) {
-		console.log("hackin the menus");
-		//$('.nav-primary, .nav-secondary').show();
 		$('#genesis-mobile-nav-secondary').hide();
 		$('.nav-primary .quadmenu-navbar-header').hide();
-
-		//primnary menu content collapse in
-
-		//primnary menu header hide header
 	}
+}
+
+function fixTopBannerPlacement($) {
+	var contentPlacement = $('header.site-header').position().top + $('header.site-header').height();
+	$('header.site-header').next().css('margin-top', contentPlacement);
 	
+	if ($(".top-home img").length > 0) {
+		// if we're on the front-home page
+		$('.nav-secondary').detach().insertBefore(".site-inner");
+		var contentPlacement = $('header.site-header').position().top + $('header.site-header  ').height();
+		$('header.site-header').next().css('margin-top', contentPlacement);
+		$('top-home').css('margin-top', 0);
+		$(window).scroll(function () { adjustTopImage($) });
+		$(window).resize(function () { adjustTopImage($) });
+	}
+	else {
+		var contentPlacement = $('.site-container header').position().top + $('.site-container header').height();
+		$('.site-inner').css('margin-top', contentPlacement);
+		$('top-home').css('margin-top', 0);
+	}
 }
 
 (function (document, $) {
@@ -3233,26 +3245,9 @@ function hackMenusForMobile($) {
 		$(window).resize(function () { adjustAToZSearchBar($) });
 	}
 
-	var mainMenuButtonClass = 'menu-toggle';
-	var subMenuButtonClass = 'sub-menu-toggle';
-
-	//$(".top-header").on("main_menu.custom_click", "." + mainMenuButtonClass,
-	//	function (evt) {
-	//		$(".menu-toggle").toggle();
-	//		$(".quadmenu-navbar-toggle").trigger("click", true);
-	//		$(".quadmenu-navbar-header").css("margin-top", "-76px");
-	//	});
-
-	//$(".top-header").on("click", ".quadmenu-navbar-toggle",
-	//	function (evt, isTriggered) {
-	//		if (!(isTriggered))
-	//		{
-	//			$(".menu-toggle").click();
-	//	}});
-
-	handleMihiAudio($);
-
-	$(document).ready(function () {
+	$(function () {
+		fixTopBannerPlacement($);
+		handleMihiAudio($);
 		fixPaekakarikiSpelling($);
 		hackMenusForMobile($);
 	});

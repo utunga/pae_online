@@ -111,8 +111,11 @@
 
 	.sponsor-1.widget-area,
 	.sponsor-2.widget-area {
-		margin-left: 10rem;
-		margin-top: 2rem;
+
+		@include breakpoint(sm) {
+			margin-left: 10rem;
+			margin-top: 2rem;
+		}
 
 		section {
 			padding: 0px;

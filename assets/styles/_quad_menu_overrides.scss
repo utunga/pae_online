@@ -30,7 +30,11 @@
 				margin-top: 1.2rem;
 			}
 
-			
+			li:first-child {
+				a .quadmenu-item-content {
+					padding-left: 0;
+				}
+			}
 		}
 
 		.quadmenu-navbar-header {

@@ -15,8 +15,6 @@
 .mihi-widget {
 	background-color: $light_accent;
 	color: black;
-	text-align: center;
-	padding: 2rem 4%;
 	font-size: 1.4rem;
 
 	@include breakpoint(md) {
@@ -30,51 +28,54 @@
 
 	font-weight: 600;
 	border-bottom: solid 1px $dark;
-	display: flex;
-	flex-flow: row;
 
-	button {
-		background-color: $light_accent;
+	.wrap {
+		display: flex;
+		flex-flow: row;
 
-		&:hover,
-		&:focus {
-			box-shadow: none !important;
-		}
-	}
+		button {
+			background-color: $light_accent;
 
-	a {
-		text-decoration: none;
-		color: $dark;
-
-		&:hover,
-		&:focus {
-			color: $accent;
-		}
-	}
-
-	.audio {
-		padding: 0px;
-		margin: 0px;
-
-		.audio_icon {
-			color: $accent;
-			font-size: 2rem;
-		}
-
-		button.btn {
-			padding: 2.2rem 1rem 0 .5rem;
-			margin: 0px;
-		}
-
-		@include breakpoint(md) {
-			margin: 1rem;
-
-			button.btn {
-				padding: 1.5rem;
+			&:hover,
+			&:focus {
+				box-shadow: none !important;
 			}
+		}
+
+		a {
+			text-decoration: none;
+			color: $dark;
+
+			&:hover,
+			&:focus {
+				color: $accent;
+			}
+		}
+
+		.audio {
+			padding: 0px;
+			margin: 0px;
 
 			.audio_icon {
-				font-size: 3rem;
+				color: $accent;
+				font-size: 2rem;
+			}
+
+			button.btn {
+				padding: 2.2rem 1rem 0 .5rem;
+				margin: 0px;
+			}
+
+			@include breakpoint(md) {
+				margin: 1rem;
+
+				button.btn {
+					padding: 1.5rem;
+				}
+
+				.audio_icon {
+					font-size: 3rem;
+				}
 			}
 		}
 	}

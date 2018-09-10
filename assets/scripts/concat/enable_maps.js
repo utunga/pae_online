@@ -154,7 +154,7 @@
     // global var
     var map = null;
 
-    $(document).ready(function () {
+    $(function () {
 
         $('.acf-map').each(function () {
 

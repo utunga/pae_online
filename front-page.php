@@ -39,23 +39,25 @@ if (    is_active_sidebar( 'top-home' ) ||
 
     ?>
     <div class="mihi-widget">
-	    <div class="main"><?php
-		    // Front page 1 widget area.
-		    genesis_widget_area( 'mihi-area', array(
-		        'before' => '<a href="/mihi/">',
-		        'after'  => '</a>',
-		    ) );
-		    ?>
-	    </div>
-	    <div class="audio">
-            <audio id='mihi'>
-              <source src="wp-content/uploads/2018/08/MihiKarlFarrell.mp3">
-            </audio>
-            <button type="button" class="btn">
-              <span class="fa-stack fa-1x">
-                <i class="fa fa-1x fa-volume-up audio_icon"></i>
-              </span>
-            </button>
+        <div class="wrap">
+	        <div class="main"><?php
+		        // Front page 1 widget area.
+		        genesis_widget_area( 'mihi-area', array(
+		            'before' => '<a href="/mihi/">',
+		            'after'  => '</a>',
+		        ) );
+		        ?>
+	        </div>
+	        <div class="audio">
+                <audio id='mihi'>
+                  <source src="wp-content/uploads/2018/08/MihiKarlFarrell.mp3">
+                </audio>
+                <button type="button" class="btn">
+                  <span class="fa-stack fa-1x">
+                    <i class="fa fa-1x fa-volume-up audio_icon"></i>
+                  </span>
+                </button>
+            </div>
         </div>
     </div>
     

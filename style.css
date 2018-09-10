@@ -4377,14 +4377,6 @@ p.entry-meta {
 	background: white;
 }
 
-.sponsor .sponsor-1.widget-area,
-.sponsor .sponsor-2.widget-area {
-	margin-left: 100px;
-	margin-left: 10rem;
-	margin-top: 20px;
-	margin-top: 2rem;
-}
-
 .sponsor .sponsor-1.widget-area section,
 .sponsor .sponsor-2.widget-area section {
 	padding: 0;
@@ -4867,51 +4859,51 @@ p.entry-meta {
 .mihi-widget {
 	background-color: #e0f0f0;
 	color: black;
-	text-align: center;
-	padding: 20px 4%;
-	padding: 2rem 4%;
 	font-size: 14px;
 	font-size: 1.4rem;
 	font-weight: 600;
 	border-bottom: solid 1px #30353a;
+	/* disable styling caused by all the random bullshit widget wrapping classes */
+}
+
+.mihi-widget .wrap {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-flow: row;
 	    flex-flow: row;
-	/* disable styling caused by all the random bullshit widget wrapping classes */
 }
 
-.mihi-widget button {
+.mihi-widget .wrap button {
 	background-color: #e0f0f0;
 }
 
-.mihi-widget button:hover,
-.mihi-widget button:focus {
+.mihi-widget .wrap button:hover,
+.mihi-widget .wrap button:focus {
 	box-shadow: none !important;
 }
 
-.mihi-widget a {
+.mihi-widget .wrap a {
 	text-decoration: none;
 	color: #30353a;
 }
 
-.mihi-widget a:hover,
-.mihi-widget a:focus {
+.mihi-widget .wrap a:hover,
+.mihi-widget .wrap a:focus {
 	color: #61b5b5;
 }
 
-.mihi-widget .audio {
+.mihi-widget .wrap .audio {
 	padding: 0;
 	margin: 0;
 }
 
-.mihi-widget .audio .audio_icon {
+.mihi-widget .wrap .audio .audio_icon {
 	color: #61b5b5;
 	font-size: 20px;
 	font-size: 2rem;
 }
 
-.mihi-widget .audio button.btn {
+.mihi-widget .wrap .audio button.btn {
 	padding: 22px 10px 0 5px;
 	padding: 2.2rem 1rem 0 0.5rem;
 	margin: 0;
@@ -5185,6 +5177,10 @@ p.entry-meta {
 .nav-secondary #quadmenu .quadmenu-navbar-nav li {
 	margin-top: 12px;
 	margin-top: 1.2rem;
+}
+
+.nav-secondary #quadmenu .quadmenu-navbar-nav li:first-child a .quadmenu-item-content {
+	padding-left: 0;
 }
 
 .nav-secondary #quadmenu .quadmenu-navbar-header {
@@ -5594,6 +5590,11 @@ p.entry-meta {
 	.front-page-1 {
 		padding: calc(20vh + 12rem) 0 20vh;
 	}
+	.sponsor .sponsor-1.widget-area,
+	.sponsor .sponsor-2.widget-area {
+		margin-left: 10rem;
+		margin-top: 2rem;
+	}
 	.directory-item {
 		padding: 0;
 	}
@@ -5879,13 +5880,13 @@ p.entry-meta {
 	.mihi-widget {
 		font-size: 1.9rem;
 	}
-	.mihi-widget .audio {
+	.mihi-widget .wrap .audio {
 		margin: 1rem;
 	}
-	.mihi-widget .audio button.btn {
+	.mihi-widget .wrap .audio button.btn {
 		padding: 1.5rem;
 	}
-	.mihi-widget .audio .audio_icon {
+	.mihi-widget .wrap .audio .audio_icon {
 		font-size: 3rem;
 	}
 	.our_stories .other_stories article {
