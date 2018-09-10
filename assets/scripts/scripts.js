@@ -3212,7 +3212,7 @@ function hackMenusForMobile($) {
 
 	if (!window.matchMedia("(min-width: 896px)").matches) {
 		console.log("hackin the menus");
-		$('.nav-primary, .nav-secondary').show();
+		//$('.nav-primary, .nav-secondary').show();
 		$('#genesis-mobile-nav-secondary').hide();
 		$('.nav-primary .quadmenu-navbar-header').hide();
 
@@ -3256,9 +3256,5 @@ function hackMenusForMobile($) {
 		fixPaekakarikiSpelling($);
 		hackMenusForMobile($);
 	});
-
-	//$(window).on("resize", function () {
-	//	hackMenusForMobile($);
-	//});
 	
 } )( document, jQuery );
