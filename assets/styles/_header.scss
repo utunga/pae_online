@@ -82,6 +82,8 @@
 		align-items: center;
 		justify-content: space-between;
 		flex-wrap: wrap;
+		padding-left: 1px;
+		padding-right: 1px;
 
 		@include breakpoint(md) {
 			padding: 0;

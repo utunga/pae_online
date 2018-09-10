@@ -138,7 +138,7 @@
 	background-color: $white;
 	border-top: $site-border;
 	border-bottom: $site-border;
-	display: none;
+	
 	top: 0px;
 	@include breakpoint(md) {
 		margin: 0;

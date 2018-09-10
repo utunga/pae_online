@@ -95,34 +95,24 @@ function fixPaekakarikiSpelling($) {
 	});
 }
 
+function hackMenusForMobile($) {
+
+	if (!window.matchMedia("(min-width: 896px)").matches) {
+		console.log("hackin the menus");
+		//$('.nav-primary, .nav-secondary').show();
+		$('#genesis-mobile-nav-secondary').hide();
+		$('.nav-primary .quadmenu-navbar-header').hide();
+
+		//primnary menu content collapse in
+
+		//primnary menu header hide header
+	}
+	
+}
+
 (function (document, $) {
 
 	'use strict';
-
-	if (window.matchMedia("(min-width: 896px)").matches) {
-
-		var contentPlacement = $('header.site-header').position().top + $('header.site-header').height();
-		$('header.site-header').next().css('margin-top', contentPlacement);
-		if ($(".top-home img").length > 0) {
-			$(".top-home img").load(
-				function () {
-					$('.nav-secondary').detach().insertBefore(".site-inner");
-					var contentPlacement = $('header.site-header').position().top + $('header.site-header  ').height();
-					$('header.site-header').next().css('margin-top', contentPlacement);
-					$('top-home').css('margin-top', 0);
-
-					$(window).scroll(function () { adjustTopImage($) });
-					$(window).resize(function () { adjustTopImage($) });
-
-				}
-			);
-		}
-		else {
-			var contentPlacement = $('.site-container header').position().top + $('.site-container header').height();
-			$('.site-inner').css('margin-top', contentPlacement);
-			$('top-home').css('margin-top', 0);
-		}
-	}
 
 	if ($("#a_to_z_widget").length > 0) {
 		adjustAToZSearchBar($);
@@ -133,24 +123,25 @@ function fixPaekakarikiSpelling($) {
 	var mainMenuButtonClass = 'menu-toggle';
 	var subMenuButtonClass = 'sub-menu-toggle';
 
-	$(".top-header").on("main_menu.custom_click", "." + mainMenuButtonClass,
-		function (evt) {
-			$(".menu-toggle").toggle();
-			$(".quadmenu-navbar-toggle").trigger("click", true);
-			$(".quadmenu-navbar-header").css("margin-top", "-76px");
-		});
+	//$(".top-header").on("main_menu.custom_click", "." + mainMenuButtonClass,
+	//	function (evt) {
+	//		$(".menu-toggle").toggle();
+	//		$(".quadmenu-navbar-toggle").trigger("click", true);
+	//		$(".quadmenu-navbar-header").css("margin-top", "-76px");
+	//	});
 
-	$(".top-header").on("click", ".quadmenu-navbar-toggle",
-		function (evt, isTriggered) {
-			if (!(isTriggered))
-			{
-				$(".menu-toggle").click();
-		}});
+	//$(".top-header").on("click", ".quadmenu-navbar-toggle",
+	//	function (evt, isTriggered) {
+	//		if (!(isTriggered))
+	//		{
+	//			$(".menu-toggle").click();
+	//	}});
 
 	handleMihiAudio($);
 
 	$(document).ready(function () {
 		fixPaekakarikiSpelling($);
-	})
+		hackMenusForMobile($);
+	});
 	
 } )( document, jQuery );
