@@ -3058,6 +3058,8 @@ img.alignright,
 	justify-content: space-between;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
+	padding-left: 1px;
+	padding-right: 1px;
 }
 
 .admin-bar header.site-header {
