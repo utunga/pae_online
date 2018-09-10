@@ -71,3 +71,44 @@
         text-align: center;
     }
 }
+
+.widget-area.official-stuff-sidebar {
+	section {
+		font-size: 1.2rem;
+		padding: 1rem;
+		@include breakpoint(sm) {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+.widget-area.official-stuff-lower-sidebar,
+.widget-area.official-stuff-lower-sidebar-2 {
+	flex-flow: column nowrap;
+	align-items: stretch;
+	display: flex;
+	align-content: space-between;
+
+	@include breakpoint(sm) {
+		flex-flow: row nowrap;
+	}
+
+	section {
+		display: flex;
+		padding: 1rem;
+		flex-grow: 1;
+		margin-top: 1rem;
+
+		@include breakpoint(sm) {
+			margin-left: 1rem;
+		}
+	}
+
+	section:first-child {
+		margin-left: 0rem;
+	}
+
+	.widget {
+		margin-bottom: 0;
+	}
+}

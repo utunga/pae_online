@@ -71,8 +71,12 @@ function official_stuff_lower_sidebar() {
         'before' => '<div class="widget-area official-stuff-lower-sidebar">',
         'after'  => '</div>',
     ) );
-}
 
+    genesis_widget_area( 'official-stuff-lower-sidebar-2', array(
+        'before' => '<div class="widget-area official-stuff-lower-sidebar-2 ">',
+        'after'  => '</div>',
+    ) );
+}
 
 // Run the Genesis loop.
 genesis();

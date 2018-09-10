@@ -55,9 +55,14 @@ genesis_register_sidebar( array(
   'description' => __( 'Side widget area for official stuff page.', 'pae-online' ),
 ) );
 
-//* Register a new sidebar
 genesis_register_sidebar( array(
   'id'          => 'official-stuff-lower-sidebar',
   'name'        => __( 'Official Stuff - Lower Sidebar', 'pae-online'),
   'description' => __( 'Lower widget area for official stuff page.', 'pae-online' ),
+) );
+
+genesis_register_sidebar( array(
+  'id'          => 'official-stuff-lower-sidebar-2',
+  'name'        => __( 'Official Stuff - Even Lower Sidebar', 'pae-online'),
+  'description' => __( 'Lower widget area for official stuff page #2', 'pae-online' ),
 ) );
