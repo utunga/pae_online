@@ -219,6 +219,11 @@
 	a, a:hover {
 		color: $white;
 	}
+
+	.menu-item {
+		width: auto;
+		padding: 1em;
+	}
 }
 
 .nav-footer {
