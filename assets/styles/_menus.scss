@@ -43,11 +43,6 @@
             padding: 1.82em 1.25em;
         }
     }
-    /*a:hover,
-    a:focus,
-    &.current-menu-item>a {
-        color: $accent;
-    }*/
 }
 
 
@@ -479,3 +474,110 @@ ul#menu-secondary-menu {
 		}
 	}
 }
+
+
+
+
+/* ## Overrides for the expando quadmenu bits 
+--------------------------------------------- */
+
+.nav-secondary #quadmenu {
+
+	.quadmenu-navbar-nav > li {
+		height: 7.2rem !important;
+	}
+
+	.quadmenu-dropdown {
+		@include breakpoint(sm) {
+
+			.col-sm-4 {
+				margin-right: auto;
+				margin-top: 2rem !important;
+				margin-bottom: 2rem !important;
+				padding-top: 0 !important;
+				padding-bottom: 0 !important;
+
+				ul {
+					padding-top: 0 !important;
+					padding-bottom: 0 !important;
+
+					li {
+						span.quadmenu-item-content {
+							font: $font-body !important;
+							font-weight: 300 !important;
+						}
+
+						a:hover {
+							background: $accent !important;
+						}
+					}
+
+					li:first-child {
+						span.quadmenu-item-content {
+							padding-top: 0 !important;
+						}
+					}
+
+					li:last-child {
+						span.quadmenu-item-content {
+							padding-bottom: 0 !important;
+						}
+					}
+				}
+			}
+			/* special override for a-z */
+			#menu-item-349 {
+				span.quadmenu-item-content {
+					text-align: right;
+					padding-right: 4rem;
+				}
+			}
+
+			/* hack for third col in our village */
+			#menu-item-5561,
+			#menu-item-545 {
+				border-left: none;
+			}
+
+			.quadmenu-dropdown-menu {
+				position: relative;
+				background: $accent !important;
+
+				ul.quadmenu-row {
+					width: 767px !important;
+					margin-left: -19.5rem !important;
+
+					li.quadmenu-item-type-column {
+						margin-top: 0px;
+						min-width: 0;
+						border-left: solid 1px white;
+					}
+
+					li.quadmenu-item-type-column:first-child {
+						border-left: none;
+					}
+				}
+			}
+			/* hack for full width turquoise */
+			.quadmenu-dropdown-menu:before, .quadmenu-dropdown-menu:after {
+				content: "";
+				position: absolute;
+				/* fill vertically */
+				top: 0;
+				bottom: 0;
+				width: 9600px;
+				right: 100%;
+				background: $accent;
+			}
+
+			.quadmenu-dropdown-menu:after {
+				width: 9600px;
+				left: 100%;
+				/* you're free to do something totally different here */
+				background: $accent;
+			}
+		}
+	}
+}
+
+

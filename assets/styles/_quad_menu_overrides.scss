@@ -2,16 +2,18 @@
 .nav-secondary {
 	text-align: left;
 	width: 100%;
+
 	@include breakpoint(sm) {
 		height: 8.5rem;
 	}
+
 	text-align: center;
 
 	#quadmenu {
 		background: $black;
 
 		.quadmenu-dropdown-menu {
-			width: 760px !important;
+			width: 760px;
 			margin: auto;
 
 			.quadmenu-row {
@@ -20,6 +22,7 @@
 
 
 		.quadmenu-navbar-nav {
+			
 
 			.quadmenu-item-content {
 				font-size: 1.5rem;
@@ -29,19 +32,12 @@
 			}
 
 			li {
-				margin-top: 1.2rem;
-			}
-
-			li:first-child {
-				a .quadmenu-item-content {
-					padding-left: 0;
-				}
+				margin-top: .2rem;
 			}
 		}
 
 		.quadmenu-navbar-header {
 			width: 100%;
-			font-size: 200px;
 
 			.quadmenu-navbar-brand {
 				display: none;
@@ -49,4 +45,3 @@
 		}
 	}
 }
-

@@ -3256,6 +3256,7 @@ function initializeMenuOverrides($, menuSelector, menuContent) {
 }
 
 function doMenuOverrides($, menuSelector, menuContent) {
+	$("#menu-item-530").addClass("open");
 	$(menuSelector + " li.menu-item").each(function () {
 		var this_menu_id = $(this).attr('id');
 		var matched = _.findWhere(menuContent, { menu_item_id: this_menu_id });
