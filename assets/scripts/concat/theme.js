@@ -1,3 +1,34 @@
+//  Fuck it I'm putting label overrides here
+//  - matches on desktop label
+//  - swaps out value of labels to mobile label when size is small enough
+//  - hides/shows on load or resize
+//  - needs to be explicitly referenced by doMenuOverrides/initMenuOverrides (see below)
+const secondary_menu_overrides = [
+	{
+		mobile_label: "Trains",
+		desktop_label: "Train times ➚"
+	},
+	{
+		mobile_label: "Weather",
+		desktop_label: "Weather, surf ➚"
+	},
+	{
+		mobile_label: "Radio",
+		desktop_label: "Local radio ➚"
+	},
+	{
+		mobile_label: "Forums",
+		desktop_label: "Forums ➚"
+	},
+	{
+		mobile_label: "Official Stuff",
+		desktop_label: "Official Stuff",
+		display: "desktop-only"
+	}
+]
+
+
+
 /**
  * Add any custom theme JavaScript to this file.
  */
@@ -95,6 +126,54 @@ function fixPaekakarikiSpelling($) {
 	});
 }
 
+function initializeMenuOverrides($, menuSelector, menuContent) {
+	$(menuSelector + " li.menu-item").each(function () {
+		var matched;
+		var current_label = $(this).find("a span").first().text();
+		var matched = _.find(menuContent, function (item) {
+			// assume that menus are set to the desktop label by default
+			return (item.desktop_label.match(new RegExp( current_label, "i")));
+		});
+		console.log("Found in menu overrides ", matched);
+		if (matched) {
+			var this_menu_id = $(this).attr('id');
+			matched.menu_item_id = this_menu_id;
+		}
+	});
+}
+
+function doMenuOverrides($, menuSelector, menuContent) {
+	$(menuSelector + " li.menu-item").each(function () {
+		var this_menu_id = $(this).attr('id');
+		var matched = _.findWhere(menuContent, { menu_item_id: this_menu_id });
+		if (matched) {
+			if (!window.matchMedia("(min-width: 896px)").matches) {
+				$(this).find("a span").each(function () {
+					$(this).html(matched.mobile_label);
+				});
+
+				if (matched.display === "mobile-only")
+					$(this).show();
+
+				if (matched.display === "desktop-only")
+					$(this).hide();
+
+			} else {
+				$(this).find("a span").each(function () {
+					$(this).html(matched.desktop_label);
+				});
+
+				if (matched.display === "mobile-only") 
+					$(this).hide();
+
+				if (matched.display === "desktop-only")
+					$(this).show();
+
+			}
+		}
+	});
+}
+
 function hackMenusForMobile($) {
 	if (!window.matchMedia("(min-width: 896px)").matches) {
 		$('#genesis-mobile-nav-secondary').hide();
@@ -136,10 +215,18 @@ function fixTopBannerPlacement($) {
 	}
 
 	$(function () {
+		initializeMenuOverrides($, ".nav-primary", secondary_menu_overrides);
+		doMenuOverrides($, ".nav-primary", secondary_menu_overrides);
 		fixTopBannerPlacement($);
 		handleMihiAudio($);
 		fixPaekakarikiSpelling($);
 		hackMenusForMobile($);
+
+		$(window).resize(function () {
+			doMenuOverrides($, ".nav-primary", secondary_menu_overrides);
+		});
 	});
+
+
 	
 } )( document, jQuery );
