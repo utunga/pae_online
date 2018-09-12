@@ -3423,6 +3423,7 @@ header.site-header .a_to_z_searchbar input.search_button {
 
 .nav-secondary ul.quadmenu-navbar-nav li.search {
 	color: #61b5b5;
+	/** customizations of google search box */
 }
 
 .nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box {
@@ -3447,6 +3448,8 @@ header.site-header .a_to_z_searchbar input.search_button {
 .nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box .gsc-input-box table .gsib_b {
 	padding-top: 6px;
 	padding-top: 0.6rem;
+	padding-right: 10px !important;
+	padding-right: 1rem !important;
 }
 
 .nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box td.gsc-search-button {
@@ -6014,6 +6017,15 @@ p.entry-meta {
 }
 
 @media (max-width: 768px) {
+	.nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box {
+		height: 4.2rem;
+	}
+	.nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box .gsc-input-box table input {
+		padding: 0 3rem !important;
+	}
+	.nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box td.gsc-search-button button.gsc-search-button {
+		height: 4.2rem !important;
+	}
 	ul#menu-secondary-menu {
 		margin: auto;
 		width: 340px;
@@ -6027,9 +6039,6 @@ p.entry-meta {
 	}
 	ul#menu-secondary-menu .menu-item:first-child {
 		border-left: none;
-	}
-	.nav-secondary #quadmenu .quadmenu-navbar-nav li.right.search {
-		display: none;
 	}
 }
 

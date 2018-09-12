@@ -178,6 +178,8 @@ function hackMenusForMobile($) {
 	if (!window.matchMedia("(min-width: 896px)").matches) {
 		$('#genesis-mobile-nav-secondary').hide();
 		$('.nav-primary .quadmenu-navbar-header').hide();
+		$('.nav-secondary .quadmenu-navbar-header').hide();
+		$('.nav-secondary .quadmenu-container div.quadmenu-navbar-collapse').addClass("in");
 	}
 }
 
