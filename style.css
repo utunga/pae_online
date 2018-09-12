@@ -4631,7 +4631,11 @@ p.entry-meta {
 	display: flex;
 	-ms-flex-flow: column wrap;
 	    flex-flow: column wrap;
-	border-bottom: solid 2px #61b5b5;
+	margin-left: 40px;
+	margin-left: 4rem;
+	margin-right: 15px;
+	margin-right: 1.5rem;
+	border-bottom: solid 1px #61b5b5;
 }
 
 .directory-item-container .directory-logo {
@@ -4639,14 +4643,11 @@ p.entry-meta {
 	/* not that this happens anyway */
 }
 
-.directory-item-container:last-child {
-	border-bottom: none;
+.directory-item-container:first-child {
+	border-top: solid 1px #61b5b5;
 }
 
 .directory-item-container.supporter {
-	margin-top: 10px;
-	margin-top: 1rem;
-	border-bottom: none;
 	background: #fdf5e6;
 }
 
@@ -4654,11 +4655,7 @@ p.entry-meta {
 	width: inherit;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
-	max-width: 990px;
-}
-
-.directory-item-container.supporter .directory-item .directory-row {
-	width: 100%;
+	max-width: 965px;
 }
 
 .directory-row {
@@ -4673,6 +4670,7 @@ p.entry-meta {
 }
 
 .directory-row.taxonomy {
+	width: 100%;
 	-ms-flex-flow: row nowrap;
 	    flex-flow: row nowrap;
 	-ms-flex-pack: justify;
@@ -5758,6 +5756,9 @@ p.entry-meta {
 	.directory-item .title {
 		float: left;
 	}
+	.a_to_z_section .a_to_z_listings {
+		margin-top: -5rem;
+	}
 	.directory-item-container {
 		-ms-flex-flow: row nowrap;
 		    flex-flow: row nowrap;
@@ -5994,17 +5995,20 @@ p.entry-meta {
 	}
 	.directory-item-container.supporter .directory-logo {
 		display: block;
-		width: 290px;
-		height: 265px;
-		-ms-flex-item-align: end;
-		align-self: flex-end;
+		width: 260px;
+		padding: 1.5rem;
+		-ms-flex-item-align: stretch;
+		-ms-grid-row-align: stretch;
+		align-self: stretch;
+		vertical-align: top;
 		margin-left: auto;
 		-ms-flex-positive: 0;
 		flex-grow: 0;
 	}
 	.directory-item-container.supporter .directory-logo img {
-		width: 290px !important;
-		height: 265px !important;
+		vertical-align: top;
+		width: 240px !important;
+		height: 220px !important;
 	}
 	.mihi-widget {
 		font-size: 1.9rem;

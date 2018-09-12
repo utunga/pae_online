@@ -127,12 +127,18 @@
 
 	.a_to_z_listings {
 		background-color: $white;
+		@include breakpoint(sm) {
+			margin-top: -5rem;
+		}
 	}
 }
 
 .directory-item-container {
 	display: flex;
 	flex-flow: column wrap;
+	margin-left: 4rem;
+	margin-right: 1.5rem;
+
 	@include breakpoint(sm) {
 		flex-flow: row nowrap;
 	}
@@ -141,22 +147,22 @@
 		display: none; /* not that this happens anyway */
 	}
 
-	border-bottom: solid 2px $accent;
+	border-bottom: solid 1px $accent;
 }
 
-.directory-item-container:last-child {
-	border-bottom: none;
+.directory-item-container:first-child {
+	border-top: solid 1px $accent;
 }
 
 .directory-item-container.supporter {
+	background: $featured_bg;
 
 	.directory-item {
 		width: inherit;
 		flex-grow: 1;
-		max-width: 990px;
+		max-width: 965px;
 
 		.directory-row {
-			width: 100%;
 
 			.item {
 				@include breakpoint(sm) {
@@ -186,22 +192,20 @@
 	.directory-logo {
 		@include breakpoint(md) {
 			display: block;
-			width: 290px;
-			height: 265px;
-			align-self: flex-end;
+			width: 260px;
+			padding: 1.5rem;
+			align-self: stretch;
+			vertical-align: top;
 			margin-left: auto;
 			flex-grow: 0;
 
 			img {
-				width: 290px !important;
-				height: 265px !important;
+				vertical-align: top;
+				width: 240px !important;
+				height: 220px !important;
 			}
 		}
 	}
-
-	margin-top: 1rem;
-	border-bottom: none;
-	background: $featured_bg;
 }
 
 .directory-row {
@@ -210,6 +214,7 @@
 	justify-content: flex-start;
 	margin-bottom: 1rem;
 	&.taxonomy {
+		width: 100%;
 		flex-flow: row nowrap;
 		justify-content: space-between;
 

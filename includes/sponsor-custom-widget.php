@@ -1,6 +1,6 @@
 <?php
 
-add_image_size('sponsor-thumb-size', 290, 265, false); // width, height, crop
+add_image_size('sponsor-thumb-size', 240, 220, false); // width, height, crop
 
 if(!class_exists('PaeOnline_SponsorWidget')) {
 
