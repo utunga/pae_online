@@ -3584,9 +3584,12 @@ header.site-header .a_to_z_searchbar input.search_button {
 
 /* ## Overrides for the expando quadmenu bits 
 --------------------------------------------- */
-.nav-secondary #quadmenu .quadmenu-navbar-nav > li {
-	height: 72px !important;
-	height: 7.2rem !important;
+
+.nav-secondary #quadmenu .quadmenu-dropdown .quadmenu-dropdown-menu li.quadmenu-item > a > .quadmenu-item-content {
+	font: 'lato', Helvetica, Arial, sans-serif !important;
+	font-weight: 300 !important;
+	color: #30353a !important;
+	background: #ffffff !important;
 }
 
 /* ## Entries
@@ -5597,6 +5600,19 @@ p.entry-meta {
 	.nav-secondary #quadmenu .quadmenu-navbar-nav li.search input[type='search'] {
 		height: 3.2rem;
 	}
+	.nav-secondary #quadmenu .quadmenu-navbar-nav > li {
+		height: 7.2rem !important;
+		padding-top: 1.2rem;
+		padding-bottom: 1.2rem;
+		margin-top: 1rem;
+	}
+	.nav-secondary #quadmenu .quadmenu-navbar-nav > li.right.search {
+		padding-top: 0rem !important;
+	}
+	.nav-secondary #quadmenu .quadmenu-dropdown .quadmenu-dropdown-menu li.quadmenu-item > a > .quadmenu-item-content {
+		color: #ffffff !important;
+		background: #61b5b5 !important;
+	}
 	.nav-secondary #quadmenu .quadmenu-dropdown {
 		/* special override for a-z */
 		/* hack for third col in our village */
@@ -5612,10 +5628,6 @@ p.entry-meta {
 	.nav-secondary #quadmenu .quadmenu-dropdown .col-sm-4 ul {
 		padding-top: 0 !important;
 		padding-bottom: 0 !important;
-	}
-	.nav-secondary #quadmenu .quadmenu-dropdown .col-sm-4 ul li span.quadmenu-item-content {
-		font: 'lato', Helvetica, Arial, sans-serif !important;
-		font-weight: 300 !important;
 	}
 	.nav-secondary #quadmenu .quadmenu-dropdown .col-sm-4 ul li a:hover,
 	.nav-secondary #quadmenu .quadmenu-dropdown .col-sm-4 ul li a:focus {
@@ -6080,6 +6092,9 @@ p.entry-meta {
 @media (max-width: 768px) {
 	.nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box {
 		height: 4.2rem;
+		margin-top: 0;
+		padding-left: 3rem;
+		max-width: 345px !important;
 	}
 	.nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box .gsc-input-box table input {
 		padding: 0 3rem !important;

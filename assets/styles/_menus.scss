@@ -135,7 +135,6 @@
 	top: 0px;
 	@include breakpoint(sm) {
 		margin: 0;
-	
 		position: absolute;
 	}
 	left: 0;
@@ -261,7 +260,6 @@
 
 		li.search {
 			color: $accent;
-
 			/** customizations of google search box */
 			.gsc-search-box {
 				margin-top: 1.8rem;
@@ -269,11 +267,17 @@
 
 				@include media("<=sm") {
 					height: 4.2rem;
+					margin-top: 0;
+					padding-left: 3rem;
+					max-width: 345px !important;
 				}
 
 				.gsc-input-box {
+
+
 					table {
 						margin-bottom: 0;
+
 
 						input {
 							height: 2.6rem !important;
@@ -483,11 +487,33 @@ ul#menu-secondary-menu {
 
 .nav-secondary #quadmenu {
 
-	.quadmenu-navbar-nav > li {
-		height: 7.2rem !important;
+	@include breakpoint(sm) {
+		.quadmenu-navbar-nav > li {
+			height: 7.2rem !important;
+			padding-top: 1.2rem;
+			padding-bottom: 1.2rem;
+			margin-top: 1rem;
+		}
+
+		.quadmenu-navbar-nav > li.right.search {
+			padding-top: 0rem !important;
+		}
 	}
 
 	.quadmenu-dropdown {
+		// ridiculousness needed to override the quadmenu defaults
+		.quadmenu-dropdown-menu li.quadmenu-item > a > .quadmenu-item-content {
+			font: $font-body !important;
+			font-weight: 300 !important;
+			color: $dark !important;
+			background: $white !important;
+
+			@include breakpoint(sm) {
+				color: $white !important;
+				background: $accent !important;
+			}
+		}
+
 		@include breakpoint(sm) {
 
 			.col-sm-4 {
@@ -502,11 +528,6 @@ ul#menu-secondary-menu {
 					padding-bottom: 0 !important;
 
 					li {
-						span.quadmenu-item-content {
-							font: $font-body !important;
-							font-weight: 300 !important;
-						}
-
 						a:hover {
 							background: $accent !important;
 						}
@@ -532,7 +553,6 @@ ul#menu-secondary-menu {
 					padding-right: 4rem;
 				}
 			}
-
 			/* hack for third col in our village */
 			#menu-item-5561,
 			#menu-item-545 {
