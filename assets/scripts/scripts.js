@@ -3260,7 +3260,7 @@ function doMenuOverrides($, menuSelector, menuContent) {
 		var this_menu_id = $(this).attr('id');
 		var matched = _.findWhere(menuContent, { menu_item_id: this_menu_id });
 		if (matched) {
-			if (!window.matchMedia("(min-width: 896px)").matches) {
+			if (!window.matchMedia("(min-width: 1152px)").matches) {
 				$(this).find("a span").each(function () {
 					$(this).html(matched.mobile_label);
 				});

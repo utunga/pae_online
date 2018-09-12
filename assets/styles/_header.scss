@@ -25,7 +25,7 @@
 		margin: 0 auto;
 		height: 90px;
 
-		@include breakpoint(md) {
+		@include breakpoint(lg) {
 			height: 100px;
 		}
 
@@ -62,18 +62,19 @@
 
 			img.logo_desktop {
 				display: inline-block;
+				/*
 				width: 200px;
+					*/
 			}
 		}
-
-		@include breakpoint(md) {
+		/*@include breakpoint(md) {
 			height: 100px;
 			width: 312px;
 
 			img.logo_desktop {
 				width: 312px;
 			}
-		}
+		}*/
 	}
 
 	> .wrap {
@@ -87,15 +88,15 @@
 
 		@include breakpoint(md) {
 			padding: 0;
-			
 			flex-wrap: nowrap;
 			flex-direction: row;
 			justify-content: space-between;
 		}
 
-		@include breakpoint(xl) {
+		@include breakpoint(sm) {
 			.title-area {
-				margin-right: 30%;
+				margin-right: auto;
+				align-self: flex-start;
 			}
 		}
 	}
