@@ -4487,6 +4487,10 @@ p.entry-meta {
 	float: right;
 }
 
+.tribe-mini-calendar-event .list-date {
+	background: black;
+}
+
 /* # Print Styles
 --------------------------------------------- */
 
