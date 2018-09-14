@@ -267,9 +267,13 @@
 
 				@include media("<=sm") {
 					height: 4.2rem;
-					margin-top: 0;
-					padding-left: 3rem;
-					max-width: 345px !important;
+					margin-top: 0rem;
+					margin-bottom: 1.5rem;
+					margin-left: .5rem;
+					margin-right: .5rem;
+					width: -webkit-fill-available;
+					width: -moz-available;
+					width: fill-available;
 				}
 
 				.gsc-input-box {

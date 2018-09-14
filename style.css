@@ -4606,24 +4606,22 @@ p.entry-meta {
 }
 
 .a_to_z_section {
-	background-color: #f4f5f6;
 	-ms-flex: 1;
 	    flex: 1;
 	-ms-flex-flow: row nowrap;
 	    flex-flow: row nowrap;
+	background-color: #f4f5f6;
 }
 
 .a_to_z_section .a_to_z_letter_heading {
-	padding-top: 30px;
-	padding-top: 3rem;
-	width: 100px;
-	background-color: #f4f5f6;
+	padding-top: 20px;
+	padding-top: 2rem;
 }
 
 .a_to_z_section .a_to_z_letter_heading h3 {
-	background-color: #f4f5f6;
-	margin: 10px;
-	margin: 1rem;
+	margin: auto;
+	width: 10px;
+	width: 1rem;
 }
 
 .a_to_z_section .a_to_z_listings {
@@ -4635,10 +4633,6 @@ p.entry-meta {
 	display: flex;
 	-ms-flex-flow: column wrap;
 	    flex-flow: column wrap;
-	margin-left: 40px;
-	margin-left: 4rem;
-	margin-right: 15px;
-	margin-right: 1.5rem;
 	border-bottom: solid 1px #61b5b5;
 }
 
@@ -4762,11 +4756,20 @@ p.entry-meta {
 	color: #61b5b5;
 }
 
-#a_to_z_widget .a_to_z_jumplinks,
 #a_to_z_widget .a_to_z_searchbar {
+	padding-top: 20px;
+	padding-top: 2rem;
 	margin-top: 20px;
 	margin-top: 2rem;
 	width: 100%;
+}
+
+#a_to_z_widget .a_to_z_jumplinks {
+	width: 100%;
+	margin-top: 10px;
+	margin-top: 1rem;
+	margin-bottom: 40px;
+	margin-bottom: 4rem;
 }
 
 #a_to_z_widget .a_to_z_searchbar .wrap {
@@ -5770,10 +5773,14 @@ p.entry-meta {
 	.directory-item .title {
 		float: left;
 	}
-	.a_to_z_section .a_to_z_listings {
-		margin-top: -5rem;
+	.a_to_z_section .a_to_z_letter_heading {
+		width: 5rem;
+		position: relative;
+		top: 3.9rem;
 	}
 	.directory-item-container {
+		margin-left: 5rem;
+		margin-right: 2rem;
 		-ms-flex-flow: row nowrap;
 		    flex-flow: row nowrap;
 	}
@@ -6010,7 +6017,7 @@ p.entry-meta {
 	.directory-item-container.supporter .directory-logo {
 		display: block;
 		width: 260px;
-		padding: 1.5rem;
+		padding: 2rem;
 		-ms-flex-item-align: stretch;
 		-ms-grid-row-align: stretch;
 		align-self: stretch;
@@ -6094,9 +6101,13 @@ p.entry-meta {
 @media (max-width: 768px) {
 	.nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box {
 		height: 4.2rem;
-		margin-top: 0;
-		padding-left: 3rem;
-		max-width: 345px !important;
+		margin-top: 0rem;
+		margin-bottom: 1.5rem;
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+		width: -webkit-fill-available;
+		width: -moz-available;
+		width:         fill-available;
 	}
 	.nav-secondary ul.quadmenu-navbar-nav li.search .gsc-search-box .gsc-input-box table input {
 		padding: 0 3rem !important;
@@ -6117,6 +6128,10 @@ p.entry-meta {
 	}
 	ul#menu-secondary-menu .menu-item:first-child {
 		border-left: none;
+	}
+	.a_to_z_section .a_to_z_letter_heading h3 {
+		margin-bottom: 2rem;
+		margin-top: 2rem;
 	}
 }
 

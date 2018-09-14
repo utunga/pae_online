@@ -111,36 +111,41 @@
 }
 
 .a_to_z_section {
-	background-color: $light;
 	flex: 1;
 	flex-flow: row nowrap;
+	background-color: $light;
 
 	.a_to_z_letter_heading {
-		padding-top: 3rem;
-		width: 100px;
-		background-color: $light;
+		padding-top: 2rem;
+
+		@include breakpoint(sm) {
+			width: 5rem;
+			position: relative;
+			top: 3.9rem;
+		}
 
 		h3 {
-			background-color: $light;
-			margin: 1rem;
+			margin: auto;
+			width: 1rem;
+			@include media("<=sm") {
+				margin-bottom:2rem;
+				margin-top:2rem;
+			}
 		}
 	}
 
 	.a_to_z_listings {
 		background-color: $white;
-		@include breakpoint(sm) {
-			margin-top: -5rem;
-		}
 	}
 }
 
 .directory-item-container {
 	display: flex;
 	flex-flow: column wrap;
-	margin-left: 4rem;
-	margin-right: 1.5rem;
 
 	@include breakpoint(sm) {
+		margin-left: 5rem;
+		margin-right: 2rem;
 		flex-flow: row nowrap;
 	}
 
@@ -194,7 +199,7 @@
 		@include breakpoint(md) {
 			display: block;
 			width: 260px;
-			padding: 1.5rem;
+			padding: 2rem;
 			align-self: stretch;
 			vertical-align: top;
 			margin-left: auto;
@@ -332,10 +337,16 @@
 
 #a_to_z_widget {
 
-	.a_to_z_jumplinks,
 	.a_to_z_searchbar {
+		padding-top: 2rem;
 		margin-top: 2rem;
 		width: 100%;
+	}
+
+	.a_to_z_jumplinks {
+		width: 100%;
+		margin-top: 1rem;
+		margin-bottom: 4rem;
 	}
 
 	.a_to_z_searchbar {
