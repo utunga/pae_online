@@ -75,9 +75,10 @@
 
 	.taxonomy {
 
-		a.tag {
+		span.tag {
 			margin-right: 0.5rem;
-			font-size: 1.2rem;
+			font-size: 1rem;
+			font-weight: bolder;
 			text-decoration: none;
 		}
 	}
@@ -213,14 +214,16 @@
 	flex-flow: column nowrap;
 	justify-content: flex-start;
 	margin-bottom: 1rem;
+
 	&.taxonomy {
 		width: 100%;
 		flex-flow: row nowrap;
 		justify-content: space-between;
 
-		a.tag {
+		span.tag {
 			margin-right: 0.5rem;
-			font-size: 1.2rem;
+			font-size: 1rem;
+			font-weight: bolder;
 			text-decoration: none;
 		}
 	}
@@ -266,11 +269,12 @@
 	}
 
 	&.title-row {
-		width:100%;
+		width: 100%;
 		flex-flow: column nowrap;
+
 		.website {
 			.website-link {
-			
+
 				a {
 					text-wrap: avoid;
 					text-decoration: none;
@@ -297,7 +301,6 @@
 			color: $accent;
 		}
 	}
-
 }
 
 .more-button {

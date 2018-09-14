@@ -4573,11 +4573,12 @@ p.entry-meta {
 	margin: 0 0 0.5rem 0;
 }
 
-.directory-sidebar .taxonomy a.tag {
+.directory-sidebar .taxonomy span.tag {
 	margin-right: 5px;
 	margin-right: 0.5rem;
-	font-size: 12px;
-	font-size: 1.2rem;
+	font-size: 10px;
+	font-size: 1rem;
+	font-weight: bolder;
 	text-decoration: none;
 }
 
@@ -4680,11 +4681,12 @@ p.entry-meta {
 	justify-content: space-between;
 }
 
-.directory-row.taxonomy a.tag {
+.directory-row.taxonomy span.tag {
 	margin-right: 5px;
 	margin-right: 0.5rem;
-	font-size: 12px;
-	font-size: 1.2rem;
+	font-size: 10px;
+	font-size: 1rem;
+	font-weight: bolder;
 	text-decoration: none;
 }
 
