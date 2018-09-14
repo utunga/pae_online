@@ -516,6 +516,10 @@ ul#menu-secondary-menu {
 				color: $white !important;
 				background: $accent !important;
 			}
+
+			img {
+				margin-bottom:1rem;
+			}
 		}
 
 		@include breakpoint(sm) {

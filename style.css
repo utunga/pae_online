@@ -3592,6 +3592,11 @@ header.site-header .a_to_z_searchbar input.search_button {
 	background: #ffffff !important;
 }
 
+.nav-secondary #quadmenu .quadmenu-dropdown .quadmenu-dropdown-menu li.quadmenu-item > a > .quadmenu-item-content img {
+	margin-bottom: 10px;
+	margin-bottom: 1rem;
+}
+
 /* ## Entries
 --------------------------------------------- */
 .entry {
