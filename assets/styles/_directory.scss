@@ -170,7 +170,7 @@
 
 		.directory-item {
 			.more-button {
-				display:none;
+				display: none;
 			}
 		}
 
@@ -186,6 +186,7 @@
 			width: 0px;
 
 			img.sponsor-thumb-mobile-size {
+				display: none; /* DAMN it its not working */
 				vertical-align: top;
 				width: 96px !important;
 				height: 88px !important;
