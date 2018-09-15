@@ -6023,23 +6023,6 @@ p.entry-meta {
 	.directory-widget .directory-widget-header h2 {
 		font-size: 3rem;
 	}
-	.directory-item-container.supporter .directory-logo {
-		display: block;
-		width: 260px;
-		padding: 2rem;
-		-ms-flex-item-align: stretch;
-		-ms-grid-row-align: stretch;
-		align-self: stretch;
-		vertical-align: top;
-		margin-left: auto;
-		-ms-flex-positive: 0;
-		flex-grow: 0;
-	}
-	.directory-item-container.supporter .directory-logo img {
-		vertical-align: top;
-		width: 240px !important;
-		height: 220px !important;
-	}
 	.mihi-widget {
 		font-size: 1.9rem;
 	}
@@ -6080,6 +6063,26 @@ p.entry-meta {
 	}
 	.front-page-1 {
 		padding: calc(20vh + 12rem) 0 20vh;
+	}
+	.directory-item-container.supporter .directory-logo {
+		display: block;
+		width: 260px;
+		padding: 2rem;
+		-ms-flex-item-align: stretch;
+		-ms-grid-row-align: stretch;
+		align-self: stretch;
+		vertical-align: top;
+		margin-left: auto;
+		-ms-flex-positive: 0;
+		flex-grow: 0;
+	}
+	.directory-item-container.supporter .directory-logo img.sponsor-thumb-size {
+		vertical-align: top;
+		width: 240px !important;
+		height: 220px !important;
+	}
+	.directory-item-container.supporter .directory-logo .sponsor-thumb-mobile-size {
+		display: none;
 	}
 	.directory_category_list .intro_area {
 		width: 40rem;
@@ -6141,6 +6144,34 @@ p.entry-meta {
 	.a_to_z_section .a_to_z_letter_heading h3 {
 		margin-bottom: 2rem;
 		margin-top: 2rem;
+	}
+	.directory-item-container.supporter {
+		-ms-flex-flow: unset;
+		    flex-flow: unset;
+		position: relative;
+		width: 100%;
+	}
+	.directory-item-container.supporter .directory-item .more-button {
+		display: none;
+	}
+	.directory-item-container.supporter .directory-logo {
+		display: block;
+		position: absolute;
+		top: 1.2rem;
+		right: 1.2rem;
+		width: 96px !important;
+		height: 88px !important;
+		padding: 0rem;
+		margin: 0;
+		width: 0;
+	}
+	.directory-item-container.supporter .directory-logo img.sponsor-thumb-mobile-size {
+		vertical-align: top;
+		width: 96px !important;
+		height: 88px !important;
+	}
+	.directory-item-container.supporter .directory-logo .sponsor-thumb-size {
+		display: none;
 	}
 }
 

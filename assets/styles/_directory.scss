@@ -163,6 +163,40 @@
 .directory-item-container.supporter {
 	background: $featured_bg;
 
+	@include media("<=sm") {
+		flex-flow: unset;
+		position: relative;
+		width: 100%;
+
+		.directory-item {
+			.more-button {
+				display:none;
+			}
+		}
+
+		.directory-logo {
+			display: block;
+			position: absolute;
+			top: 1.2rem;
+			right: 1.2rem;
+			width: 96px !important;
+			height: 88px !important;
+			padding: 0rem;
+			margin: 0px;
+			width: 0px;
+
+			img.sponsor-thumb-mobile-size {
+				vertical-align: top;
+				width: 96px !important;
+				height: 88px !important;
+			}
+
+			.sponsor-thumb-size {
+				display: none;
+			}
+		}
+	}
+
 	.directory-item {
 		width: inherit;
 		flex-grow: 1;
@@ -196,7 +230,8 @@
 	}
 
 	.directory-logo {
-		@include breakpoint(md) {
+
+		@include breakpoint(lg) {
 			display: block;
 			width: 260px;
 			padding: 2rem;
@@ -205,10 +240,14 @@
 			margin-left: auto;
 			flex-grow: 0;
 
-			img {
+			img.sponsor-thumb-size {
 				vertical-align: top;
 				width: 240px !important;
 				height: 220px !important;
+			}
+
+			.sponsor-thumb-mobile-size {
+				display: none;
 			}
 		}
 	}
