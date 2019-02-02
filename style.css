@@ -5053,7 +5053,7 @@ p.entry-meta {
 }
 
 .single-listing article.entry {
-	padding: 0;
+	padding: 5px;
 }
 
 .single-listing .sidebar .widget {
