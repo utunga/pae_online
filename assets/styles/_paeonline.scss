@@ -155,7 +155,10 @@
 	}
 
 	article.entry {
-		padding: 2rem 6rem;
+		padding: 0;
+		@include breakpoint(sm) {
+			padding: 2rem 6rem;
+		}
 	}
 
 	.sidebar .widget {

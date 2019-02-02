@@ -5053,8 +5053,7 @@ p.entry-meta {
 }
 
 .single-listing article.entry {
-	padding: 20px 60px;
-	padding: 2rem 6rem;
+	padding: 0;
 }
 
 .single-listing .sidebar .widget {
@@ -5848,6 +5847,9 @@ p.entry-meta {
 		-ms-flex-order: -1;
 		order: -1;
 		width: 20rem;
+	}
+	.single-listing article.entry {
+		padding: 2rem 6rem;
 	}
 	.our_stories .featured_story {
 		-ms-flex-flow: row nowrap;
